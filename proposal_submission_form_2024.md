@@ -5,7 +5,7 @@
 #### Team Name: `Desert Pythons`    
   
 #### Your teams hackathon idea in One sentence:
-##### ``
+##### `Create an app to improve access to healthcare specialists for recipients of state-federally funded programs living in rural areas such as Imperial County as well as collect data on the populace seeking specialized services.`
 
 
 #### A visual
