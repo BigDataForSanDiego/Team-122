@@ -5,7 +5,7 @@
 #### Team Name: `Desert Pythons`    
   
 #### Your teams hackathon idea in One sentence:
-##### `Create an app to improve access to healthcare specialists for recipients of state-federally funded programs living in rural areas such as Imperial County as well as collect data on the populace seeking specialized services.`
+##### `Create an app/platform to improve access to healthcare specialists for recipients of state-federally funded programs living in rural areas such as Imperial County as well as collect data on the populace seeking specialized services.`
 
 
 #### A visual
@@ -30,9 +30,9 @@
 > Mental health challenges may be difficult to identify and have a broad impact on health, how can we help clinicians be more in tune with patients mental health needs?
 
 #### Optional Questions. `TEAMS CAN SELECT ONE ADDITIONAL OPTIONAL QUESTION (insert X in [ ])`
-- [X] Cultural Competence in Healthcare
+- [ ] Cultural Competence in Healthcare
 > How can we design a mobile app that helps healthcare providers better understand and respect cultural differences, improving communication and care for diverse patient populations?
-- [ ] Access to Care for Rural and Remote Communities
+- [X] Access to Care for Rural and Remote Communities
 > How can we leverage technology to improve healthcare access for rural and remote communities, ensuring timely and specialized care for those in underserved areas? (Focus on SDSU Imperial Valley Connection - Rural/Remote)
 - [ ] Enhancing disease prevention (For Geocomputational Thinker Awards)
 > How can big (geospatial) data analytics and AI be used to improve access to information about the influence of human behavior, cultural practices, and social interactions on the spread of diseases?
@@ -42,8 +42,9 @@
 
 #### Team Coordinator GitHub Username: `daguilar12801`
 
-#### Team Members `Daniel Lara -  
+#### Team Members 
+Daniel Lara -  dlara7599
 Xitlali Ortega - ortegaxitlali
 Caleb Molina - cmolina9576
-David Aguilar - daguilar12801`
+David Aguilar - daguilar12801
 
