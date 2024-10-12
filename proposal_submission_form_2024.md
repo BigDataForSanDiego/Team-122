@@ -44,7 +44,10 @@
 
 #### Team Members 
 Daniel Lara -  dlara7599
+
 Xitlali Ortega - ortegaxitlali
+
 Caleb Molina - cmolina9576
+
 David Aguilar - daguilar12801
 
