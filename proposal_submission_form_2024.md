@@ -8,11 +8,11 @@
 ##### `Create an app/platform to improve access to healthcare specialists for recipients of state-federally funded programs living in rural areas such as Imperial County as well as collect data on the populace seeking specialized services.`
 
 
-
-#<img height="10%" width="50%" alt="HDMA" #src="https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/hdma2.png?raw=true"> 
-
-
 <!--
+<img height="10%" width="50%" alt="HDMA" src="https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/hdma2.png?raw=true"> 
+
+
+
 #### Theme: Enhancing Healthcareâ€™s Digital Front Door
 #### - Digital solutions to help increase access, manage health, and improve patient satisfaction along the healthcare journey -  
 -->
