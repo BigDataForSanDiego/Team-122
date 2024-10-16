@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df=pd.read_csv('IVData.csv',dtype={'BHIndicator':'object'}) #IVDATA.csv is what I call it on my computer. Adjust it to whatever its called on your computers.
+dfTax=pd.read_csv('Taxonomy.csv')#This is the dataframe for the csv containing the taxonomy codes and all that
+taxonomy_subset = dfTax[['Code', 'Specialization','Classification','Definition','Display Name']]#Creates a subset from taxonomy dataframe
+merged_df = pd.merge(df, taxonomy_subset,
+                     how='left',
+                     left_on='Taxonomy',
+                     right_on='Code')
+merged_df = merged_df.rename(columns={'Specialization': 'ProviderSpecialization'}) #Merges the taxonomy df to the IVData df by matching the taxonomy codes
+dfIV=merged_df[merged_df['County']=='Imperial'] #Adjust the merged df to look only at Imperial County
+dfIV=dfIV[['X','Y','OBJECTID','ManagedCarePlan','SubNetwork','PlanCode', 'RecordType','NPI','FacilityName','LastName','FirstName','Taxonomy','Classification','ProviderSpecialization','Definition','Display Name','MCNAProviderGroup','MCNAProviderType','FacilityType','LicensureType','PrimaryCare','Specialist','SeesChildren','Telehealth','BHIndicator','Address','Address2','City','State','ZIP','ZIP_4','Longitude','Latitude','DHCSCountyCode','FIPSCd','County']]
+#Rearranges the columns in dfIV so that Taxonomy, Classification, etc are all by each other
+dfIV.to_csv('IVMCProviderList.csv', index=False) #Downloads dfIV as a csv on your jupyter notebook
+
