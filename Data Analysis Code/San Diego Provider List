@@ -1,0 +1,16 @@
+#Matches Taxonomy Codes with appropriate specialization for San Diego County
+import pandas as pd
+import matplotlib.pyplot as plt
+import scipy.stats
+df=pd.read_csv('IVData.csv',dtype={'BHIndicator':'object'})
+dfTax=pd.read_csv('Taxonomy.csv')
+taxonomy_subset = dfTax[['Code', 'Specialization','Classification','Definition','Display Name']]
+merged_df = pd.merge(df, taxonomy_subset,
+                     how='left',
+                     left_on='Taxonomy',
+                     right_on='Code')
+merged_df = merged_df.rename(columns={'Specialization': 'ProviderSpecialization'})
+dfSD=merged_df[merged_df['County']=='San Diego ']
+dfSD=dfSD[['X','Y','OBJECTID','ManagedCarePlan','SubNetwork','PlanCode', 'RecordType','NPI','FacilityName','LastName','FirstName','Taxonomy','Classification','ProviderSpecialization','Definition','Display Name','MCNAProviderGroup','MCNAProviderType','FacilityType','LicensureType','PrimaryCare','Specialist','SeesChildren','Telehealth','BHIndicator','Address','Address2','City','State','ZIP','ZIP_4','Longitude','Latitude','DHCSCountyCode','FIPSCd','County']]
+
+dfSD.to_csv('SDMCProviderList.csv', index=False)
