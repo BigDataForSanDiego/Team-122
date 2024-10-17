@@ -6,6 +6,9 @@ For BLUE SHIELD add 'Anesthesiology','Orthopaedic Surgery','Urology','Neurologic
 '
 FOR SAN DIEGO PHYSICIANS UNDER MOLINA ADD 'Pathology', 'Acupuncturist','Dietitian','Transplant Surgery'
 FOR SAN DIEGO PHYSICIANS UNDER MOLINA THAT OFFER TELEHEALTH ADD 'Pathology','Clinical Neuropsychologist','Transplant Surgery'
+
+FOR SAN DIEGO PHYSICIANS UNDER BLUE SHIELD ADD 'Acupuncturist','Pathology','Dietitian','Colon and Rectal Surgery'
+FOR SAN DIEGO PHYSICIANS UNDER BLUE SHIELD THAT OFFER TELEHEALTH ADD 'Hearing Aid Fitter','Acupuncturist','Speech-Language Pathologist'
 3. Create calendar function (if possible)
 4. Create Heatmaps for certain diseases/illnesses
 5. Create Google Slides
