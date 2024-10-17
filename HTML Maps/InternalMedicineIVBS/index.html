@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c1509d81015a98a4999e585a31ec94c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1c1509d81015a98a4999e585a31ec94c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1c1509d81015a98a4999e585a31ec94c = L.map(
+                "map_1c1509d81015a98a4999e585a31ec94c",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4760d6c34a92b2e04d5e70411ac9988 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a4760d6c34a92b2e04d5e70411ac9988.addTo(map_1c1509d81015a98a4999e585a31ec94c);
+        
+    
+            var marker_497047f91bf46a52171ff736920ffd19 = L.marker(
+                [32.7814494692429, -115.568541],
+                {}
+            ).addTo(map_1c1509d81015a98a4999e585a31ec94c);
+        
+    
+        var popup_a9072d1d00a841552779521d38094561 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eab1b68bcbc1dbf31e66702766bc0bf7 = $(`<div id="html_eab1b68bcbc1dbf31e66702766bc0bf7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1415 ROSS AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> DANIEL SWEENEY, VENKTESH RAMNATH, KEVAN AKRAMI, ASHWIN GOWDA, GABRIEL WARDI, ALI ASGHAR, ADNAN BEGOVIC, Christopher Amann, Linh Tran<br>     </div>`)[0];
+                popup_a9072d1d00a841552779521d38094561.setContent(html_eab1b68bcbc1dbf31e66702766bc0bf7);
+            
+        
+
+        marker_497047f91bf46a52171ff736920ffd19.bindPopup(popup_a9072d1d00a841552779521d38094561)
+        ;
+
+        
+    
+    
+            var marker_c9000cb9d6f83123ff455b599ef1dfc1 = L.marker(
+                [32.8068164620073, -115.569710331854],
+                {}
+            ).addTo(map_1c1509d81015a98a4999e585a31ec94c);
+        
+    
+        var popup_540324b2380cbfa66e46b74a0a0017b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6b0ca55f31126fe14b99db6248c8963c = $(`<div id="html_6b0ca55f31126fe14b99db6248c8963c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1503 N IMPERIAL AVE STE 203<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> HANH BUI<br>     </div>`)[0];
+                popup_540324b2380cbfa66e46b74a0a0017b2.setContent(html_6b0ca55f31126fe14b99db6248c8963c);
+            
+        
+
+        marker_c9000cb9d6f83123ff455b599ef1dfc1.bindPopup(popup_540324b2380cbfa66e46b74a0a0017b2)
+        ;
+
+        
+    
+    
+            var marker_2eb5287d1f0f1cc71e0513629edf2305 = L.marker(
+                [32.95809, -115.5537045],
+                {}
+            ).addTo(map_1c1509d81015a98a4999e585a31ec94c);
+        
+    
+        var popup_ef22de33aa6440ab05c38f06f21da4b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e1a23b2eb605e3d051425ed5199f3116 = $(`<div id="html_e1a23b2eb605e3d051425ed5199f3116" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 207 W LEGION RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> Edna Flores<br>     </div>`)[0];
+                popup_ef22de33aa6440ab05c38f06f21da4b2.setContent(html_e1a23b2eb605e3d051425ed5199f3116);
+            
+        
+
+        marker_2eb5287d1f0f1cc71e0513629edf2305.bindPopup(popup_ef22de33aa6440ab05c38f06f21da4b2)
+        ;
+
+        
+    
+</script>
+</html>
