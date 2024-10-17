@@ -4,8 +4,8 @@ Create folium plots for SOME classifications of physicians under the managedcare
 'Obstetrics & Gynecology','Physical Therapist',''Anesthesiology',''Radiology','Nurse Anesthetist','Behavior Analyst'
 For BLUE SHIELD add 'Anesthesiology','Orthopaedic Surgery','Urology','Neurological Surgery','Otolaryngology','Radiology','Obstetrics & Gynecology'
 '
-FOR SAN DIEGO PHYSICIANS ADD 'Pathology', 'Acupuncturist','Dietitian','Transplant Surgery'
-FOR SAN DIEGO PHYSICIANS THAT OFFER TELEHEALTH ADD 'Pathology','Clinical Neuropsychologist','Transplant Surgery'
+FOR SAN DIEGO PHYSICIANS UNDER MOLINA ADD 'Pathology', 'Acupuncturist','Dietitian','Transplant Surgery'
+FOR SAN DIEGO PHYSICIANS UNDER MOLINA THAT OFFER TELEHEALTH ADD 'Pathology','Clinical Neuropsychologist','Transplant Surgery'
 3. Create calendar function (if possible)
 4. Create Heatmaps for certain diseases/illnesses
 5. Create Google Slides
