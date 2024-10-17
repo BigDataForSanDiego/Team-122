@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e64e88aa88ce10fbe4ce501c25bb2060 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e64e88aa88ce10fbe4ce501c25bb2060" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e64e88aa88ce10fbe4ce501c25bb2060 = L.map(
+                "map_e64e88aa88ce10fbe4ce501c25bb2060",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a4559ec9d567e5f0eefad646f8cc6bff = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a4559ec9d567e5f0eefad646f8cc6bff.addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+            var marker_17c123ef401a22471f8247a171518999 = L.marker(
+                [32.9789106133936, -115.533867810549],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_b7678f3404c69ca91a9378ba98f4a36f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_585a32e7bb0e5e0b4ebd48c328558c05 = $(`<div id="html_585a32e7bb0e5e0b4ebd48c328558c05" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 116 N PLAZA ST<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> MICHAEL SAMUEL, REID WAINESS<br>     </div>`)[0];
+                popup_b7678f3404c69ca91a9378ba98f4a36f.setContent(html_585a32e7bb0e5e0b4ebd48c328558c05);
+            
+        
+
+        marker_17c123ef401a22471f8247a171518999.bindPopup(popup_b7678f3404c69ca91a9378ba98f4a36f)
+        ;
+
+        
+    
+    
+            var marker_c87fb6b44eba2d4228a0acec8b5c9176 = L.marker(
+                [32.7767180377689, -115.568394297247],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_af2ed6d69dbf40be27fa413e04d8eaaf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_833af703a7d6f7a647d30132134af8c0 = $(`<div id="html_833af703a7d6f7a647d30132134af8c0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1420 OCOTILLO DR STE D<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> REID WAINESS, MICHAEL SAMUEL<br>     </div>`)[0];
+                popup_af2ed6d69dbf40be27fa413e04d8eaaf.setContent(html_833af703a7d6f7a647d30132134af8c0);
+            
+        
+
+        marker_c87fb6b44eba2d4228a0acec8b5c9176.bindPopup(popup_af2ed6d69dbf40be27fa413e04d8eaaf)
+        ;
+
+        
+    
+    
+            var marker_19b06ab12e05b5a5dd72b895e74bb850 = L.marker(
+                [32.7562560015576, -115.57776836759],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_0bd84eda6560025d99209d0210a33a84 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c39bae34ebac253ada38071488610ee2 = $(`<div id="html_c39bae34ebac253ada38071488610ee2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1452 S LA BRUCHERIE RD STE A<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> NASRIN MANI, James Peairs, PATRICK SASSANI, AYHAM SKAF, Emma McDonnell, MAJID DELENGOCKY, TAYSON PONS, MAURICIO CARRABY, ARNETT SCHER, BARRY RAJSBAUM, MARTIN CHAVEZ, CESAR ECHEGOYEN, JULIO PAPASTERGIOU<br>     </div>`)[0];
+                popup_0bd84eda6560025d99209d0210a33a84.setContent(html_c39bae34ebac253ada38071488610ee2);
+            
+        
+
+        marker_19b06ab12e05b5a5dd72b895e74bb850.bindPopup(popup_0bd84eda6560025d99209d0210a33a84)
+        ;
+
+        
+    
+    
+            var marker_70843b00a2d4289ed292bb6f23b25642 = L.marker(
+                [32.7595957147632, -115.57784733264],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_e25526b325d51ec9bdf5658c28144f41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ae06ace555250420411a2c3a320a053d = $(`<div id="html_ae06ace555250420411a2c3a320a053d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1498 S LA BRUCHERIE RD STE A<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> CESAR CHAVEZ<br>     </div>`)[0];
+                popup_e25526b325d51ec9bdf5658c28144f41.setContent(html_ae06ace555250420411a2c3a320a053d);
+            
+        
+
+        marker_70843b00a2d4289ed292bb6f23b25642.bindPopup(popup_e25526b325d51ec9bdf5658c28144f41)
+        ;
+
+        
+    
+    
+            var marker_ffc247a420b0a7a19bab8e024e2e62fa = L.marker(
+                [32.6940495469783, -115.502451401511],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_77673a803f291dfabd7f458a00ad6796 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7af124f6c93c9f7ca7f5c00708b61f98 = $(`<div id="html_7af124f6c93c9f7ca7f5c00708b61f98" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 233 W COLE BLVD<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> MAJID MANI<br>     </div>`)[0];
+                popup_77673a803f291dfabd7f458a00ad6796.setContent(html_7af124f6c93c9f7ca7f5c00708b61f98);
+            
+        
+
+        marker_ffc247a420b0a7a19bab8e024e2e62fa.bindPopup(popup_77673a803f291dfabd7f458a00ad6796)
+        ;
+
+        
+    
+    
+            var marker_a1ad84b2b449ae179266f83a2b8cf69e = L.marker(
+                [32.7881131187893, -115.561394730394],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_9553b83faf636de9ddaa3cbdfe491a89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f1ab67635d8ed8566debff11d5c2e2ec = $(`<div id="html_f1ab67635d8ed8566debff11d5c2e2ec" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 534 S 8TH ST<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> CESAR CHAVEZ<br>     </div>`)[0];
+                popup_9553b83faf636de9ddaa3cbdfe491a89.setContent(html_f1ab67635d8ed8566debff11d5c2e2ec);
+            
+        
+
+        marker_a1ad84b2b449ae179266f83a2b8cf69e.bindPopup(popup_9553b83faf636de9ddaa3cbdfe491a89)
+        ;
+
+        
+    
+    
+            var marker_fe12c9316b15449823d376dcebb03f73 = L.marker(
+                [32.787621, -115.561389529026],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_10bc718f4777807a4cf32ed3499f40e9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_834399c12598e08c567d1ddb1d5933e4 = $(`<div id="html_834399c12598e08c567d1ddb1d5933e4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 610 S 8TH ST<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> CESAR CHAVEZ<br>     </div>`)[0];
+                popup_10bc718f4777807a4cf32ed3499f40e9.setContent(html_834399c12598e08c567d1ddb1d5933e4);
+            
+        
+
+        marker_fe12c9316b15449823d376dcebb03f73.bindPopup(popup_10bc718f4777807a4cf32ed3499f40e9)
+        ;
+
+        
+    
+    
+            var marker_bede8eb3c6f129605645b48ea2730ecf = L.marker(
+                [32.7705537043014, -115.532652716726],
+                {}
+            ).addTo(map_e64e88aa88ce10fbe4ce501c25bb2060);
+        
+    
+        var popup_5a9e5016a35559ccfed37dce26451698 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0b749b468fd667ef6d4faf29faadfba = $(`<div id="html_f0b749b468fd667ef6d4faf29faadfba" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 651 WAKE AVE STE A<br>     <b>Classification:</b> Ophthalmology<br>     <b>Physicians:</b> MAJID MANI<br>     </div>`)[0];
+                popup_5a9e5016a35559ccfed37dce26451698.setContent(html_f0b749b468fd667ef6d4faf29faadfba);
+            
+        
+
+        marker_bede8eb3c6f129605645b48ea2730ecf.bindPopup(popup_5a9e5016a35559ccfed37dce26451698)
+        ;
+
+        
+    
+</script>
+</html>
