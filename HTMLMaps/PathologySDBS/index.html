@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0bd45257385f39ebf1cad4a2c9dd06b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0bd45257385f39ebf1cad4a2c9dd06b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0bd45257385f39ebf1cad4a2c9dd06b9 = L.map(
+                "map_0bd45257385f39ebf1cad4a2c9dd06b9",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47aeeeee64c61d4aaddf72f91de3ff95 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_47aeeeee64c61d4aaddf72f91de3ff95.addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+            var marker_49aebeeb6d49217f7279a7f4ca75b429 = L.marker(
+                [32.8926911438336, -117.222076617548],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_41875d2883764b10f5766587c340b6f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9ab99cfa95d2ede048cc15d934655905 = $(`<div id="html_9ab99cfa95d2ede048cc15d934655905" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 10300 CAMPUS POINT DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> HELEN BROOME, WEI SONG, Richard Wong, MICHAEL KELNER, The Le Dzung, HUAN YOU WANG, LAURA STEPHENS, JACK BUI<br>     </div>`)[0];
+                popup_41875d2883764b10f5766587c340b6f7.setContent(html_9ab99cfa95d2ede048cc15d934655905);
+            
+        
+
+        marker_49aebeeb6d49217f7279a7f4ca75b429.bindPopup(popup_41875d2883764b10f5766587c340b6f7)
+        ;
+
+        
+    
+    
+            var marker_d93583ef98a6180d13251c478dfd427c = L.marker(
+                [33.0184104328794, -117.081444363233],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_4773c25a2c804141739b93c898b08667 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d14d71f5a241b1059baf0ad30e88050 = $(`<div id="html_6d14d71f5a241b1059baf0ad30e88050" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 16835 W BERNARDO DR STE 212<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> MOHAMMAD KAMAL, SEPI MAHOOTI<br>     </div>`)[0];
+                popup_4773c25a2c804141739b93c898b08667.setContent(html_6d14d71f5a241b1059baf0ad30e88050);
+            
+        
+
+        marker_d93583ef98a6180d13251c478dfd427c.bindPopup(popup_4773c25a2c804141739b93c898b08667)
+        ;
+
+        
+    
+    
+            var marker_51ba4f367e2493332ae07e0ddaaa07d4 = L.marker(
+                [32.7537974982397, -117.165829840412],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_59cd5904fd31c4e9729886d7ef116ccf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b48934acd392c8ab08aeb27180efce56 = $(`<div id="html_b48934acd392c8ab08aeb27180efce56" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 W ARBOR DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> AHNIKA KLINE, AHMED SHABAIK, MANA PARAST, BRIAN DATNOW, HELEN BROOME, ANN TIPPS, DENISE MALICKI, SCOTT VANDENBERG, JONATHAN LIN, MICHAEL KELNER, VERA VAVINSKAYA, SEPI MAHOOTI, ELIZABETH ALLEN, HENRY POWELL, ANDRES ROMA, QINGHONG YANG, The Le Dzung, Mojgan Hosseini-Varnamkhasti, HUAN YOU WANG, Gerald Morris, PATRICIA KOPKO, STEVEN GONIAS, Oluwole Fadare, GRACE BUI, JACK Walavalkar, Vighnesh Lowenthal, Brett HANSEN, LAWRENCE MCLAWHON, RONALD HASTEH<br>     </div>`)[0];
+                popup_59cd5904fd31c4e9729886d7ef116ccf.setContent(html_b48934acd392c8ab08aeb27180efce56);
+            
+        
+
+        marker_51ba4f367e2493332ae07e0ddaaa07d4.bindPopup(popup_59cd5904fd31c4e9729886d7ef116ccf)
+        ;
+
+        
+    
+    
+            var marker_25ab1b55b003e8e1fb99df8d32309b44 = L.marker(
+                [32.7074559699224, -117.085119563498],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_e862ade0cd5b9c2ca78d5997411c7ac3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c537cead316898f7fabf9d47385e4f1 = $(`<div id="html_0c537cead316898f7fabf9d47385e4f1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 292 EUCLID AVE STE 115<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> PAULINA QUINTANA<br>     </div>`)[0];
+                popup_e862ade0cd5b9c2ca78d5997411c7ac3.setContent(html_0c537cead316898f7fabf9d47385e4f1);
+            
+        
+
+        marker_25ab1b55b003e8e1fb99df8d32309b44.bindPopup(popup_e862ade0cd5b9c2ca78d5997411c7ac3)
+        ;
+
+        
+    
+    
+            var marker_c221b1eb76a510e831dd395e7d794d51 = L.marker(
+                [32.798691, -117.150828963067],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_373002fa2720917d714328acca303b43 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8441a5505be7a09019e0717db1ced2ba = $(`<div id="html_8441a5505be7a09019e0717db1ced2ba" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3020 CHILDRENS WAY<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> DENISE MALICKI, KATAYOON SHAYAN, Suzanne Tucker, ROBERT NEWBURY, JUN MO<br>     </div>`)[0];
+                popup_373002fa2720917d714328acca303b43.setContent(html_8441a5505be7a09019e0717db1ced2ba);
+            
+        
+
+        marker_c221b1eb76a510e831dd395e7d794d51.bindPopup(popup_373002fa2720917d714328acca303b43)
+        ;
+
+        
+    
+    
+            var marker_dd92805d496b207e15eba61e2d118022 = L.marker(
+                [32.798691, -117.150828963067],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_66182eeae32fc84c07e8e634f9eee64f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e30fce81220e13e9f9805fcc91734b7 = $(`<div id="html_3e30fce81220e13e9f9805fcc91734b7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3020 CHILDRENS WAY MC 5007<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> ROBERT NEWBURY, KATAYOON SHAYAN, JUN MO<br>     </div>`)[0];
+                popup_66182eeae32fc84c07e8e634f9eee64f.setContent(html_3e30fce81220e13e9f9805fcc91734b7);
+            
+        
+
+        marker_dd92805d496b207e15eba61e2d118022.bindPopup(popup_66182eeae32fc84c07e8e634f9eee64f)
+        ;
+
+        
+    
+    
+            var marker_cf9d8df5823baf97c3902e56982fdc0c = L.marker(
+                [32.798889, -117.150825994893],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_fe8f0e19d8323090888f0ed4d76d5047 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7973e156e244343d88c4d69aa5d8ba38 = $(`<div id="html_7973e156e244343d88c4d69aa5d8ba38" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3030 CHILDRENS WAY FL 1<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> Dehua Wang, NATALIE ELLINGTON<br>     </div>`)[0];
+                popup_fe8f0e19d8323090888f0ed4d76d5047.setContent(html_7973e156e244343d88c4d69aa5d8ba38);
+            
+        
+
+        marker_cf9d8df5823baf97c3902e56982fdc0c.bindPopup(popup_fe8f0e19d8323090888f0ed4d76d5047)
+        ;
+
+        
+    
+    
+            var marker_0b27929845509af1a95ebc6b63fb6880 = L.marker(
+                [32.8786149946912, -117.222204175053],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_69bbbcc94cdea2bec9fc18eaeaec74e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_316daf46a3917a6becffbc14d24042d9 = $(`<div id="html_316daf46a3917a6becffbc14d24042d9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3855 HEALTH SCIENCES DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> KYLE BACKER, HUAN YOU WANG, THOMAS LANE, Xiangdong Xu<br>     </div>`)[0];
+                popup_69bbbcc94cdea2bec9fc18eaeaec74e6.setContent(html_316daf46a3917a6becffbc14d24042d9);
+            
+        
+
+        marker_0b27929845509af1a95ebc6b63fb6880.bindPopup(popup_69bbbcc94cdea2bec9fc18eaeaec74e6)
+        ;
+
+        
+    
+    
+            var marker_c996757964abf4b46de8041c8d1c86de = L.marker(
+                [32.8755417855009, -117.210307679721],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_54e2061af37f414afa8cde2b3a3fdf53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6860273d41e258042a690184a01dda0e = $(`<div id="html_6860273d41e258042a690184a01dda0e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4510 EXECUTIVE DR STE 325<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> HENRY POWELL<br>     </div>`)[0];
+                popup_54e2061af37f414afa8cde2b3a3fdf53.setContent(html_6860273d41e258042a690184a01dda0e);
+            
+        
+
+        marker_c996757964abf4b46de8041c8d1c86de.bindPopup(popup_54e2061af37f414afa8cde2b3a3fdf53)
+        ;
+
+        
+    
+    
+            var marker_abe2758e168aea6be3954d9c1ca6f065 = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_c5c422c46b0f39b5e3570466166b2e05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c5296f8a3699c66ab9010aa5dce925f8 = $(`<div id="html_c5296f8a3699c66ab9010aa5dce925f8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9300 CAMPUS POINT DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> Omonigho Aisagbonhi, Jingjing Hu, MICHELLE DON, VANESSA GOODWILL, ROBERT HEVNER, COLE FERGUSON, LI LEI, HAIYAN ZHANG, DENISE MALICKI, SOMAYE ZARE, JAE ELKIND, Charmi Patel, MARYAM PEZHOUH<br>     </div>`)[0];
+                popup_c5c422c46b0f39b5e3570466166b2e05.setContent(html_c5296f8a3699c66ab9010aa5dce925f8);
+            
+        
+
+        marker_abe2758e168aea6be3954d9c1ca6f065.bindPopup(popup_c5c422c46b0f39b5e3570466166b2e05)
+        ;
+
+        
+    
+    
+            var marker_dda579e05eb2c0a5214f5d8711691770 = L.marker(
+                [32.8761056655893, -117.227136434387],
+                {}
+            ).addTo(map_0bd45257385f39ebf1cad4a2c9dd06b9);
+        
+    
+        var popup_890ec817d55b410bf17bd814e4dc8ee2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ed778126169b6f5557bc8aaf059a73d = $(`<div id="html_7ed778126169b6f5557bc8aaf059a73d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9444 MEDICAL CENTER DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> ANN TIPPS, Omonigho Aisagbonhi, STEVEN GONIAS, Oluwole Fadare, ANDRES ROMA, ELIZABETH ALLEN, Jingjing Hu, SOMAYE ZARE, HAIYAN ZHANG, LAWRENCE HANSEN, HENRY POWELL, Richard Wong, MICHAEL KELNER, VERA VAVINSKAYA, HELEN BROOME, AHMED SHABAIK, ROBERT HEVNER, MICHELLE DON, VANESSA GOODWILL, KYLE BACKER, The Le Dzung, HUAN YOU WANG, JACK BUI, MANA PARAST, COLE FERGUSON, BRIAN DATNOW<br>     </div>`)[0];
+                popup_890ec817d55b410bf17bd814e4dc8ee2.setContent(html_7ed778126169b6f5557bc8aaf059a73d);
+            
+        
+
+        marker_dda579e05eb2c0a5214f5d8711691770.bindPopup(popup_890ec817d55b410bf17bd814e4dc8ee2)
+        ;
+
+        
+    
+</script>
+</html>
