@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_640c8728add8286b281d75f351b1d938 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_640c8728add8286b281d75f351b1d938" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_640c8728add8286b281d75f351b1d938 = L.map(
+                "map_640c8728add8286b281d75f351b1d938",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_35e01266bc0670b4db7a7b7f72440ea8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_35e01266bc0670b4db7a7b7f72440ea8.addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+            var marker_328194868964638c8664e9a49b73856d = L.marker(
+                [32.7537974982397, -117.165829840412],
+                {}
+            ).addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+        var popup_2c2e0ca788b52e31b213de7a34e98fe2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5a1aa13dc8d927b7ce4a6584948c526 = $(`<div id="html_a5a1aa13dc8d927b7ce4a6584948c526" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 W ARBOR DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> JENNIFER FISHER<br>     </div>`)[0];
+                popup_2c2e0ca788b52e31b213de7a34e98fe2.setContent(html_a5a1aa13dc8d927b7ce4a6584948c526);
+            
+        
+
+        marker_328194868964638c8664e9a49b73856d.bindPopup(popup_2c2e0ca788b52e31b213de7a34e98fe2)
+        ;
+
+        
+    
+    
+            var marker_3c9ce60c3e85c2615acf9dd46c1a7ffc = L.marker(
+                [32.8786149946912, -117.222204175053],
+                {}
+            ).addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+        var popup_3d379e23daa29b50f853ff41406e3ca4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8049c1eb93a3f3ca4ebfc73a868b0e72 = $(`<div id="html_8049c1eb93a3f3ca4ebfc73a868b0e72" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3855 HEALTH SCIENCES DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> Traci Roberts<br>     </div>`)[0];
+                popup_3d379e23daa29b50f853ff41406e3ca4.setContent(html_8049c1eb93a3f3ca4ebfc73a868b0e72);
+            
+        
+
+        marker_3c9ce60c3e85c2615acf9dd46c1a7ffc.bindPopup(popup_3d379e23daa29b50f853ff41406e3ca4)
+        ;
+
+        
+    
+    
+            var marker_57b7eca55148d07c9933ed3b5db1847d = L.marker(
+                [32.7532384854291, -117.165014107709],
+                {}
+            ).addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+        var popup_d4d53ce9273cf47fd291cc5f6f43ad3b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fbf1546fa07b80383d4da7a78ebd9cdc = $(`<div id="html_fbf1546fa07b80383d4da7a78ebd9cdc" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4168 FRONT ST<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> Traci Roberts, KRISTEN GONZALEZ, Denise Sievering<br>     </div>`)[0];
+                popup_d4d53ce9273cf47fd291cc5f6f43ad3b.setContent(html_fbf1546fa07b80383d4da7a78ebd9cdc);
+            
+        
+
+        marker_57b7eca55148d07c9933ed3b5db1847d.bindPopup(popup_d4d53ce9273cf47fd291cc5f6f43ad3b)
+        ;
+
+        
+    
+    
+            var marker_dfdef33ae1754304012d6b16bb986793 = L.marker(
+                [32.8724890879656, -117.2138852354],
+                {}
+            ).addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+        var popup_66860bef470a85fe83d307aa05497559 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_629fdc7593902702ba41816e1d710b08 = $(`<div id="html_629fdc7593902702ba41816e1d710b08" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4303 LA JOLLA VILLAGE DR STE 2110<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> JENNIFER FISHER, MALLORY CALLAWAY<br>     </div>`)[0];
+                popup_66860bef470a85fe83d307aa05497559.setContent(html_629fdc7593902702ba41816e1d710b08);
+            
+        
+
+        marker_dfdef33ae1754304012d6b16bb986793.bindPopup(popup_66860bef470a85fe83d307aa05497559)
+        ;
+
+        
+    
+    
+            var marker_ca6bf34c03bcb7b0e1d4643050892469 = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+        var popup_fbf1e7afe00c50f67d1331b155e29fb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a88e761d76a39695b3983417bf463d24 = $(`<div id="html_a88e761d76a39695b3983417bf463d24" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9350 CAMPUS POINT DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> Traci Roberts, Denise Sievering<br>     </div>`)[0];
+                popup_fbf1e7afe00c50f67d1331b155e29fb0.setContent(html_a88e761d76a39695b3983417bf463d24);
+            
+        
+
+        marker_ca6bf34c03bcb7b0e1d4643050892469.bindPopup(popup_fbf1e7afe00c50f67d1331b155e29fb0)
+        ;
+
+        
+    
+    
+            var marker_6bad877f96f90ef2de642d9222734bd9 = L.marker(
+                [32.883433397088, -117.22174014759],
+                {}
+            ).addTo(map_640c8728add8286b281d75f351b1d938);
+        
+    
+        var popup_cf8aa594cb616004516882b7d843a217 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7a8e39fffdf065589b4859377d7223cd = $(`<div id="html_7a8e39fffdf065589b4859377d7223cd" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9850 GENESEE AVE STE 320<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> Traci Roberts<br>     </div>`)[0];
+                popup_cf8aa594cb616004516882b7d843a217.setContent(html_7a8e39fffdf065589b4859377d7223cd);
+            
+        
+
+        marker_6bad877f96f90ef2de642d9222734bd9.bindPopup(popup_cf8aa594cb616004516882b7d843a217)
+        ;
+
+        
+    
+</script>
+</html>
