@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d439d025bc59f6e85492432cc4ced60a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d439d025bc59f6e85492432cc4ced60a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d439d025bc59f6e85492432cc4ced60a = L.map(
+                "map_d439d025bc59f6e85492432cc4ced60a",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4cb14dae4ae8d58ea94be52075a8a25e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4cb14dae4ae8d58ea94be52075a8a25e.addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+            var marker_60362e01928fc46cee827e5268274014 = L.marker(
+                [32.7814494692429, -115.568541],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_cc7921237d8cbb117197a2be0f0e8425 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_962c389ccf54e55e68c1830bc5872cce = $(`<div id="html_962c389ccf54e55e68c1830bc5872cce" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1415 ROSS AVE<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> DIANA HYLTON, MARTIN KRAUSE, MATTHEW MUELLER, MAYA FILIPOVIC, ANUSHIRVAN MINOKADEH<br>     </div>`)[0];
+                popup_cc7921237d8cbb117197a2be0f0e8425.setContent(html_962c389ccf54e55e68c1830bc5872cce);
+            
+        
+
+        marker_60362e01928fc46cee827e5268274014.bindPopup(popup_cc7921237d8cbb117197a2be0f0e8425)
+        ;
+
+        
+    
+    
+            var marker_ab7a0c13594b6a268e90cd99bdfbd705 = L.marker(
+                [32.7786006530671, -115.569524060621],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_d97bd9c41c61efdb27550e05f8525bca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9d2759b66e6a5f88ab7ed55b5ed52b21 = $(`<div id="html_9d2759b66e6a5f88ab7ed55b5ed52b21" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1665 S IMPERIAL AVE<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> CHARLES STEVENS<br>     </div>`)[0];
+                popup_d97bd9c41c61efdb27550e05f8525bca.setContent(html_9d2759b66e6a5f88ab7ed55b5ed52b21);
+            
+        
+
+        marker_ab7a0c13594b6a268e90cd99bdfbd705.bindPopup(popup_d97bd9c41c61efdb27550e05f8525bca)
+        ;
+
+        
+    
+    
+            var marker_2dea98e6272a1145662f838d1748e886 = L.marker(
+                [32.9599135547927, -115.552509653067],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_55a38d1c1cfec56abfbc67e703b21768 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db9e86f8eb73fbe65573d643ca5d1539 = $(`<div id="html_db9e86f8eb73fbe65573d643ca5d1539" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 195 W LEGION RD<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> DILANGANI RATNAYAKE, RICHARD HIRASUNA<br>     </div>`)[0];
+                popup_55a38d1c1cfec56abfbc67e703b21768.setContent(html_db9e86f8eb73fbe65573d643ca5d1539);
+            
+        
+
+        marker_2dea98e6272a1145662f838d1748e886.bindPopup(popup_55a38d1c1cfec56abfbc67e703b21768)
+        ;
+
+        
+    
+    
+            var marker_d1950ee7ba6f3a1841e8fd3f888bc88d = L.marker(
+                [32.95809, -115.5537045],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_51d30e8c3afbeae3c49298f58f2c420a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a023bab5c6d946a089453d163284f364 = $(`<div id="html_a023bab5c6d946a089453d163284f364" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 207 W LEGION RD<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> RICHARD HIRASUNA, DEVENDRA KAPOOR, DILANGANI RATNAYAKE, HAN-MIN CHIU<br>     </div>`)[0];
+                popup_51d30e8c3afbeae3c49298f58f2c420a.setContent(html_a023bab5c6d946a089453d163284f364);
+            
+        
+
+        marker_d1950ee7ba6f3a1841e8fd3f888bc88d.bindPopup(popup_51d30e8c3afbeae3c49298f58f2c420a)
+        ;
+
+        
+    
+    
+            var marker_d9d6b5ba02920e028a1bf091576fdf61 = L.marker(
+                [32.9786852956986, -115.537744990598],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_64df6030671f0de6de728adf0d835ae6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c5fd8fe6ace1355c1302b1eb422acb9 = $(`<div id="html_6c5fd8fe6ace1355c1302b1eb422acb9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 283 MAIN ST<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> CHARLES STEVENS<br>     </div>`)[0];
+                popup_64df6030671f0de6de728adf0d835ae6.setContent(html_6c5fd8fe6ace1355c1302b1eb422acb9);
+            
+        
+
+        marker_d9d6b5ba02920e028a1bf091576fdf61.bindPopup(popup_64df6030671f0de6de728adf0d835ae6)
+        ;
+
+        
+    
+    
+            var marker_16d0347d3f89d33a278f96d88e490aae = L.marker(
+                [32.9582593938771, -115.551561984274],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_bcee745233c8bc8522acfeeb389f538c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0bf60ec3ba90ae74a6aa2aa72ca97e0 = $(`<div id="html_e0bf60ec3ba90ae74a6aa2aa72ca97e0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4231 US HIGHWAY 86<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> JULIET FLIEGEL<br>     </div>`)[0];
+                popup_bcee745233c8bc8522acfeeb389f538c.setContent(html_e0bf60ec3ba90ae74a6aa2aa72ca97e0);
+            
+        
+
+        marker_16d0347d3f89d33a278f96d88e490aae.bindPopup(popup_bcee745233c8bc8522acfeeb389f538c)
+        ;
+
+        
+    
+    
+            var marker_e7468e91b9e86d3777da088cc31764b2 = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_251f87a4bbc81f5a4c001272fc6f152e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ddc4229669e5431cfca3f1824e4293b2 = $(`<div id="html_ddc4229669e5431cfca3f1824e4293b2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 W LEGION RD<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> DILANGANI RATNAYAKE, RICHARD HIRASUNA<br>     </div>`)[0];
+                popup_251f87a4bbc81f5a4c001272fc6f152e.setContent(html_ddc4229669e5431cfca3f1824e4293b2);
+            
+        
+
+        marker_e7468e91b9e86d3777da088cc31764b2.bindPopup(popup_251f87a4bbc81f5a4c001272fc6f152e)
+        ;
+
+        
+    
+    
+            var marker_c39916359a5263d369bc478f4c404bcf = L.marker(
+                [32.6792506331001, -115.488700311457],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_aa7a3ce003b442ae87feda49e41c0cc3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce7d575dd3c0c1df658cb9324caa03fa = $(`<div id="html_ce7d575dd3c0c1df658cb9324caa03fa" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 801 E BIRCH ST<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> JULIET FLIEGEL<br>     </div>`)[0];
+                popup_aa7a3ce003b442ae87feda49e41c0cc3.setContent(html_ce7d575dd3c0c1df658cb9324caa03fa);
+            
+        
+
+        marker_c39916359a5263d369bc478f4c404bcf.bindPopup(popup_aa7a3ce003b442ae87feda49e41c0cc3)
+        ;
+
+        
+    
+    
+            var marker_7318df0e0640a22a014f6b898d91a2b3 = L.marker(
+                [32.9785797043014, -115.528580199245],
+                {}
+            ).addTo(map_d439d025bc59f6e85492432cc4ced60a);
+        
+    
+        var popup_cb47752b198a0c96d0124a757fdf07b8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4eaeca8813fe0b74839e2cc834a9c38f = $(`<div id="html_4eaeca8813fe0b74839e2cc834a9c38f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 900 MAIN ST<br>     <b>Classification:</b> Anesthesiology<br>     <b>Physicians:</b> CHARLES STEVENS<br>     </div>`)[0];
+                popup_cb47752b198a0c96d0124a757fdf07b8.setContent(html_4eaeca8813fe0b74839e2cc834a9c38f);
+            
+        
+
+        marker_7318df0e0640a22a014f6b898d91a2b3.bindPopup(popup_cb47752b198a0c96d0124a757fdf07b8)
+        ;
+
+        
+    
+</script>
+</html>
