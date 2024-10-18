@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_56d336e2aefe595b7263995b91ed4cba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_56d336e2aefe595b7263995b91ed4cba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_56d336e2aefe595b7263995b91ed4cba = L.map(
+                "map_56d336e2aefe595b7263995b91ed4cba",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0ee7fae2106c0f21e043aa6139f21ac = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b0ee7fae2106c0f21e043aa6139f21ac.addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+            var marker_6f68ab0d31eca78f5a0a31fc513fb8ff = L.marker(
+                [32.9778208839935, -115.534105937991],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_1e132f58196ae1b100fbc2d509f83844 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b50b30bdb25051787db40a75b151d37 = $(`<div id="html_4b50b30bdb25051787db40a75b151d37" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 125 S 5TH ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> LUIS CASTELLANOS, HUSSEIN EL-NEWIHI<br>     </div>`)[0];
+                popup_1e132f58196ae1b100fbc2d509f83844.setContent(html_4b50b30bdb25051787db40a75b151d37);
+            
+        
+
+        marker_6f68ab0d31eca78f5a0a31fc513fb8ff.bindPopup(popup_1e132f58196ae1b100fbc2d509f83844)
+        ;
+
+        
+    
+    
+            var marker_399348af93a0ae6b18c828cd0def51fa = L.marker(
+                [32.781450470137, -115.567309844019],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_b83c7e730c6174763afbbe5390eeb0df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a0107ce4dd428ed6987a0cfb9f08f7ea = $(`<div id="html_a0107ce4dd428ed6987a0cfb9f08f7ea" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1271 ROSS AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> OSCAR LOPEZ, SYED AHMED<br>     </div>`)[0];
+                popup_b83c7e730c6174763afbbe5390eeb0df.setContent(html_a0107ce4dd428ed6987a0cfb9f08f7ea);
+            
+        
+
+        marker_399348af93a0ae6b18c828cd0def51fa.bindPopup(popup_b83c7e730c6174763afbbe5390eeb0df)
+        ;
+
+        
+    
+    
+            var marker_19a62b19b04e11469a0db6486b3c509b = L.marker(
+                [33.2760957091006, -115.96999904605],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_4e58ab1315ddd3e9daf8532dfb4fc2f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b325be888cf3042177299ad36376b46b = $(`<div id="html_b325be888cf3042177299ad36376b46b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1289 S MARINA DR<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> KACIE BRUMLEY<br>     </div>`)[0];
+                popup_4e58ab1315ddd3e9daf8532dfb4fc2f2.setContent(html_b325be888cf3042177299ad36376b46b);
+            
+        
+
+        marker_19a62b19b04e11469a0db6486b3c509b.bindPopup(popup_4e58ab1315ddd3e9daf8532dfb4fc2f2)
+        ;
+
+        
+    
+    
+            var marker_a0da110d242d8b1625e4d30eeffcb81e = L.marker(
+                [32.7532058866917, -115.577709766261],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_f978cb51b466ee1c9c3388ad503e884f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e4a8f44cee1f7c3a1b0d81652fdc00f4 = $(`<div id="html_e4a8f44cee1f7c3a1b0d81652fdc00f4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1410 S LA BRUCHERIE RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> SYED AHMED<br>     </div>`)[0];
+                popup_f978cb51b466ee1c9c3388ad503e884f.setContent(html_e4a8f44cee1f7c3a1b0d81652fdc00f4);
+            
+        
+
+        marker_a0da110d242d8b1625e4d30eeffcb81e.bindPopup(popup_f978cb51b466ee1c9c3388ad503e884f)
+        ;
+
+        
+    
+    
+            var marker_c12791e2bada041f148644d0cd9ae53c = L.marker(
+                [32.7814494692429, -115.568541],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_2e710554aea69c2a6806cb75657eb668 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d5a6decd36cfcce0628ffa930f6679b = $(`<div id="html_2d5a6decd36cfcce0628ffa930f6679b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1415 ROSS AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> LINH TRAN, ALIDAD ZADEH, JAMES KOHAN, ADNAN BEGOVIC, OXANA ORMONOVA, ARUN CHAKRABARTY, VENKTESH RAMNATH, KEVAN AKRAMI, ASHWIN GOWDA, DANIEL WALTERS, MAN DUONG, WILLIAM CONVALECER, GABRIEL WARDI, TIEN VO, MICHAEL RUTMAN, HANH BUI, SUNNY RICHLEY, VICTOR LIN, ALVIN WYCOCO, OMAR KHAYYAT, ALI ASGHAR JR, MARC DAO, DANIEL C SWEENEY, JIMMY HARRISON, MASOUD PHAM, KYLE AFSHAR, HARRISON WICOMB, CHRISTOPHER WOOD, JONAS AMANN, AFSANEH PENROSE<br>     </div>`)[0];
+                popup_2e710554aea69c2a6806cb75657eb668.setContent(html_2d5a6decd36cfcce0628ffa930f6679b);
+            
+        
+
+        marker_c12791e2bada041f148644d0cd9ae53c.bindPopup(popup_2e710554aea69c2a6806cb75657eb668)
+        ;
+
+        
+    
+    
+            var marker_f2df977c7b07ed64d06018fc5fa7b4fa = L.marker(
+                [32.8065590534161, -115.570272356803],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_01d937906c53987b8f823efc049ece54 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dfa734550d6aff8831460bf33e0f24db = $(`<div id="html_dfa734550d6aff8831460bf33e0f24db" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1502 NORTH IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> MAHOMED SULIMAN<br>     </div>`)[0];
+                popup_01d937906c53987b8f823efc049ece54.setContent(html_dfa734550d6aff8831460bf33e0f24db);
+            
+        
+
+        marker_f2df977c7b07ed64d06018fc5fa7b4fa.bindPopup(popup_01d937906c53987b8f823efc049ece54)
+        ;
+
+        
+    
+    
+            var marker_079be9764352e971c7db5a62241ca13e = L.marker(
+                [32.8068164620073, -115.569710331854],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_460f4d115b384a1c7c833cc014a55b0c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac579b495195b2760737b13e15ccc32c = $(`<div id="html_ac579b495195b2760737b13e15ccc32c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1503 N IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> HANH BUI, MAHOMED SULIMAN<br>     </div>`)[0];
+                popup_460f4d115b384a1c7c833cc014a55b0c.setContent(html_ac579b495195b2760737b13e15ccc32c);
+            
+        
+
+        marker_079be9764352e971c7db5a62241ca13e.bindPopup(popup_460f4d115b384a1c7c833cc014a55b0c)
+        ;
+
+        
+    
+    
+            var marker_65098d8de45f9c907e2a39a87f43aa91 = L.marker(
+                [32.806881, -115.569753478995],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_46cd3929955d61d6c656ea38b0d27f10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ddae45891d04c2299c011bfbe4d26f1f = $(`<div id="html_ddae45891d04c2299c011bfbe4d26f1f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1503 N IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> HANH BUI<br>     </div>`)[0];
+                popup_46cd3929955d61d6c656ea38b0d27f10.setContent(html_ddae45891d04c2299c011bfbe4d26f1f);
+            
+        
+
+        marker_65098d8de45f9c907e2a39a87f43aa91.bindPopup(popup_46cd3929955d61d6c656ea38b0d27f10)
+        ;
+
+        
+    
+    
+            var marker_d54528eb9aee418fe43a2eb49c1c07d8 = L.marker(
+                [32.8069654585365, -115.570279504632],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_0de2c8c82a7c2579d526048a170a80c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c1f11e04a59911babcdff0603abb0bea = $(`<div id="html_c1f11e04a59911babcdff0603abb0bea" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1550 N IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> HUSSEIN EL-NEWIHI, MOHSEN EL RAMAH, SOL REISIN, RAKESH MALHOTRA<br>     </div>`)[0];
+                popup_0de2c8c82a7c2579d526048a170a80c9.setContent(html_c1f11e04a59911babcdff0603abb0bea);
+            
+        
+
+        marker_d54528eb9aee418fe43a2eb49c1c07d8.bindPopup(popup_0de2c8c82a7c2579d526048a170a80c9)
+        ;
+
+        
+    
+    
+            var marker_9a481888bfeed8488231a09969eb90b9 = L.marker(
+                [32.7795011770731, -115.569727914594],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_92cd9bc0f461871627ec8e116f24b8ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_deda1c6602352d651fa36d6af68baa40 = $(`<div id="html_deda1c6602352d651fa36d6af68baa40" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1590 S IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> LUCIAN OPREA, JAMES KOHAN, MICHAEL RUTMAN, TIEN VO, ARTHUR MABAQUIAO<br>     </div>`)[0];
+                popup_92cd9bc0f461871627ec8e116f24b8ad.setContent(html_deda1c6602352d651fa36d6af68baa40);
+            
+        
+
+        marker_9a481888bfeed8488231a09969eb90b9.bindPopup(popup_92cd9bc0f461871627ec8e116f24b8ad)
+        ;
+
+        
+    
+    
+            var marker_61eba253048d0af150da344ea67d1070 = L.marker(
+                [32.7788291945583, -115.569711628022],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_3e0701397c73a9bd0c9560effaf9a7b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39cc8dfdbe74fd5e1ee83e6225cbb9e1 = $(`<div id="html_39cc8dfdbe74fd5e1ee83e6225cbb9e1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1600 S IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> MOHAMMED AL-JASIM, MOSTAFA HAMDY, GEORGE FAREED, ALIDAD ZADEH<br>     </div>`)[0];
+                popup_3e0701397c73a9bd0c9560effaf9a7b6.setContent(html_39cc8dfdbe74fd5e1ee83e6225cbb9e1);
+            
+        
+
+        marker_61eba253048d0af150da344ea67d1070.bindPopup(popup_3e0701397c73a9bd0c9560effaf9a7b6)
+        ;
+
+        
+    
+    
+            var marker_d928c4d0a4f181233dcd50873058a869 = L.marker(
+                [32.7788952191943, -115.569754833236],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_6d42634fcd747ad4c0834980a6a18a40 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3531919ef4fc677e10bef1fd11c9b937 = $(`<div id="html_3531919ef4fc677e10bef1fd11c9b937" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1600 S IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> ALIDAD ZADEH<br>     </div>`)[0];
+                popup_6d42634fcd747ad4c0834980a6a18a40.setContent(html_3531919ef4fc677e10bef1fd11c9b937);
+            
+        
+
+        marker_d928c4d0a4f181233dcd50873058a869.bindPopup(popup_6d42634fcd747ad4c0834980a6a18a40)
+        ;
+
+        
+    
+    
+            var marker_efbe7f6014c7b3643895800359847ad7 = L.marker(
+                [32.7786006530671, -115.569524060621],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_9971ac3031fdd3147c7439659a98aaed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d015e0b708ef7029a94ebe3e29fc5ae5 = $(`<div id="html_d015e0b708ef7029a94ebe3e29fc5ae5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1665 S IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> UNNATI SAMPAT<br>     </div>`)[0];
+                popup_9971ac3031fdd3147c7439659a98aaed.setContent(html_d015e0b708ef7029a94ebe3e29fc5ae5);
+            
+        
+
+        marker_efbe7f6014c7b3643895800359847ad7.bindPopup(popup_9971ac3031fdd3147c7439659a98aaed)
+        ;
+
+        
+    
+    
+            var marker_3b00bed1f26dc9d9b6ea5773fec5f593 = L.marker(
+                [32.9773838428935, -115.533544514311],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_da11aaa0f24d937af477e8116f1bfb4c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_42f6b4678b2767bc970f6588b3122f57 = $(`<div id="html_42f6b4678b2767bc970f6588b3122f57" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 183 S 5TH ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> ROMAN SAPOZHNIKOV<br>     </div>`)[0];
+                popup_da11aaa0f24d937af477e8116f1bfb4c.setContent(html_42f6b4678b2767bc970f6588b3122f57);
+            
+        
+
+        marker_3b00bed1f26dc9d9b6ea5773fec5f593.bindPopup(popup_da11aaa0f24d937af477e8116f1bfb4c)
+        ;
+
+        
+    
+    
+            var marker_70d601cad6cc24aa7e1062f5364d87e6 = L.marker(
+                [32.791482, -115.554748006261],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_b42f207a86953f07d2b9299aca505943 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d8a7bbe26886eb060f33717f4862ec30 = $(`<div id="html_d8a7bbe26886eb060f33717f4862ec30" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 S 5TH ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> LUCIAN OPREA<br>     </div>`)[0];
+                popup_b42f207a86953f07d2b9299aca505943.setContent(html_d8a7bbe26886eb060f33717f4862ec30);
+            
+        
+
+        marker_70d601cad6cc24aa7e1062f5364d87e6.bindPopup(popup_b42f207a86953f07d2b9299aca505943)
+        ;
+
+        
+    
+    
+            var marker_6183271f74adbda1e14c0ab470272f69 = L.marker(
+                [32.8125634679439, -115.570020202377],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_9960443c2a76aff451d0b43d2237e0ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca344a131b2c680b9c3eeb2dcafaccc7 = $(`<div id="html_ca344a131b2c680b9c3eeb2dcafaccc7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2026 N IMPERIAL AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> GEORGE FAREED<br>     </div>`)[0];
+                popup_9960443c2a76aff451d0b43d2237e0ab.setContent(html_ca344a131b2c680b9c3eeb2dcafaccc7);
+            
+        
+
+        marker_6183271f74adbda1e14c0ab470272f69.bindPopup(popup_9960443c2a76aff451d0b43d2237e0ab)
+        ;
+
+        
+    
+    
+            var marker_43344f3ed6bdb40e5bc42cdcd4178de1 = L.marker(
+                [32.9600002475442, -115.553012517804],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_0c07d237ad768d90a1bb981f2f42ff25 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b9de287878e43467878ede59ca0fd56 = $(`<div id="html_8b9de287878e43467878ede59ca0fd56" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 205 W LEGION RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> OSAGIE BELLO<br>     </div>`)[0];
+                popup_0c07d237ad768d90a1bb981f2f42ff25.setContent(html_8b9de287878e43467878ede59ca0fd56);
+            
+        
+
+        marker_43344f3ed6bdb40e5bc42cdcd4178de1.bindPopup(popup_0c07d237ad768d90a1bb981f2f42ff25)
+        ;
+
+        
+    
+    
+            var marker_e816a5c377896373b40a3f98ac182fa6 = L.marker(
+                [32.7814151030379, -115.579293461756],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_dbcfdcf16ac832a3eadefdcdf5e31533 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e6166375da7b96ee23ddb7e5f7e6230 = $(`<div id="html_4e6166375da7b96ee23ddb7e5f7e6230" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2061 ROSS AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> PRABHDEEP SINGH, HANH BUI, JAMES KOHAN, MICHAEL RUTMAN, SIVARAMAN GOUNDER<br>     </div>`)[0];
+                popup_dbcfdcf16ac832a3eadefdcdf5e31533.setContent(html_4e6166375da7b96ee23ddb7e5f7e6230);
+            
+        
+
+        marker_e816a5c377896373b40a3f98ac182fa6.bindPopup(popup_dbcfdcf16ac832a3eadefdcdf5e31533)
+        ;
+
+        
+    
+    
+            var marker_98017dc2bf9ea8e1f9eb1f9e6210dc20 = L.marker(
+                [32.95809, -115.5537045],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_d73fe1c4f2c4307157a5af38d052f52f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88e03c7d253a38eb1e60f26b00eda9e8 = $(`<div id="html_88e03c7d253a38eb1e60f26b00eda9e8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 207 W LEGION RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> ZAIN JABRI, EDNA FLORES, MICHAEL KRUTZIK, GEORGE FAREED, GABRIELLA SKUTA, RICHARD JACOBY, ANH VO, MEHBOOB GHULAM<br>     </div>`)[0];
+                popup_d73fe1c4f2c4307157a5af38d052f52f.setContent(html_88e03c7d253a38eb1e60f26b00eda9e8);
+            
+        
+
+        marker_98017dc2bf9ea8e1f9eb1f9e6210dc20.bindPopup(popup_d73fe1c4f2c4307157a5af38d052f52f)
+        ;
+
+        
+    
+    
+            var marker_5bd8a4ed095e84eea685b75d2008947b = L.marker(
+                [32.7385910809861, -114.635781816045],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_57b01751744f842ed5b9646a4b26146f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1ad23257437127f3676d9614dcab2b2 = $(`<div id="html_a1ad23257437127f3676d9614dcab2b2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2133 WINTERHAVEN DR<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> OWAIS AHMAD<br>     </div>`)[0];
+                popup_57b01751744f842ed5b9646a4b26146f.setContent(html_a1ad23257437127f3676d9614dcab2b2);
+            
+        
+
+        marker_5bd8a4ed095e84eea685b75d2008947b.bindPopup(popup_57b01751744f842ed5b9646a4b26146f)
+        ;
+
+        
+    
+    
+            var marker_2b68a49e6238431c58d83517d85dc185 = L.marker(
+                [32.7814034006106, -115.580560249511],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_63945db0cbf269320404841f8ebcda36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d2eeea10b5e66fc86ca895c15a6a455 = $(`<div id="html_5d2eeea10b5e66fc86ca895c15a6a455" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2205 ROSS AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> ODAY SAEED, NASIM SHAHBAZI, SHAHID HUSSAIN, MASOUD AFSHAR, RAMIN BERENJI<br>     </div>`)[0];
+                popup_63945db0cbf269320404841f8ebcda36.setContent(html_5d2eeea10b5e66fc86ca895c15a6a455);
+            
+        
+
+        marker_2b68a49e6238431c58d83517d85dc185.bindPopup(popup_63945db0cbf269320404841f8ebcda36)
+        ;
+
+        
+    
+    
+            var marker_97aab278ec33e9a7f20141674f99d6cd = L.marker(
+                [32.6939194892669, -115.495038],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_d02ed12dcedcca32b65e0a4577c50c12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d2cd1ef7eb225b8a76b207c73d6be72 = $(`<div id="html_7d2cd1ef7eb225b8a76b207c73d6be72" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 222 E COLE BLVD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> TIEN VO<br>     </div>`)[0];
+                popup_d02ed12dcedcca32b65e0a4577c50c12.setContent(html_7d2cd1ef7eb225b8a76b207c73d6be72);
+            
+        
+
+        marker_97aab278ec33e9a7f20141674f99d6cd.bindPopup(popup_d02ed12dcedcca32b65e0a4577c50c12)
+        ;
+
+        
+    
+    
+            var marker_6e18cbf5ef9b7b0b5f7bf47e42297896 = L.marker(
+                [32.6940194868713, -115.5029355],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_336d98543f407c73c1dc49d372297190 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f833cc7399ed7de9e98620a4fcf11f6a = $(`<div id="html_f833cc7399ed7de9e98620a4fcf11f6a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 223 W COLE BLVD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> BLALA NAWURAH, GEORGE FAREED<br>     </div>`)[0];
+                popup_336d98543f407c73c1dc49d372297190.setContent(html_f833cc7399ed7de9e98620a4fcf11f6a);
+            
+        
+
+        marker_6e18cbf5ef9b7b0b5f7bf47e42297896.bindPopup(popup_336d98543f407c73c1dc49d372297190)
+        ;
+
+        
+    
+    
+            var marker_7ba3a36922cbbfa15bb7d2773ad296ea = L.marker(
+                [32.7927912456001, -115.551903185123],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_17199c310c08de9ac07fcffb01ae936b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf7d7056b08274da3a8b72549c71b4d0 = $(`<div id="html_cf7d7056b08274da3a8b72549c71b4d0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 385 W MAIN ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> MOSTAFA HAMDY, HUSSEIN EL-NEWIHI, GEORGE FAREED, MAHOMED SULIMAN, MOHAMMED AL-JASIM, ARA DIKRANIAN, OSCAR LOPEZ<br>     </div>`)[0];
+                popup_17199c310c08de9ac07fcffb01ae936b.setContent(html_cf7d7056b08274da3a8b72549c71b4d0);
+            
+        
+
+        marker_7ba3a36922cbbfa15bb7d2773ad296ea.bindPopup(popup_17199c310c08de9ac07fcffb01ae936b)
+        ;
+
+        
+    
+    
+            var marker_c1f561cbc0c94a2d2c91d135fdef32ca = L.marker(
+                [32.6689987368862, -115.492064937937],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_359d86341dfe243ca24d5d112b958599 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1022e3280d00d872141512b9cdab2649 = $(`<div id="html_1022e3280d00d872141512b9cdab2649" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 400 MARY AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> GEORGE FAREED<br>     </div>`)[0];
+                popup_359d86341dfe243ca24d5d112b958599.setContent(html_1022e3280d00d872141512b9cdab2649);
+            
+        
+
+        marker_c1f561cbc0c94a2d2c91d135fdef32ca.bindPopup(popup_359d86341dfe243ca24d5d112b958599)
+        ;
+
+        
+    
+    
+            var marker_ca7321857ec95463aeec9500490e7d56 = L.marker(
+                [32.6691, -115.494862994287],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_8806bcc972027675821d0be2e1b7ff9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb57cc61a97b3afc0ec03f6c41a40f0e = $(`<div id="html_eb57cc61a97b3afc0ec03f6c41a40f0e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 420 HEFFERNAN AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> VITALI AIZIN, BERNARD LICHTENSTEIN<br>     </div>`)[0];
+                popup_8806bcc972027675821d0be2e1b7ff9a.setContent(html_eb57cc61a97b3afc0ec03f6c41a40f0e);
+            
+        
+
+        marker_ca7321857ec95463aeec9500490e7d56.bindPopup(popup_8806bcc972027675821d0be2e1b7ff9a)
+        ;
+
+        
+    
+    
+            var marker_431cc5512b9eee3171bf0bc999e64ed3 = L.marker(
+                [32.6667137821569, -115.492521132668],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_d309db041419486d30e468892d5d6dfa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_61cc9f9e3f3d2592fba111a99e3f3d8b = $(`<div id="html_61cc9f9e3f3d2592fba111a99e3f3d8b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 423 E 2ND ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> MAN DUONG<br>     </div>`)[0];
+                popup_d309db041419486d30e468892d5d6dfa.setContent(html_61cc9f9e3f3d2592fba111a99e3f3d8b);
+            
+        
+
+        marker_431cc5512b9eee3171bf0bc999e64ed3.bindPopup(popup_d309db041419486d30e468892d5d6dfa)
+        ;
+
+        
+    
+    
+            var marker_d92ef38c7b84dee3fb086c1a4fcab1fe = L.marker(
+                [32.9582760943008, -115.551602257096],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_6d91100d6b227e9779a820e66f7be848 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2ad5ae986f66e977db735e2b94dea2c = $(`<div id="html_a2ad5ae986f66e977db735e2b94dea2c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4231 HWY 86<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> MAN DUONG<br>     </div>`)[0];
+                popup_6d91100d6b227e9779a820e66f7be848.setContent(html_a2ad5ae986f66e977db735e2b94dea2c);
+            
+        
+
+        marker_d92ef38c7b84dee3fb086c1a4fcab1fe.bindPopup(popup_6d91100d6b227e9779a820e66f7be848)
+        ;
+
+        
+    
+    
+            var marker_c7345a696e901dc95d7c1393132b8aef = L.marker(
+                [32.7917484920655, -115.5535245],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_38462075244ca82551fd7c85f40e71eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ee9dbdb00c6798352f2b912c066d12d = $(`<div id="html_3ee9dbdb00c6798352f2b912c066d12d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 441 W STATE ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> ARA DIKRANIAN<br>     </div>`)[0];
+                popup_38462075244ca82551fd7c85f40e71eb.setContent(html_3ee9dbdb00c6798352f2b912c066d12d);
+            
+        
+
+        marker_c7345a696e901dc95d7c1393132b8aef.bindPopup(popup_38462075244ca82551fd7c85f40e71eb)
+        ;
+
+        
+    
+    
+            var marker_d4228124ee5af7ea359edbe7d279d56c = L.marker(
+                [32.679124850915, -115.491339775463],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_01463ff1f1aef0e3bb8af68f9ccddb94 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4388d2a9dec66e0e39e18b82a92710dc = $(`<div id="html_4388d2a9dec66e0e39e18b82a92710dc" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 450 E BIRCH ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> MAHOMED SULIMAN, GEORGE FAREED, HORACIO RODILES<br>     </div>`)[0];
+                popup_01463ff1f1aef0e3bb8af68f9ccddb94.setContent(html_4388d2a9dec66e0e39e18b82a92710dc);
+            
+        
+
+        marker_d4228124ee5af7ea359edbe7d279d56c.bindPopup(popup_01463ff1f1aef0e3bb8af68f9ccddb94)
+        ;
+
+        
+    
+    
+            var marker_09564511e252c5ea9b229d385bd780fe = L.marker(
+                [32.6794317041662, -115.492845393848],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_f4617697d423911e931bdce5c9a06232 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b24678a45f993a7ac89bd67fccca8577 = $(`<div id="html_b24678a45f993a7ac89bd67fccca8577" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 495 BIRCH ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> OSCAR LOPEZ<br>     </div>`)[0];
+                popup_f4617697d423911e931bdce5c9a06232.setContent(html_b24678a45f993a7ac89bd67fccca8577);
+            
+        
+
+        marker_09564511e252c5ea9b229d385bd780fe.bindPopup(popup_f4617697d423911e931bdce5c9a06232)
+        ;
+
+        
+    
+    
+            var marker_0784762fcfffe70d70b2f49826e74146 = L.marker(
+                [32.6791652956986, -115.493031],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_110fb75f85bb458684fb7f7952b2fa96 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb5e78a0f0f9080927e0f4da459137b3 = $(`<div id="html_eb5e78a0f0f9080927e0f4da459137b3" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 495 E BIRCH ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> HUSSEIN EL-NEWIHI<br>     </div>`)[0];
+                popup_110fb75f85bb458684fb7f7952b2fa96.setContent(html_eb5e78a0f0f9080927e0f4da459137b3);
+            
+        
+
+        marker_0784762fcfffe70d70b2f49826e74146.bindPopup(popup_110fb75f85bb458684fb7f7952b2fa96)
+        ;
+
+        
+    
+    
+            var marker_1992a55d0fb1d6dbcbabdfb9a1aac9c5 = L.marker(
+                [32.8256042956986, -115.581342817214],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_d8d73db6fb572b905274bd67dee53592 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f435cbe1ab651a33cf8f6df5346d30c0 = $(`<div id="html_f435cbe1ab651a33cf8f6df5346d30c0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 516 W ATEN RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> FARSHAD RAISSI SHABARI, DANIEL WALTERS, ANNA NAREZKINA, LUIS CASTELLANOS, ANAS ALANI<br>     </div>`)[0];
+                popup_d8d73db6fb572b905274bd67dee53592.setContent(html_f435cbe1ab651a33cf8f6df5346d30c0);
+            
+        
+
+        marker_1992a55d0fb1d6dbcbabdfb9a1aac9c5.bindPopup(popup_d8d73db6fb572b905274bd67dee53592)
+        ;
+
+        
+    
+    
+            var marker_2823dd80638712ec4893fedbe81d1d62 = L.marker(
+                [32.9774845825496, -115.532992844019],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_56e292f74aa1126a28276d1c57ea89de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_371229b31b2465a5d0cdfcb9dae7f750 = $(`<div id="html_371229b31b2465a5d0cdfcb9dae7f750" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 528 G ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> ODAY SAEED, MICHAEL KRUTZIK<br>     </div>`)[0];
+                popup_56e292f74aa1126a28276d1c57ea89de.setContent(html_371229b31b2465a5d0cdfcb9dae7f750);
+            
+        
+
+        marker_2823dd80638712ec4893fedbe81d1d62.bindPopup(popup_56e292f74aa1126a28276d1c57ea89de)
+        ;
+
+        
+    
+    
+            var marker_c618107fd04aa808b35fb7d246f46614 = L.marker(
+                [32.9764258157422, -115.552775210658],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_f7b6d3e1b3d68e8993e3ad680fd95777 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d75fccf637d73d3c873eed07ab0db739 = $(`<div id="html_d75fccf637d73d3c873eed07ab0db739" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 605 W H ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> RAMONA KRUTZIK<br>     </div>`)[0];
+                popup_f7b6d3e1b3d68e8993e3ad680fd95777.setContent(html_d75fccf637d73d3c873eed07ab0db739);
+            
+        
+
+        marker_c618107fd04aa808b35fb7d246f46614.bindPopup(popup_f7b6d3e1b3d68e8993e3ad680fd95777)
+        ;
+
+        
+    
+    
+            var marker_df615cb2ce3a2119f46013848283b9af = L.marker(
+                [32.976452435699, -115.552797309017],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_a7124989c6766ce908ce43ede45e599a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c85e2d950985b3c1f9f9476486b6620b = $(`<div id="html_c85e2d950985b3c1f9f9476486b6620b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 605 W H ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> SUNNY RICHLEY<br>     </div>`)[0];
+                popup_a7124989c6766ce908ce43ede45e599a.setContent(html_c85e2d950985b3c1f9f9476486b6620b);
+            
+        
+
+        marker_df615cb2ce3a2119f46013848283b9af.bindPopup(popup_a7124989c6766ce908ce43ede45e599a)
+        ;
+
+        
+    
+    
+            var marker_da685587a40ffea292991accac95b68b = L.marker(
+                [32.9774637043014, -115.531910219292],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_d30d133bd2080fd4fa8b2e979e5b898a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a571be1ae5cef9b4d05ea8298d93dd4 = $(`<div id="html_1a571be1ae5cef9b4d05ea8298d93dd4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 608 G ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> RAKESH MALHOTRA, UNNATI SAMPAT, PRABHDEEP SINGH<br>     </div>`)[0];
+                popup_d30d133bd2080fd4fa8b2e979e5b898a.setContent(html_1a571be1ae5cef9b4d05ea8298d93dd4);
+            
+        
+
+        marker_da685587a40ffea292991accac95b68b.bindPopup(popup_d30d133bd2080fd4fa8b2e979e5b898a)
+        ;
+
+        
+    
+    
+            var marker_ed75f8f5310562914943172846d26187 = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_efb9527dfbc0ba4b987137940830cecc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ea30a56742e233773fbae5042da9ec6 = $(`<div id="html_4ea30a56742e233773fbae5042da9ec6" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 W LEGION RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> SHAHID HUSSAIN, RAMIN BERENJI, OSCAR LOPEZ, SUNNY RICHLEY, HORACIO RODILES<br>     </div>`)[0];
+                popup_efb9527dfbc0ba4b987137940830cecc.setContent(html_4ea30a56742e233773fbae5042da9ec6);
+            
+        
+
+        marker_ed75f8f5310562914943172846d26187.bindPopup(popup_efb9527dfbc0ba4b987137940830cecc)
+        ;
+
+        
+    
+    
+            var marker_59651c1fff91f52afc8a8934a153b655 = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_47e0181970cb74059751437fe1b85e18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a70c17fe4be261c3d1660098b1cb7051 = $(`<div id="html_a70c17fe4be261c3d1660098b1cb7051" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 WEST LEGION RD<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> OSCAR LOPEZ<br>     </div>`)[0];
+                popup_47e0181970cb74059751437fe1b85e18.setContent(html_a70c17fe4be261c3d1660098b1cb7051);
+            
+        
+
+        marker_59651c1fff91f52afc8a8934a153b655.bindPopup(popup_47e0181970cb74059751437fe1b85e18)
+        ;
+
+        
+    
+    
+            var marker_af27654a7ac01a2e24cfe5f7c83e1581 = L.marker(
+                [32.7888122981128, -115.5609792398],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_e4a2cb79d674e53050e8b90cf4d0e349 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00a4ceb88d700d77133ff7eb53f86965 = $(`<div id="html_00a4ceb88d700d77133ff7eb53f86965" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 790 W ORANGE AVE<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> PATRICK WOLCOTT, MICHAEL KRUTZIK, ATHAR ANSARI, SOHAIB TARIQ<br>     </div>`)[0];
+                popup_e4a2cb79d674e53050e8b90cf4d0e349.setContent(html_00a4ceb88d700d77133ff7eb53f86965);
+            
+        
+
+        marker_af27654a7ac01a2e24cfe5f7c83e1581.bindPopup(popup_e4a2cb79d674e53050e8b90cf4d0e349)
+        ;
+
+        
+    
+    
+            var marker_37c426ebcb08dc48e962317583836cc0 = L.marker(
+                [32.773176, -115.5270465],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_018d9e6a7fe40d9a5a6098eb56bde03e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0f563e92f5303f04d6c5a06815910206 = $(`<div id="html_0f563e92f5303f04d6c5a06815910206" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 852 E DANENBERG DR<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> PATRICK WOLCOTT, KACIE BRUMLEY<br>     </div>`)[0];
+                popup_018d9e6a7fe40d9a5a6098eb56bde03e.setContent(html_0f563e92f5303f04d6c5a06815910206);
+            
+        
+
+        marker_37c426ebcb08dc48e962317583836cc0.bindPopup(popup_018d9e6a7fe40d9a5a6098eb56bde03e)
+        ;
+
+        
+    
+    
+            var marker_6d553e8f83781b6569b04a8003264b27 = L.marker(
+                [32.9785797043014, -115.528580199245],
+                {}
+            ).addTo(map_56d336e2aefe595b7263995b91ed4cba);
+        
+    
+        var popup_e0aa88cb363e64458c31e4c25e4e7c5f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e4a24faff3bfed8f9c1e6b57d6d723e = $(`<div id="html_4e4a24faff3bfed8f9c1e6b57d6d723e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 900 MAIN ST<br>     <b>Classification:</b> Internal Medicine<br>     <b>Physicians:</b> OWAIS AHMAD, GEORGE FAREED, HUSSEIN EL-NEWIHI, ALIDAD ZADEH<br>     </div>`)[0];
+                popup_e0aa88cb363e64458c31e4c25e4e7c5f.setContent(html_4e4a24faff3bfed8f9c1e6b57d6d723e);
+            
+        
+
+        marker_6d553e8f83781b6569b04a8003264b27.bindPopup(popup_e0aa88cb363e64458c31e4c25e4e7c5f)
+        ;
+
+        
+    
+</script>
+</html>
