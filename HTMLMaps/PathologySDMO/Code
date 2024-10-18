@@ -1,0 +1,36 @@
+df_filtered = dfSD_unique[
+    (dfSD_unique['Classification'].str.strip() == 'Pathology') & 
+    (dfSD_unique['ManagedCarePlan'].str.strip() == 'MOLINA HEALTHCARE OF CALIFORNIA PARTNER PLAN')
+]
+
+grouped_facilities = df_filtered.groupby(['Address', 'Latitude', 'Longitude']).agg({
+    'FirstName': lambda x: ', '.join(x.unique()),  # Combine unique first names
+    'LastName': lambda x: ', '.join(x.unique()),   # Combine unique last names
+    'Classification': lambda x: ', '.join(x.unique()),  # Combine unique classifications
+}).reset_index()
+
+# Create a new column with the combined unique physician names
+grouped_facilities['Physicians'] = grouped_facilities.apply(
+    lambda x: ', '.join(f"{fn} {ln}" for fn, ln in zip(x['FirstName'].split(', '), x['LastName'].split(', '))), axis=1
+)
+
+# Initialize the map centered around a location (e.g., San Diego)
+m = folium.Map(location=[32.7157, -117.1611], zoom_start=10)
+
+# Add markers for each facility with physician, classification, and telehealth information
+for index, row in grouped_facilities.iterrows():
+    popup_html = f"""
+    <b>Address:</b> {row['Address']}<br>
+    <b>Classification:</b> {row['Classification']}<br>
+    <b>Physicians:</b> {row['Physicians']}<br>
+    """
+    folium.Marker(
+        location=[row['Latitude'], row['Longitude']],
+        popup=folium.Popup(popup_html, max_width=300),
+    ).add_to(m)
+
+# Save the map to an HTML file
+m.save("Pathology_SD_Molina.html")
+
+# Display the map
+m
