@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_442cd675af5a0cbf277e2b3cc59e7315 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_442cd675af5a0cbf277e2b3cc59e7315" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_442cd675af5a0cbf277e2b3cc59e7315 = L.map(
+                "map_442cd675af5a0cbf277e2b3cc59e7315",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_94f1b5bed29ddfc7a416aa2ee26232f4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_94f1b5bed29ddfc7a416aa2ee26232f4.addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+            var marker_851592e3949662db4b9efe4513f3209b = L.marker(
+                [33.0584036988288, -117.260155875382],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_973e93a635b017420fe8f1b3e3d50834 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_521ce96c9ed02ee5bdd3e09ad026eda4 = $(`<div id="html_521ce96c9ed02ee5bdd3e09ad026eda4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1200 GARDEN VIEW RD<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> ADRIANA ARREDONDO, SUZANNE SMITH, TIFFANY HOLT<br>     </div>`)[0];
+                popup_973e93a635b017420fe8f1b3e3d50834.setContent(html_521ce96c9ed02ee5bdd3e09ad026eda4);
+            
+        
+
+        marker_851592e3949662db4b9efe4513f3209b.bindPopup(popup_973e93a635b017420fe8f1b3e3d50834)
+        ;
+
+        
+    
+    
+            var marker_aeef37006645870689aead331df481fa = L.marker(
+                [33.0225778834037, -117.085633177823],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_93280aa2f6dc8cabe4e94626ca500eba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d0f452ea2cdf2a8fddf3bf83e2f0c54 = $(`<div id="html_1d0f452ea2cdf2a8fddf3bf83e2f0c54" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 16950 VIA TAZON<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> ANNA HUNTER, TIFFANY HOLT<br>     </div>`)[0];
+                popup_93280aa2f6dc8cabe4e94626ca500eba.setContent(html_1d0f452ea2cdf2a8fddf3bf83e2f0c54);
+            
+        
+
+        marker_aeef37006645870689aead331df481fa.bindPopup(popup_93280aa2f6dc8cabe4e94626ca500eba)
+        ;
+
+        
+    
+    
+            var marker_a7b3c75e1289fefa8943be568f249e31 = L.marker(
+                [32.7537974982397, -117.165829840412],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_e1dcac23d81399c82ee349615f298c12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4401a647a6c29f639291e698e66d6618 = $(`<div id="html_4401a647a6c29f639291e698e66d6618" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 W ARBOR DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TIFFANY HOLT, LAUREN KORT, ELENA MUSSER, JENNIFER FISHER<br>     </div>`)[0];
+                popup_e1dcac23d81399c82ee349615f298c12.setContent(html_4401a647a6c29f639291e698e66d6618);
+            
+        
+
+        marker_a7b3c75e1289fefa8943be568f249e31.bindPopup(popup_e1dcac23d81399c82ee349615f298c12)
+        ;
+
+        
+    
+    
+            var marker_9d40b35d61d61eae95950a0ec7c36859 = L.marker(
+                [32.7518749051011, -117.161740199694],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_db2021dbd2addea097ad1cd9fe673148 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ef4406bdcc4af872ffb5163d49ab519e = $(`<div id="html_ef4406bdcc4af872ffb5163d49ab519e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 330 LEWIS ST<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> CARLA SALCEDO, ANNA HUNTER, TIFFANY HOLT<br>     </div>`)[0];
+                popup_db2021dbd2addea097ad1cd9fe673148.setContent(html_ef4406bdcc4af872ffb5163d49ab519e);
+            
+        
+
+        marker_9d40b35d61d61eae95950a0ec7c36859.bindPopup(popup_db2021dbd2addea097ad1cd9fe673148)
+        ;
+
+        
+    
+    
+            var marker_451548c50e9c0e5d2a5acb87762fdc91 = L.marker(
+                [32.8786149946912, -117.222204175053],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_dbc8e03937263c7f7b3f1556d83efd8d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f68edc633d8cca7ba7899e123f49202 = $(`<div id="html_4f68edc633d8cca7ba7899e123f49202" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3855 HEALTH SCIENCES DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TRACI ROBERTS, TIFFANY HOLT<br>     </div>`)[0];
+                popup_dbc8e03937263c7f7b3f1556d83efd8d.setContent(html_4f68edc633d8cca7ba7899e123f49202);
+            
+        
+
+        marker_451548c50e9c0e5d2a5acb87762fdc91.bindPopup(popup_dbc8e03937263c7f7b3f1556d83efd8d)
+        ;
+
+        
+    
+    
+            var marker_ca275c0f0bbe960e740ec3813bb13655 = L.marker(
+                [32.7532384854291, -117.165014107709],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_78ae24311722dce53ada3d3b3cc6b8d1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_15404b7e5a0cc9936fd6038c9c1b456b = $(`<div id="html_15404b7e5a0cc9936fd6038c9c1b456b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4168 FRONT ST<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> CARLA SALCEDO, TRACI ROBERTS, ADRIANA ARREDONDO, KELLY VALDEZ, KRISTEN GONZALES<br>     </div>`)[0];
+                popup_78ae24311722dce53ada3d3b3cc6b8d1.setContent(html_15404b7e5a0cc9936fd6038c9c1b456b);
+            
+        
+
+        marker_ca275c0f0bbe960e740ec3813bb13655.bindPopup(popup_78ae24311722dce53ada3d3b3cc6b8d1)
+        ;
+
+        
+    
+    
+            var marker_37b94f064b8423e7fc15066e08373f08 = L.marker(
+                [32.7532384854291, -117.165014107709],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_d7ca1147f3fdd43d993fb509502cd0ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6e05fa5993580f5b5d0432fae2479ea = $(`<div id="html_d6e05fa5993580f5b5d0432fae2479ea" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4168 FRONT ST THIRD FLOOR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> KELLY VALDEZ<br>     </div>`)[0];
+                popup_d7ca1147f3fdd43d993fb509502cd0ca.setContent(html_d6e05fa5993580f5b5d0432fae2479ea);
+            
+        
+
+        marker_37b94f064b8423e7fc15066e08373f08.bindPopup(popup_d7ca1147f3fdd43d993fb509502cd0ca)
+        ;
+
+        
+    
+    
+            var marker_0588424cb87551246b017051af8fd2fa = L.marker(
+                [32.8724890879656, -117.2138852354],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_72223d0bed87bccc8fa508b170b271c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e88a262b476028b138898c678a23a16e = $(`<div id="html_e88a262b476028b138898c678a23a16e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4303 LA JOLLA VILLAGE DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> MALLORY CALLAWAY, JENNIFER FISHER, LAUREN KORT<br>     </div>`)[0];
+                popup_72223d0bed87bccc8fa508b170b271c4.setContent(html_e88a262b476028b138898c678a23a16e);
+            
+        
+
+        marker_0588424cb87551246b017051af8fd2fa.bindPopup(popup_72223d0bed87bccc8fa508b170b271c4)
+        ;
+
+        
+    
+    
+            var marker_f16af4eaee955a17930b23ccd101ab38 = L.marker(
+                [32.870265300537, -117.228046173698],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_d6d6b3bed3feff615455f88b3cee5bc9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2a6aa8554bdf537525398eee3b5ff6a = $(`<div id="html_e2a6aa8554bdf537525398eee3b5ff6a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8899 UNIVERSITY CENTER LN<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> CARLA SALCEDO<br>     </div>`)[0];
+                popup_d6d6b3bed3feff615455f88b3cee5bc9.setContent(html_e2a6aa8554bdf537525398eee3b5ff6a);
+            
+        
+
+        marker_f16af4eaee955a17930b23ccd101ab38.bindPopup(popup_d6d6b3bed3feff615455f88b3cee5bc9)
+        ;
+
+        
+    
+    
+            var marker_2610fa0d4f0c15a006d2a478bde2d3cf = L.marker(
+                [32.8703718264574, -117.233926844595],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_d6c39b2072e128d49d3f8023ce6fa2e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_da223a268801ec11ca0e5441d537617f = $(`<div id="html_da223a268801ec11ca0e5441d537617f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8910 VILLA LA JOLLA DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TIFFANY HOLT<br>     </div>`)[0];
+                popup_d6c39b2072e128d49d3f8023ce6fa2e0.setContent(html_da223a268801ec11ca0e5441d537617f);
+            
+        
+
+        marker_2610fa0d4f0c15a006d2a478bde2d3cf.bindPopup(popup_d6c39b2072e128d49d3f8023ce6fa2e0)
+        ;
+
+        
+    
+    
+            var marker_e09e8244c5ee2cab4ea394f357b3d52c = L.marker(
+                [32.8705331735426, -117.233785155405],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_4f2a166b4deda054b44b1794c0caebae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07dbda73f12bbefc8cbf2d12b6604a9d = $(`<div id="html_07dbda73f12bbefc8cbf2d12b6604a9d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8939 VILLA LA JOLLA DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> KRISTEN GONZALES<br>     </div>`)[0];
+                popup_4f2a166b4deda054b44b1794c0caebae.setContent(html_07dbda73f12bbefc8cbf2d12b6604a9d);
+            
+        
+
+        marker_e09e8244c5ee2cab4ea394f357b3d52c.bindPopup(popup_4f2a166b4deda054b44b1794c0caebae)
+        ;
+
+        
+    
+    
+            var marker_511ae6691c6ad670d51b46dea58788e6 = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_5c504110e3cb42bf72a6d1ccfa4c1cfc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79ba1572e0552f67c833a77c97702edf = $(`<div id="html_79ba1572e0552f67c833a77c97702edf" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9300 CAMPUS POINT DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TIFFANY HOLT, SUZANNE SMITH, ALLISON LIU<br>     </div>`)[0];
+                popup_5c504110e3cb42bf72a6d1ccfa4c1cfc.setContent(html_79ba1572e0552f67c833a77c97702edf);
+            
+        
+
+        marker_511ae6691c6ad670d51b46dea58788e6.bindPopup(popup_5c504110e3cb42bf72a6d1ccfa4c1cfc)
+        ;
+
+        
+    
+    
+            var marker_f2d16f8a41ba2df957375f9f267e7437 = L.marker(
+                [32.875668, -117.213922513129],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_f69eaae66930b8b2ab965300268c7bb2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af2ec80f70a57900056c876a057d5493 = $(`<div id="html_af2ec80f70a57900056c876a057d5493" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9333 GENESEE AVE<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> CARLA SALCEDO, TIFFANY HOLT, ANNA HUNTER<br>     </div>`)[0];
+                popup_f69eaae66930b8b2ab965300268c7bb2.setContent(html_af2ec80f70a57900056c876a057d5493);
+            
+        
+
+        marker_f2d16f8a41ba2df957375f9f267e7437.bindPopup(popup_f69eaae66930b8b2ab965300268c7bb2)
+        ;
+
+        
+    
+    
+            var marker_475c4f9ab5448b25d6b06696e2700d4a = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_7ada6704677718635b6f9df4d6b3cbdb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2cd44aa4e7c20ed3b5ecb250124b811 = $(`<div id="html_f2cd44aa4e7c20ed3b5ecb250124b811" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9350 CAMPUS POINT DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TRACI ROBERTS, TIFFANY HOLT, ADRIANA ARREDONDO<br>     </div>`)[0];
+                popup_7ada6704677718635b6f9df4d6b3cbdb.setContent(html_f2cd44aa4e7c20ed3b5ecb250124b811);
+            
+        
+
+        marker_475c4f9ab5448b25d6b06696e2700d4a.bindPopup(popup_7ada6704677718635b6f9df4d6b3cbdb)
+        ;
+
+        
+    
+    
+            var marker_3c7e72f6430661b294f7d5d5c1a5cd6d = L.marker(
+                [32.8752, -117.2231775],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_05b5f399002f04a2a2c6029f9486ba62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88560a64d7275746aece3671e15eea83 = $(`<div id="html_88560a64d7275746aece3671e15eea83" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9400 CAMPUS POINT DR<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> ELENA MUSSER<br>     </div>`)[0];
+                popup_05b5f399002f04a2a2c6029f9486ba62.setContent(html_88560a64d7275746aece3671e15eea83);
+            
+        
+
+        marker_3c7e72f6430661b294f7d5d5c1a5cd6d.bindPopup(popup_05b5f399002f04a2a2c6029f9486ba62)
+        ;
+
+        
+    
+    
+            var marker_a5d751c29378a48e9b3c34b6412c23ba = L.marker(
+                [32.883433397088, -117.22174014759],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_bfc0f900d90169a8c6fba3b7dce02a69 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_767147aee12dd89669fc273f16034583 = $(`<div id="html_767147aee12dd89669fc273f16034583" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9850 GENESEE AVE<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TRACI ROBERTS, CLAIRE ANSPACH<br>     </div>`)[0];
+                popup_bfc0f900d90169a8c6fba3b7dce02a69.setContent(html_767147aee12dd89669fc273f16034583);
+            
+        
+
+        marker_a5d751c29378a48e9b3c34b6412c23ba.bindPopup(popup_bfc0f900d90169a8c6fba3b7dce02a69)
+        ;
+
+        
+    
+    
+            var marker_608e91f62706dfa11dc803291512c633 = L.marker(
+                [32.916618887583, -117.112344793008],
+                {}
+            ).addTo(map_442cd675af5a0cbf277e2b3cc59e7315);
+        
+    
+        var popup_ad6f67adad81e8c4af18e7af10bccc61 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_378a2aaa9ef2512506b14dc82db90ab1 = $(`<div id="html_378a2aaa9ef2512506b14dc82db90ab1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9909 MIRA MESA BLVD<br>     <b>Classification:</b> Dietitian, Registered<br>     <b>Physicians:</b> TIFFANY HOLT, CARLA SALCEDO<br>     </div>`)[0];
+                popup_ad6f67adad81e8c4af18e7af10bccc61.setContent(html_378a2aaa9ef2512506b14dc82db90ab1);
+            
+        
+
+        marker_608e91f62706dfa11dc803291512c633.bindPopup(popup_ad6f67adad81e8c4af18e7af10bccc61)
+        ;
+
+        
+    
+</script>
+</html>
