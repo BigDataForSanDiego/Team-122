@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f11dcf4f8e532ea313f488914fb2e1d8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f11dcf4f8e532ea313f488914fb2e1d8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f11dcf4f8e532ea313f488914fb2e1d8 = L.map(
+                "map_f11dcf4f8e532ea313f488914fb2e1d8",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5b23eff4cf1b0bb719308525c1d8c39 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b5b23eff4cf1b0bb719308525c1d8c39.addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+            var marker_ebce593de5082694afef63d92b01826a = L.marker(
+                [32.7537974982397, -117.165829840412],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_023274b6fb6c2b0999f9bd7f1788e80c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d73f1d4ad58eef45eb1abc5efdfadf29 = $(`<div id="html_d73f1d4ad58eef45eb1abc5efdfadf29" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 W ARBOR DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> DENISE MALICKI<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_023274b6fb6c2b0999f9bd7f1788e80c.setContent(html_d73f1d4ad58eef45eb1abc5efdfadf29);
+            
+        
+
+        marker_ebce593de5082694afef63d92b01826a.bindPopup(popup_023274b6fb6c2b0999f9bd7f1788e80c)
+        ;
+
+        
+    
+    
+            var marker_a647db2bdbd7f7a9f263fb46a383ee59 = L.marker(
+                [32.798691, -117.150828963067],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_2e6b7fd9e6adf3f71c3887c3a345a1d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a2a3bc6ad9873f608d223602aca24e0 = $(`<div id="html_8a2a3bc6ad9873f608d223602aca24e0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3020 CHILDRENS WAY<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> DENISE MALICKI, STEVEN DAVIS<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_2e6b7fd9e6adf3f71c3887c3a345a1d9.setContent(html_8a2a3bc6ad9873f608d223602aca24e0);
+            
+        
+
+        marker_a647db2bdbd7f7a9f263fb46a383ee59.bindPopup(popup_2e6b7fd9e6adf3f71c3887c3a345a1d9)
+        ;
+
+        
+    
+    
+            var marker_eafe87d90c38b2c00df9aea2e2852eb2 = L.marker(
+                [32.798889, -117.150825994893],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_be6a336a2ee7730e2085cd49e29a2b9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf0d2182f93e81dcaeff7d08d6f5b7eb = $(`<div id="html_bf0d2182f93e81dcaeff7d08d6f5b7eb" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3030 CHILDRENS WAY<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> DENISE MALICKI<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_be6a336a2ee7730e2085cd49e29a2b9a.setContent(html_bf0d2182f93e81dcaeff7d08d6f5b7eb);
+            
+        
+
+        marker_eafe87d90c38b2c00df9aea2e2852eb2.bindPopup(popup_be6a336a2ee7730e2085cd49e29a2b9a)
+        ;
+
+        
+    
+    
+            var marker_06107c7dac332b0580c04d59ad0a570b = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_6eb3d94eac6d561ffdc9aba4d58273a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a2eca72190d3123411543802b889765 = $(`<div id="html_5a2eca72190d3123411543802b889765" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9300 CAMPUS POINT DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> DENISE MALICKI<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_6eb3d94eac6d561ffdc9aba4d58273a1.setContent(html_5a2eca72190d3123411543802b889765);
+            
+        
+
+        marker_06107c7dac332b0580c04d59ad0a570b.bindPopup(popup_6eb3d94eac6d561ffdc9aba4d58273a1)
+        ;
+
+        
+    
+    
+            var marker_c73ad879f128ddaf800788703af9ce58 = L.marker(
+                [32.8761056655893, -117.227136434387],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_c40ac8f61d5c1c27d3236abf3d7a6b77 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_acde77cac3f4f7f8c27a678f9186295a = $(`<div id="html_acde77cac3f4f7f8c27a678f9186295a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9444 MEDICAL CENTER DR<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> DENISE MALICKI<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_c40ac8f61d5c1c27d3236abf3d7a6b77.setContent(html_acde77cac3f4f7f8c27a678f9186295a);
+            
+        
+
+        marker_c73ad879f128ddaf800788703af9ce58.bindPopup(popup_c40ac8f61d5c1c27d3236abf3d7a6b77)
+        ;
+
+        
+    
+    
+            var marker_af6b9670f7cdb0faccd3fbf166bf1b28 = L.marker(
+                [32.8940884287327, -117.170697178141],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_0f1d1e2b63438cc4bbcb023f9fc2b219 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_50670d21a667a788646ad88a36a103b7 = $(`<div id="html_50670d21a667a788646ad88a36a103b7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9730 SUMMERS RIDGE RD<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> STEVEN DAVIS<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_0f1d1e2b63438cc4bbcb023f9fc2b219.setContent(html_50670d21a667a788646ad88a36a103b7);
+            
+        
+
+        marker_af6b9670f7cdb0faccd3fbf166bf1b28.bindPopup(popup_0f1d1e2b63438cc4bbcb023f9fc2b219)
+        ;
+
+        
+    
+    
+            var marker_1fa72fc141441da8f8f0c142db7108a7 = L.marker(
+                [32.8942123462597, -117.170311279152],
+                {}
+            ).addTo(map_f11dcf4f8e532ea313f488914fb2e1d8);
+        
+    
+        var popup_294830d312dd9c7e9a15be1c3aba6b11 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2ac0bf0e70b74eeca52f849a2aef66a1 = $(`<div id="html_2ac0bf0e70b74eeca52f849a2aef66a1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9730 SUMMERS RIDGE RD<br>     <b>Classification:</b> Pathology<br>     <b>Physicians:</b> STEVEN DAVIS<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_294830d312dd9c7e9a15be1c3aba6b11.setContent(html_2ac0bf0e70b74eeca52f849a2aef66a1);
+            
+        
+
+        marker_1fa72fc141441da8f8f0c142db7108a7.bindPopup(popup_294830d312dd9c7e9a15be1c3aba6b11)
+        ;
+
+        
+    
+</script>
+</html>
