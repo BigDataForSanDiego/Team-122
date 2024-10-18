@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_00a00f4f2b9a0b2d76d6fd07fbecfdb0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_00a00f4f2b9a0b2d76d6fd07fbecfdb0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_00a00f4f2b9a0b2d76d6fd07fbecfdb0 = L.map(
+                "map_00a00f4f2b9a0b2d76d6fd07fbecfdb0",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56a8823033cf12b7666221457828205c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_56a8823033cf12b7666221457828205c.addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+            var marker_9ede95c274828c04e4554a09eaf161df = L.marker(
+                [32.8078272320427, -115.570049169133],
+                {}
+            ).addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+        var popup_63191db18e1844d19e90f515e06f701f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3edd8f3dda6de309c089d9cc935d2ce = $(`<div id="html_e3edd8f3dda6de309c089d9cc935d2ce" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1602A N IMPERIAL AVE<br>     <b>Classification:</b> Physical Therapist<br>     <b>Physicians:</b> ATHENIE GALVEZ, COLLIN FLEECS<br>     </div>`)[0];
+                popup_63191db18e1844d19e90f515e06f701f.setContent(html_e3edd8f3dda6de309c089d9cc935d2ce);
+            
+        
+
+        marker_9ede95c274828c04e4554a09eaf161df.bindPopup(popup_63191db18e1844d19e90f515e06f701f)
+        ;
+
+        
+    
+    
+            var marker_52e886d031223a9b3cfcdc97d9993201 = L.marker(
+                [32.6923412956986, -115.495845889674],
+                {}
+            ).addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+        var popup_af53613daada576110adbc9965de8547 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_770718b0b241f6a51d05f5e5c31337f9 = $(`<div id="html_770718b0b241f6a51d05f5e5c31337f9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 221 AVENIDA CAMPILLO<br>     <b>Classification:</b> Physical Therapist<br>     <b>Physicians:</b> ZENAIDA SANTOS<br>     </div>`)[0];
+                popup_af53613daada576110adbc9965de8547.setContent(html_770718b0b241f6a51d05f5e5c31337f9);
+            
+        
+
+        marker_52e886d031223a9b3cfcdc97d9993201.bindPopup(popup_af53613daada576110adbc9965de8547)
+        ;
+
+        
+    
+    
+            var marker_52dbf6c49260d089ff69dc4cb5747651 = L.marker(
+                [32.9786852956986, -115.548230871108],
+                {}
+            ).addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+        var popup_6f2aea7d5cc6a9aa375faca224cfe38d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb769845e67205f181b9f03c9c55983c = $(`<div id="html_fb769845e67205f181b9f03c9c55983c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 411 W MAIN ST<br>     <b>Classification:</b> Physical Therapist<br>     <b>Physicians:</b> BRANDON PHELPS<br>     </div>`)[0];
+                popup_6f2aea7d5cc6a9aa375faca224cfe38d.setContent(html_fb769845e67205f181b9f03c9c55983c);
+            
+        
+
+        marker_52dbf6c49260d089ff69dc4cb5747651.bindPopup(popup_6f2aea7d5cc6a9aa375faca224cfe38d)
+        ;
+
+        
+    
+    
+            var marker_c0dc4d4867109e374045196f06904d37 = L.marker(
+                [32.7959973157303, -115.570042312285],
+                {}
+            ).addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+        var popup_8a7789f20fe4bbadf35e8fbdd8b2b51b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e73deed1aa8a40ce9a415fda23a0682 = $(`<div id="html_5e73deed1aa8a40ce9a415fda23a0682" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 426 N IMPERIAL AVE<br>     <b>Classification:</b> Physical Therapist<br>     <b>Physicians:</b> FARAH MAKANI, NORJA RODMAN, ROBERT YEE, DYLAN STEINHAUER<br>     </div>`)[0];
+                popup_8a7789f20fe4bbadf35e8fbdd8b2b51b.setContent(html_5e73deed1aa8a40ce9a415fda23a0682);
+            
+        
+
+        marker_c0dc4d4867109e374045196f06904d37.bindPopup(popup_8a7789f20fe4bbadf35e8fbdd8b2b51b)
+        ;
+
+        
+    
+    
+            var marker_d0114af0849f944d4b88334bb7026adb = L.marker(
+                [32.7927657043014, -115.585571573076],
+                {}
+            ).addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+        var popup_d0a98452965a708e65b07f8224815ad4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb8a3674e58193f17912360040f9cb0a = $(`<div id="html_bb8a3674e58193f17912360040f9cb0a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 541 W MAIN ST<br>     <b>Classification:</b> Physical Therapist<br>     <b>Physicians:</b> ZENAIDA SANTOS<br>     </div>`)[0];
+                popup_d0a98452965a708e65b07f8224815ad4.setContent(html_bb8a3674e58193f17912360040f9cb0a);
+            
+        
+
+        marker_d0114af0849f944d4b88334bb7026adb.bindPopup(popup_d0a98452965a708e65b07f8224815ad4)
+        ;
+
+        
+    
+    
+            var marker_0b0b9583f42bb7b29e7d57799e2c48c7 = L.marker(
+                [32.7927961276475, -115.556127846933],
+                {}
+            ).addTo(map_00a00f4f2b9a0b2d76d6fd07fbecfdb0);
+        
+    
+        var popup_43d39a5984040fd01defc00f3d658be0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_84b1333207abf01b1567905123b6f15d = $(`<div id="html_84b1333207abf01b1567905123b6f15d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 561 W MAIN ST<br>     <b>Classification:</b> Physical Therapist<br>     <b>Physicians:</b> ZENAIDA SANTOS<br>     </div>`)[0];
+                popup_43d39a5984040fd01defc00f3d658be0.setContent(html_84b1333207abf01b1567905123b6f15d);
+            
+        
+
+        marker_0b0b9583f42bb7b29e7d57799e2c48c7.bindPopup(popup_43d39a5984040fd01defc00f3d658be0)
+        ;
+
+        
+    
+</script>
+</html>
