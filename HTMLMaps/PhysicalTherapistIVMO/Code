@@ -1,0 +1,37 @@
+df_filtered = dfIV[
+    (dfIV['Classification'].str.strip() == 'Physical Therapist') & 
+    (dfIV['ManagedCarePlan'].str.strip() == 'MOLINA HEALTHCARE OF CALIFORNIA PARTNER PLAN')
+]
+
+# Group by 'Address', 'Latitude', and 'Longitude' to aggregate unique physician names and classifications
+grouped_facilities = df_filtered.groupby(['Address', 'Latitude', 'Longitude']).agg({
+    'FirstName': lambda x: ', '.join(x.unique()),  # Combine unique first names
+    'LastName': lambda x: ', '.join(x.unique()),   # Combine unique last names
+    'Classification': lambda x: ', '.join(x.unique())  # Combine unique classifications
+}).reset_index()
+
+# Create a new column with the combined unique physician names
+grouped_facilities['Physicians'] = grouped_facilities.apply(
+    lambda x: ', '.join(f"{fn} {ln}" for fn, ln in zip(x['FirstName'].split(', '), x['LastName'].split(', '))), axis=1
+)
+
+# Initialize the map centered around a location (e.g., Imperial Valley)
+m = folium.Map(location=[32.784884, -115.551463], zoom_start=12)
+
+# Add markers for each facility with physician and classification information
+for index, row in grouped_facilities.iterrows():
+    popup_html = f"""
+    <b>Address:</b> {row['Address']}<br>
+    <b>Classification:</b> {row['Classification']}<br>
+    <b>Physicians:</b> {row['Physicians']}<br>
+    """
+    folium.Marker(
+        location=[row['Latitude'], row['Longitude']],
+        popup=folium.Popup(popup_html, max_width=300),
+    ).add_to(m)
+
+# Save the map to an HTML file
+m.save("PhysicalTherapist.html")
+
+# Display the map
+m
