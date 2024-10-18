@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4f5f1189a69857e06f18eec0389f0fe4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4f5f1189a69857e06f18eec0389f0fe4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4f5f1189a69857e06f18eec0389f0fe4 = L.map(
+                "map_4f5f1189a69857e06f18eec0389f0fe4",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e06371e81b927dbd65d5599d2eeb719e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e06371e81b927dbd65d5599d2eeb719e.addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+            var marker_c8c119d4da26ff981713274d2cecc84b = L.marker(
+                [32.7814494692429, -115.568541],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_733f00abbbfd5d36842efefba1be19c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26478881fc45d79431124f1b97f1b1a2 = $(`<div id="html_26478881fc45d79431124f1b97f1b1a2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1415 ROSS AVE<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> JESSE GUITTARD, CHRISTIAN DAMEFF, DESIREE LEITHEM, MATTHEW MUELLER, CAMERON SMYRES, MICHELLE ST. ROMAIN, AMANDA NASSER, ADAM NADOLSKI, NORMA ORDONEZ, LESLIE MUKAU, GUSTAVO SALCIDO, ALEXIS LENZ, AMIR AMINLARI, BENJAMIN SUPAT, GABRIEL WARDI, HARRY ELSHIRE, JOSEPH HAYEK, NICOLAS KAHL, DANIEL ICHWAN, HIDEAKI TANAKA, CRISTINA HERNANDEZ, CHRISTANNE COFFEY, ANDREW KOZMINSKI, THOMAS PEDERSON, ELAINE YU, RICHARD CHILDERS, SUSANA FAVILA, STEPHANIE BENJAMIN, MICHAEL MACIAS, JEREMY HARDIN, RAHUL NENE, JENNIFER FARAH, PATRICIA CASTANEDA, BENITO LASOFF, KARA ARREOLA, AVELINA PASCUA, SUSAN YEUNG, SUKHDEEP RAMIREZ, KARI SAFFERMAN, JESSICA BRAVO<br>     </div>`)[0];
+                popup_733f00abbbfd5d36842efefba1be19c0.setContent(html_26478881fc45d79431124f1b97f1b1a2);
+            
+        
+
+        marker_c8c119d4da26ff981713274d2cecc84b.bindPopup(popup_733f00abbbfd5d36842efefba1be19c0)
+        ;
+
+        
+    
+    
+            var marker_50767b0a43d325a3a1a6d1e7c1e64afd = L.marker(
+                [32.7795011770731, -115.569727914594],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_ee71e4dea7cb97f5b7e1d217042bf5c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99df4020cec990705088d727b2131c3a = $(`<div id="html_99df4020cec990705088d727b2131c3a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1590 S IMPERIAL AVE<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> HARRY ELSHIRE<br>     </div>`)[0];
+                popup_ee71e4dea7cb97f5b7e1d217042bf5c3.setContent(html_99df4020cec990705088d727b2131c3a);
+            
+        
+
+        marker_50767b0a43d325a3a1a6d1e7c1e64afd.bindPopup(popup_ee71e4dea7cb97f5b7e1d217042bf5c3)
+        ;
+
+        
+    
+    
+            var marker_00ad387fbd55620c0d1f2ba1445ac4ce = L.marker(
+                [32.95809, -115.5537045],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_cdf0e307c5669476a0062e0a06ebd607 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_387f4057911e42c9b5c05e74bcd9bd1d = $(`<div id="html_387f4057911e42c9b5c05e74bcd9bd1d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 207 W LEGION RD<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> MICHAEL BISHOP<br>     </div>`)[0];
+                popup_cdf0e307c5669476a0062e0a06ebd607.setContent(html_387f4057911e42c9b5c05e74bcd9bd1d);
+            
+        
+
+        marker_00ad387fbd55620c0d1f2ba1445ac4ce.bindPopup(popup_cdf0e307c5669476a0062e0a06ebd607)
+        ;
+
+        
+    
+    
+            var marker_40fa0bf1a5012d41fee7b8ef6ec26f44 = L.marker(
+                [32.7927912456001, -115.551903185123],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_0decf9dfb04f339efa61e835ba887cbc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f976984f4febb3478cc1bd6bca011c64 = $(`<div id="html_f976984f4febb3478cc1bd6bca011c64" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 385 W MAIN ST<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> HARRY ELSHIRE<br>     </div>`)[0];
+                popup_0decf9dfb04f339efa61e835ba887cbc.setContent(html_f976984f4febb3478cc1bd6bca011c64);
+            
+        
+
+        marker_40fa0bf1a5012d41fee7b8ef6ec26f44.bindPopup(popup_0decf9dfb04f339efa61e835ba887cbc)
+        ;
+
+        
+    
+    
+            var marker_8b0207a19ff0f4680d5fa15b9bb7d400 = L.marker(
+                [32.6791652956986, -115.493031],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_d6da905f93c86a3ea55323e1f867622d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9dc96577492a44a672b2afbc6ca0ccc1 = $(`<div id="html_9dc96577492a44a672b2afbc6ca0ccc1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 495 E BIRCH ST<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> HARRY ELSHIRE<br>     </div>`)[0];
+                popup_d6da905f93c86a3ea55323e1f867622d.setContent(html_9dc96577492a44a672b2afbc6ca0ccc1);
+            
+        
+
+        marker_8b0207a19ff0f4680d5fa15b9bb7d400.bindPopup(popup_d6da905f93c86a3ea55323e1f867622d)
+        ;
+
+        
+    
+    
+            var marker_f037efcce9c61356850045a0ce34a0c5 = L.marker(
+                [32.9774845825496, -115.532992844019],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_3405617ca71134bf21d21262fd6a6ae3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_342a65765344608c5cfc19fa40e64e26 = $(`<div id="html_342a65765344608c5cfc19fa40e64e26" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 528 G ST<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> SUSANA FAVILA<br>     </div>`)[0];
+                popup_3405617ca71134bf21d21262fd6a6ae3.setContent(html_342a65765344608c5cfc19fa40e64e26);
+            
+        
+
+        marker_f037efcce9c61356850045a0ce34a0c5.bindPopup(popup_3405617ca71134bf21d21262fd6a6ae3)
+        ;
+
+        
+    
+    
+            var marker_67a0791ea1dc117ef3e6630394442cbc = L.marker(
+                [32.6792506331001, -115.488700311457],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_9da29845469050aaf1e8cdcc24f6233a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6df102fc4cd1dd72ab629b76d9767044 = $(`<div id="html_6df102fc4cd1dd72ab629b76d9767044" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 801 E BIRCH ST<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> URI GUEFEN<br>     </div>`)[0];
+                popup_9da29845469050aaf1e8cdcc24f6233a.setContent(html_6df102fc4cd1dd72ab629b76d9767044);
+            
+        
+
+        marker_67a0791ea1dc117ef3e6630394442cbc.bindPopup(popup_9da29845469050aaf1e8cdcc24f6233a)
+        ;
+
+        
+    
+    
+            var marker_bd20e70c8b7af175024f5f972008ca3c = L.marker(
+                [32.767173718944, -115.561568663171],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_956e8be92d5d0a7287cf919089138ba2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_720d90aa30b49decd25fc1ac8b51e4a6 = $(`<div id="html_720d90aa30b49decd25fc1ac8b51e4a6" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 852 DANENBERG DR<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> JAMES WICHSER<br>     </div>`)[0];
+                popup_956e8be92d5d0a7287cf919089138ba2.setContent(html_720d90aa30b49decd25fc1ac8b51e4a6);
+            
+        
+
+        marker_bd20e70c8b7af175024f5f972008ca3c.bindPopup(popup_956e8be92d5d0a7287cf919089138ba2)
+        ;
+
+        
+    
+    
+            var marker_e03e5b727f6c6d32a671b92deded4e55 = L.marker(
+                [32.773176, -115.5270465],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_df855b81838a269e759094550d586ab7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41398a956a44a187e4f12c892d432dda = $(`<div id="html_41398a956a44a187e4f12c892d432dda" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 852 E DANENBERG DR<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> JAMES WICHSER<br>     </div>`)[0];
+                popup_df855b81838a269e759094550d586ab7.setContent(html_41398a956a44a187e4f12c892d432dda);
+            
+        
+
+        marker_e03e5b727f6c6d32a671b92deded4e55.bindPopup(popup_df855b81838a269e759094550d586ab7)
+        ;
+
+        
+    
+    
+            var marker_fbe8c5b03976b855599d2108a2c6a75d = L.marker(
+                [32.9785797043014, -115.528580199245],
+                {}
+            ).addTo(map_4f5f1189a69857e06f18eec0389f0fe4);
+        
+    
+        var popup_34fcfa02b8080aed2e274b9f8a4e7f91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7add43401f1757e9838e1b692dfa3545 = $(`<div id="html_7add43401f1757e9838e1b692dfa3545" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 900 MAIN ST<br>     <b>Classification:</b> Emergency Medicine<br>     <b>Physicians:</b> JAMES WICHSER, JEFFERY ZIELINSKI<br>     </div>`)[0];
+                popup_34fcfa02b8080aed2e274b9f8a4e7f91.setContent(html_7add43401f1757e9838e1b692dfa3545);
+            
+        
+
+        marker_fbe8c5b03976b855599d2108a2c6a75d.bindPopup(popup_34fcfa02b8080aed2e274b9f8a4e7f91)
+        ;
+
+        
+    
+</script>
+</html>
