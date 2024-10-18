@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec20c594e093443c4eb4df0c2829fa47 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec20c594e093443c4eb4df0c2829fa47" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec20c594e093443c4eb4df0c2829fa47 = L.map(
+                "map_ec20c594e093443c4eb4df0c2829fa47",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a950d9410208f8448f6e1fce45766f1d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a950d9410208f8448f6e1fce45766f1d.addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+            var marker_9a720619e651955cd58b37b669e4359f = L.marker(
+                [32.678172, -115.490777070023],
+                {}
+            ).addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+        var popup_1af06d363af3e9c281caa00404953860 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cde9927368966ae6b7d1cadd3086da22 = $(`<div id="html_cde9927368966ae6b7d1cadd3086da22" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1007 BLAIR AVE<br>     <b>Classification:</b> Radiology<br>     <b>Physicians:</b> AMIEL MOSHFEGH<br>     </div>`)[0];
+                popup_1af06d363af3e9c281caa00404953860.setContent(html_cde9927368966ae6b7d1cadd3086da22);
+            
+        
+
+        marker_9a720619e651955cd58b37b669e4359f.bindPopup(popup_1af06d363af3e9c281caa00404953860)
+        ;
+
+        
+    
+    
+            var marker_93b70b243d24ea35d8818379dab395b2 = L.marker(
+                [32.7532058866917, -115.577709766261],
+                {}
+            ).addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+        var popup_8b106c1827a58e3759af8a384fcc400b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e523620393be4344e208636ebe562764 = $(`<div id="html_e523620393be4344e208636ebe562764" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1410 S LA BRUCHERIE RD<br>     <b>Classification:</b> Radiology<br>     <b>Physicians:</b> BRIAN RONSON, LESLIE BOTNICK, JANET HOCKO, DOMINIQUE RASH, ANDREW BRUGGEMAN, PARAG SANGHVI, SUSANNA GORDON, SIAVOSH VAKILIAN<br>     </div>`)[0];
+                popup_8b106c1827a58e3759af8a384fcc400b.setContent(html_e523620393be4344e208636ebe562764);
+            
+        
+
+        marker_93b70b243d24ea35d8818379dab395b2.bindPopup(popup_8b106c1827a58e3759af8a384fcc400b)
+        ;
+
+        
+    
+    
+            var marker_2da497e75ca02ed50d094bd8f124f7a0 = L.marker(
+                [32.7804882747706, -115.578487982688],
+                {}
+            ).addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+        var popup_8766bd345e02d23941bf3378d88deb45 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff2f5a47703e58b68908b5348f2158c9 = $(`<div id="html_ff2f5a47703e58b68908b5348f2158c9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1410 S LA BRUCHERIE RD<br>     <b>Classification:</b> Radiology<br>     <b>Physicians:</b> LESLIE BOTNICK, SIAVOSH VAKILIAN, BRIAN RONSON<br>     </div>`)[0];
+                popup_8766bd345e02d23941bf3378d88deb45.setContent(html_ff2f5a47703e58b68908b5348f2158c9);
+            
+        
+
+        marker_2da497e75ca02ed50d094bd8f124f7a0.bindPopup(popup_8766bd345e02d23941bf3378d88deb45)
+        ;
+
+        
+    
+    
+            var marker_9e9b7b7df89737523fb243e9b11f5349 = L.marker(
+                [32.7532058866917, -115.577709766261],
+                {}
+            ).addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+        var popup_f48c945508407fc1b9fab57da11448ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_90af4a702b445e2157dea5c0c39567ea = $(`<div id="html_90af4a702b445e2157dea5c0c39567ea" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1410 SOUTH LA BRUCHERIE RD<br>     <b>Classification:</b> Radiology<br>     <b>Physicians:</b> SUSANNA GORDON, BRIAN RONSON, JANET HOCKO, LESLIE BOTNICK<br>     </div>`)[0];
+                popup_f48c945508407fc1b9fab57da11448ec.setContent(html_90af4a702b445e2157dea5c0c39567ea);
+            
+        
+
+        marker_9e9b7b7df89737523fb243e9b11f5349.bindPopup(popup_f48c945508407fc1b9fab57da11448ec)
+        ;
+
+        
+    
+    
+            var marker_a8d60248a483037d298a75b19ef87091 = L.marker(
+                [32.95809, -115.5537045],
+                {}
+            ).addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+        var popup_ce7713c33c5f0b1b2083dabffbc36e6d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_936090df470c5d855ab59ada4b2d91a1 = $(`<div id="html_936090df470c5d855ab59ada4b2d91a1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 207 W LEGION RD<br>     <b>Classification:</b> Radiology<br>     <b>Physicians:</b> GEORGE RAPP<br>     </div>`)[0];
+                popup_ce7713c33c5f0b1b2083dabffbc36e6d.setContent(html_936090df470c5d855ab59ada4b2d91a1);
+            
+        
+
+        marker_a8d60248a483037d298a75b19ef87091.bindPopup(popup_ce7713c33c5f0b1b2083dabffbc36e6d)
+        ;
+
+        
+    
+    
+            var marker_839120950f1ab500ec02927e15d503cf = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_ec20c594e093443c4eb4df0c2829fa47);
+        
+    
+        var popup_dda53d85afdc85571a3a091eb8613a82 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3d136ef38a2cc4d2ad0d011c273a0d33 = $(`<div id="html_3d136ef38a2cc4d2ad0d011c273a0d33" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 W LEGION RD<br>     <b>Classification:</b> Radiology<br>     <b>Physicians:</b> GEORGE RAPP<br>     </div>`)[0];
+                popup_dda53d85afdc85571a3a091eb8613a82.setContent(html_3d136ef38a2cc4d2ad0d011c273a0d33);
+            
+        
+
+        marker_839120950f1ab500ec02927e15d503cf.bindPopup(popup_dda53d85afdc85571a3a091eb8613a82)
+        ;
+
+        
+    
+</script>
+</html>
