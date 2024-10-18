@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b66987095473e941afcb3b4a920246c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7b66987095473e941afcb3b4a920246c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7b66987095473e941afcb3b4a920246c = L.map(
+                "map_7b66987095473e941afcb3b4a920246c",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3d5ee22f054a8137f79b80f7775a24d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b3d5ee22f054a8137f79b80f7775a24d.addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+            var marker_e43863c42da3c11d314fa37b0cc37874 = L.marker(
+                [32.7814494692429, -115.568541],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_f8d7ecd8d99feef4e820324c83ac49c5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72779cf7c292c8541779a545a4116e7f = $(`<div id="html_72779cf7c292c8541779a545a4116e7f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1415 ROSS AVE<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> MARC MANIX<br>     </div>`)[0];
+                popup_f8d7ecd8d99feef4e820324c83ac49c5.setContent(html_72779cf7c292c8541779a545a4116e7f);
+            
+        
+
+        marker_e43863c42da3c11d314fa37b0cc37874.bindPopup(popup_f8d7ecd8d99feef4e820324c83ac49c5)
+        ;
+
+        
+    
+    
+            var marker_08e44e9fd5743a464c0c679f2a9aa8da = L.marker(
+                [32.7814397413009, -115.570444693866],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_eda0a1c450e546a8bb015ca039c8bb58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fc972237227ded3bdf9e2d4c9790d980 = $(`<div id="html_fc972237227ded3bdf9e2d4c9790d980" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1505 ROSS AVE<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> TRAVIS CALVIN JR<br>     </div>`)[0];
+                popup_eda0a1c450e546a8bb015ca039c8bb58.setContent(html_fc972237227ded3bdf9e2d4c9790d980);
+            
+        
+
+        marker_08e44e9fd5743a464c0c679f2a9aa8da.bindPopup(popup_eda0a1c450e546a8bb015ca039c8bb58)
+        ;
+
+        
+    
+    
+            var marker_79e7f54e336efb760a6e78f05b909e1a = L.marker(
+                [32.7791299114277, -115.570777823597],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_440e10d7ff83de466c65910f2e8403ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0dc2dce3bda46ed20a38c5076b4b4484 = $(`<div id="html_0dc2dce3bda46ed20a38c5076b4b4484" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1550 PEPPER DR<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> MARC MANIX<br>     </div>`)[0];
+                popup_440e10d7ff83de466c65910f2e8403ad.setContent(html_0dc2dce3bda46ed20a38c5076b4b4484);
+            
+        
+
+        marker_79e7f54e336efb760a6e78f05b909e1a.bindPopup(popup_440e10d7ff83de466c65910f2e8403ad)
+        ;
+
+        
+    
+    
+            var marker_c159f4108910ce924db0ea122ee3b3ad = L.marker(
+                [32.7927387043014, -115.57390420146],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_5dec6d0736cff0aacea01f0a393760f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5a46c8d60bd5125b9401cc17151145f = $(`<div id="html_d5a46c8d60bd5125b9401cc17151145f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1671 W MAIN ST<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> DAVID BARBA<br>     </div>`)[0];
+                popup_5dec6d0736cff0aacea01f0a393760f6.setContent(html_d5a46c8d60bd5125b9401cc17151145f);
+            
+        
+
+        marker_c159f4108910ce924db0ea122ee3b3ad.bindPopup(popup_5dec6d0736cff0aacea01f0a393760f6)
+        ;
+
+        
+    
+    
+            var marker_fd21ece1808fbc5cee0a31b74c23a266 = L.marker(
+                [32.95809, -115.5537045],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_0a6f2d5d2a6a9ce20a7c61433dfa8bbe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c76279abcd2e5600a20573ff519ce46 = $(`<div id="html_7c76279abcd2e5600a20573ff519ce46" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 207 W LEGION RD<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> MARC MANIX<br>     </div>`)[0];
+                popup_0a6f2d5d2a6a9ce20a7c61433dfa8bbe.setContent(html_7c76279abcd2e5600a20573ff519ce46);
+            
+        
+
+        marker_fd21ece1808fbc5cee0a31b74c23a266.bindPopup(popup_0a6f2d5d2a6a9ce20a7c61433dfa8bbe)
+        ;
+
+        
+    
+    
+            var marker_eb9f3d1e415e5400f31e27373548fc9c = L.marker(
+                [32.679124850915, -115.491339775463],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_6b1819b067fb268f7007837919bdda50 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5ca08c2978b215dc4fabe30d6cd7c95 = $(`<div id="html_a5ca08c2978b215dc4fabe30d6cd7c95" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 450 E BIRCH ST<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> MARC MANIX<br>     </div>`)[0];
+                popup_6b1819b067fb268f7007837919bdda50.setContent(html_a5ca08c2978b215dc4fabe30d6cd7c95);
+            
+        
+
+        marker_eb9f3d1e415e5400f31e27373548fc9c.bindPopup(popup_6b1819b067fb268f7007837919bdda50)
+        ;
+
+        
+    
+    
+            var marker_93f3c9399e3f4c0f8229ee98b0772c6b = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_7b66987095473e941afcb3b4a920246c);
+        
+    
+        var popup_8d5b0d25d4517559ed87359de39240e8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00a648ff1754d64892c6603273e22346 = $(`<div id="html_00a648ff1754d64892c6603273e22346" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 W LEGION RD<br>     <b>Classification:</b> Neurological Surgery<br>     <b>Physicians:</b> MARC MANIX<br>     </div>`)[0];
+                popup_8d5b0d25d4517559ed87359de39240e8.setContent(html_00a648ff1754d64892c6603273e22346);
+            
+        
+
+        marker_93f3c9399e3f4c0f8229ee98b0772c6b.bindPopup(popup_8d5b0d25d4517559ed87359de39240e8)
+        ;
+
+        
+    
+</script>
+</html>
