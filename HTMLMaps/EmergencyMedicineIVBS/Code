@@ -1,0 +1,39 @@
+df_filtered = dfIV[
+    (dfIV['Classification'].str.strip().str.lower() == 'emergency medicine') & 
+    (dfIV['ManagedCarePlan'].str.strip().str.lower() == 'molina healthcare of california partner plan')
+]
+
+# Group by 'FacilityName', 'Latitude', 'Longitude', and collect unique physician names
+grouped_facilities = df_filtered.groupby(['FacilityName', 'Latitude', 'Longitude']).agg({
+    'FirstName': 'unique',
+    'LastName': 'unique'
+}).reset_index()
+
+# Create a new column with the unique physician names combined
+grouped_facilities['Physicians'] = grouped_facilities.apply(
+    lambda x: ', '.join(f"{fn} {ln}" for fn, ln in zip(x['FirstName'], x['LastName'])), axis=1
+)
+
+# Initialize the map centered around a location (e.g., Imperial Valley)
+m = folium.Map(location=[32.784884, -115.551463], zoom_start=12)
+
+# Add markers for each facility with physician information
+for index, row in grouped_facilities.iterrows():
+    # Get unique physicians to avoid duplicates
+    unique_physicians = set(f"{fn} {ln}" for fn, ln in zip(row['FirstName'], row['LastName']))
+    
+    popup_html = f"""
+    <b>Facility Name:</b> {row['FacilityName']}<br>
+    <b>Physicians:</b> {', '.join(unique_physicians)}<br>
+    <b>Classification:</b> Emergency Medicine
+    """
+    folium.Marker(
+        location=[row['Latitude'], row['Longitude']],
+        popup=folium.Popup(popup_html, max_width=300),
+    ).add_to(m)
+
+# Save the map to an HTML file
+m.save("EmergencyMedicine_BlueShield.html")
+
+# Display the map
+m
