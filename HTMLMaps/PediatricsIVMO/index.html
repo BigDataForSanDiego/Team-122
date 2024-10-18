@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f01dc2c93ea6c52e65edb26030a18a8e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f01dc2c93ea6c52e65edb26030a18a8e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f01dc2c93ea6c52e65edb26030a18a8e = L.map(
+                "map_f01dc2c93ea6c52e65edb26030a18a8e",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f02cbf24ed826fbd322b3bc597c63fdb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f02cbf24ed826fbd322b3bc597c63fdb.addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+            var marker_394c36ebcee6a38d7e6f0f2f11efd3f6 = L.marker(
+                [32.791793244359, -115.566088462908],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_fd4605e3dda9810f165ffbb19335bdb5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7504ddb78f2604e1362dc47647f673b3 = $(`<div id="html_7504ddb78f2604e1362dc47647f673b3" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1224 W STATE ST<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> HOSEA BROWN<br>     </div>`)[0];
+                popup_fd4605e3dda9810f165ffbb19335bdb5.setContent(html_7504ddb78f2604e1362dc47647f673b3);
+            
+        
+
+        marker_394c36ebcee6a38d7e6f0f2f11efd3f6.bindPopup(popup_fd4605e3dda9810f165ffbb19335bdb5)
+        ;
+
+        
+    
+    
+            var marker_5c1a2b07357bfa48f117b7350ecbed73 = L.marker(
+                [32.781450470137, -115.567309844019],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_8661e143dfad7f294cc3ca3f605cdcf4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e08b6a7f8c709591eeb5bb5e46de31c = $(`<div id="html_4e08b6a7f8c709591eeb5bb5e46de31c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1271 ROSS AVE<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> AMEEN ALSHAREEF<br>     </div>`)[0];
+                popup_8661e143dfad7f294cc3ca3f605cdcf4.setContent(html_4e08b6a7f8c709591eeb5bb5e46de31c);
+            
+        
+
+        marker_5c1a2b07357bfa48f117b7350ecbed73.bindPopup(popup_8661e143dfad7f294cc3ca3f605cdcf4)
+        ;
+
+        
+    
+    
+            var marker_3763ab8584b01f7ce3bb73e479cfcc6f = L.marker(
+                [32.7814494692429, -115.568541],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_267963a330a5fcb4024b8ae78bcbbc2c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d322da90ec17c5bbfca3f770eb249ebd = $(`<div id="html_d322da90ec17c5bbfca3f770eb249ebd" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1415 ROSS AVE<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> CHRISTOPHER AMANN, AMIR AMINLARI<br>     </div>`)[0];
+                popup_267963a330a5fcb4024b8ae78bcbbc2c.setContent(html_d322da90ec17c5bbfca3f770eb249ebd);
+            
+        
+
+        marker_3763ab8584b01f7ce3bb73e479cfcc6f.bindPopup(popup_267963a330a5fcb4024b8ae78bcbbc2c)
+        ;
+
+        
+    
+    
+            var marker_0e400b80d7e4f7ee60b5c478e8bcb807 = L.marker(
+                [32.7767180377689, -115.568394297247],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_43d6e4e700f6d20b8f3edf10eccab631 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ef4a611ccf60b740efd41271b1f420b = $(`<div id="html_7ef4a611ccf60b740efd41271b1f420b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1420 OCOTILLO DR<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> KWEKU GRANT-ACQUAH<br>     </div>`)[0];
+                popup_43d6e4e700f6d20b8f3edf10eccab631.setContent(html_7ef4a611ccf60b740efd41271b1f420b);
+            
+        
+
+        marker_0e400b80d7e4f7ee60b5c478e8bcb807.bindPopup(popup_43d6e4e700f6d20b8f3edf10eccab631)
+        ;
+
+        
+    
+    
+            var marker_a8b68807409957c1e325352fc2ec56da = L.marker(
+                [32.781439406573, -115.579914930752],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_8e11e43db76453515407bb73b08e46dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_21d1096cb43165066d46ecf8a9c3f903 = $(`<div id="html_21d1096cb43165066d46ecf8a9c3f903" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2151 ROSS AVE<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> VISHWA KAPOOR<br>     </div>`)[0];
+                popup_8e11e43db76453515407bb73b08e46dd.setContent(html_21d1096cb43165066d46ecf8a9c3f903);
+            
+        
+
+        marker_a8b68807409957c1e325352fc2ec56da.bindPopup(popup_8e11e43db76453515407bb73b08e46dd)
+        ;
+
+        
+    
+    
+            var marker_6ce3eb7c42386c5c5361368705afff15 = L.marker(
+                [32.6940194868713, -115.5029355],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_6d33c01bfc08214e742d358fe6924560 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d46ed456655f935653fb3c9a08c73af9 = $(`<div id="html_d46ed456655f935653fb3c9a08c73af9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 223 W COLE BLVD<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> MICHELLE MELENDEZ, ERNESTO TIZNADO-GARCIA<br>     </div>`)[0];
+                popup_6d33c01bfc08214e742d358fe6924560.setContent(html_d46ed456655f935653fb3c9a08c73af9);
+            
+        
+
+        marker_6ce3eb7c42386c5c5361368705afff15.bindPopup(popup_6d33c01bfc08214e742d358fe6924560)
+        ;
+
+        
+    
+    
+            var marker_401450ed7e25eaab80a35c8db112f247 = L.marker(
+                [32.6691, -115.494862994287],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_48a9beb7666d53a031f825c184280c15 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd1454f3e1ae9c49bdfc5c11d911c4c1 = $(`<div id="html_fd1454f3e1ae9c49bdfc5c11d911c4c1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 420 HEFFERNAN AVE<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> BRET GERBER<br>     </div>`)[0];
+                popup_48a9beb7666d53a031f825c184280c15.setContent(html_fd1454f3e1ae9c49bdfc5c11d911c4c1);
+            
+        
+
+        marker_401450ed7e25eaab80a35c8db112f247.bindPopup(popup_48a9beb7666d53a031f825c184280c15)
+        ;
+
+        
+    
+    
+            var marker_b9d3f6ae51a3bbb1d897a0407c713421 = L.marker(
+                [32.6791652956986, -115.493031],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_dce90cca6284e6453887fbdd358adfc5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9cd80915a14419a3d5aeaa48cc5919c = $(`<div id="html_e9cd80915a14419a3d5aeaa48cc5919c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 495 E BIRCH ST<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> LUZ TRISTAN<br>     </div>`)[0];
+                popup_dce90cca6284e6453887fbdd358adfc5.setContent(html_e9cd80915a14419a3d5aeaa48cc5919c);
+            
+        
+
+        marker_b9d3f6ae51a3bbb1d897a0407c713421.bindPopup(popup_dce90cca6284e6453887fbdd358adfc5)
+        ;
+
+        
+    
+    
+            var marker_87aab0ef6c80fc0c1fd87ec124675e67 = L.marker(
+                [32.978657523198, -115.532307],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_288d9607d1c05f3828746d6695eb4d4a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_808c38e56f8b7f07ec858a7643d6c231 = $(`<div id="html_808c38e56f8b7f07ec858a7643d6c231" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 565 MAIN ST<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> DANELA ESCUETA, MOHAMMAD ADMANI<br>     </div>`)[0];
+                popup_288d9607d1c05f3828746d6695eb4d4a.setContent(html_808c38e56f8b7f07ec858a7643d6c231);
+            
+        
+
+        marker_87aab0ef6c80fc0c1fd87ec124675e67.bindPopup(popup_288d9607d1c05f3828746d6695eb4d4a)
+        ;
+
+        
+    
+    
+            var marker_a1a97fde282e57555b8c1a19ebe18c42 = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_92754d99047dd7c70c14659bc56105f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4f4a4a8a426c831ab1d4b399f89f937 = $(`<div id="html_f4f4a4a8a426c831ab1d4b399f89f937" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 W LEGION RD<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> LWBBA CHAIT LLAMAS, AMEEN ALSHAREEF<br>     </div>`)[0];
+                popup_92754d99047dd7c70c14659bc56105f6.setContent(html_f4f4a4a8a426c831ab1d4b399f89f937);
+            
+        
+
+        marker_a1a97fde282e57555b8c1a19ebe18c42.bindPopup(popup_92754d99047dd7c70c14659bc56105f6)
+        ;
+
+        
+    
+    
+            var marker_134936c2c160e81e92c0b91acc5973d2 = L.marker(
+                [32.773176, -115.5270465],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_51bd391c49dd2ec487b519084782fb86 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3b7dd01f3e59b44f55feb8e82e3b274 = $(`<div id="html_e3b7dd01f3e59b44f55feb8e82e3b274" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 852 E DANENBERG DR<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> EMILIANO HIGUERA, RICARDO VILLALBA LOPEZ, ERNESTO TIZNADO-GARCIA<br>     </div>`)[0];
+                popup_51bd391c49dd2ec487b519084782fb86.setContent(html_e3b7dd01f3e59b44f55feb8e82e3b274);
+            
+        
+
+        marker_134936c2c160e81e92c0b91acc5973d2.bindPopup(popup_51bd391c49dd2ec487b519084782fb86)
+        ;
+
+        
+    
+    
+            var marker_ba45a54ab86c8a0949ad1d77fec1685a = L.marker(
+                [32.9785797043014, -115.528580199245],
+                {}
+            ).addTo(map_f01dc2c93ea6c52e65edb26030a18a8e);
+        
+    
+        var popup_87f5037644a2944709326113c401c687 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ddc9f33ef74d3cbc748ed87efad4b976 = $(`<div id="html_ddc9f33ef74d3cbc748ed87efad4b976" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 900 MAIN ST<br>     <b>Classification:</b> Pediatrics<br>     <b>Physicians:</b> ERNESTO TIZNADO-GARCIA, JAVIER HERNANDEZ, MAYRA ROBINSON HERASME<br>     </div>`)[0];
+                popup_87f5037644a2944709326113c401c687.setContent(html_ddc9f33ef74d3cbc748ed87efad4b976);
+            
+        
+
+        marker_ba45a54ab86c8a0949ad1d77fec1685a.bindPopup(popup_87f5037644a2944709326113c401c687)
+        ;
+
+        
+    
+</script>
+</html>
