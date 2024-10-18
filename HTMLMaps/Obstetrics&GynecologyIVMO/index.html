@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32945c3fc64a45e5fc693d4491d187a5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_32945c3fc64a45e5fc693d4491d187a5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_32945c3fc64a45e5fc693d4491d187a5 = L.map(
+                "map_32945c3fc64a45e5fc693d4491d187a5",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e350ae314c37c88177676da9897e017c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e350ae314c37c88177676da9897e017c.addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+            var marker_6e3d6b2c50a2e7c66a769939695ada5d = L.marker(
+                [32.6939187043014, -115.501242316479],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_b1e5e95d46e2cf6d3a581d1bdb1905b9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6ca811e175dbbd6979d9561f32fb8ed9 = $(`<div id="html_6ca811e175dbbd6979d9561f32fb8ed9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 120 W COLE BLVD<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> HAMID ZADEH<br>     </div>`)[0];
+                popup_b1e5e95d46e2cf6d3a581d1bdb1905b9.setContent(html_6ca811e175dbbd6979d9561f32fb8ed9);
+            
+        
+
+        marker_6e3d6b2c50a2e7c66a769939695ada5d.bindPopup(popup_b1e5e95d46e2cf6d3a581d1bdb1905b9)
+        ;
+
+        
+    
+    
+            var marker_c40378022a4194b2d11bd577d8c3a6fe = L.marker(
+                [32.8125634679439, -115.570020202377],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_6ecd32c2e12f4d7d83c64173929ecc53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_18bb2de56dd86d977cf259418437c155 = $(`<div id="html_18bb2de56dd86d977cf259418437c155" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2026 N IMPERIAL AVE<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> AJANAMJOT GREWAL<br>     </div>`)[0];
+                popup_6ecd32c2e12f4d7d83c64173929ecc53.setContent(html_18bb2de56dd86d977cf259418437c155);
+            
+        
+
+        marker_c40378022a4194b2d11bd577d8c3a6fe.bindPopup(popup_6ecd32c2e12f4d7d83c64173929ecc53)
+        ;
+
+        
+    
+    
+            var marker_49028b3b242d505a5cf4e21838b83f1c = L.marker(
+                [32.6940194868713, -115.5029355],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_5146ff88c2bc46597cd2dd00488b5b14 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_672a40c02286f2125f8f6d595eb7d452 = $(`<div id="html_672a40c02286f2125f8f6d595eb7d452" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 223 W COLE BLVD<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> LISA BEAN, ALLAN WU, LUC FONTAINE<br>     </div>`)[0];
+                popup_5146ff88c2bc46597cd2dd00488b5b14.setContent(html_672a40c02286f2125f8f6d595eb7d452);
+            
+        
+
+        marker_49028b3b242d505a5cf4e21838b83f1c.bindPopup(popup_5146ff88c2bc46597cd2dd00488b5b14)
+        ;
+
+        
+    
+    
+            var marker_efec15d40fad8cef0f0f2d98c139b71e = L.marker(
+                [32.8311343144441, -115.569167000721],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_f8ef1cc29609150560beed1bfc90a353 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f803f20f23083f93e2632d212264c074 = $(`<div id="html_f803f20f23083f93e2632d212264c074" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2435 MARSHALL AVE<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> HAMID ZADEH<br>     </div>`)[0];
+                popup_f8ef1cc29609150560beed1bfc90a353.setContent(html_f803f20f23083f93e2632d212264c074);
+            
+        
+
+        marker_efec15d40fad8cef0f0f2d98c139b71e.bindPopup(popup_f8ef1cc29609150560beed1bfc90a353)
+        ;
+
+        
+    
+    
+            var marker_e0112d47636a9df94ad12ba1028f2ea4 = L.marker(
+                [32.9599832956986, -115.554802776761],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_90026ce663ba734d91a675464dcc4d41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bab58dcb33db261433f7df648d053b04 = $(`<div id="html_bab58dcb33db261433f7df648d053b04" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 751 W LEGION RD<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> NATALIA BABKINA, KESTUTIS KURAITIS<br>     </div>`)[0];
+                popup_90026ce663ba734d91a675464dcc4d41.setContent(html_bab58dcb33db261433f7df648d053b04);
+            
+        
+
+        marker_e0112d47636a9df94ad12ba1028f2ea4.bindPopup(popup_90026ce663ba734d91a675464dcc4d41)
+        ;
+
+        
+    
+    
+            var marker_3eb4b886af80f3aaafe555b9af197b0b = L.marker(
+                [32.773176, -115.5270465],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_a4c24f00313e27a837b6e886236f02f3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8a9eebb723ac957545797635589a49e = $(`<div id="html_e8a9eebb723ac957545797635589a49e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 852 E DANENBERG DR<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> ALLAN WU<br>     </div>`)[0];
+                popup_a4c24f00313e27a837b6e886236f02f3.setContent(html_e8a9eebb723ac957545797635589a49e);
+            
+        
+
+        marker_3eb4b886af80f3aaafe555b9af197b0b.bindPopup(popup_a4c24f00313e27a837b6e886236f02f3)
+        ;
+
+        
+    
+    
+            var marker_550fd75462a126a00b7a18040ce18f74 = L.marker(
+                [32.9785797043014, -115.528580199245],
+                {}
+            ).addTo(map_32945c3fc64a45e5fc693d4491d187a5);
+        
+    
+        var popup_a5f27330b3c30a36d8019dcbdf2f2a2b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9d5a9be1dcf77f348de7544071ba291a = $(`<div id="html_9d5a9be1dcf77f348de7544071ba291a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 900 MAIN ST<br>     <b>Classification:</b> Obstetrics & Gynecology<br>     <b>Physicians:</b> VANESSA HERNANDEZ, LUC FONTAINE<br>     </div>`)[0];
+                popup_a5f27330b3c30a36d8019dcbdf2f2a2b.setContent(html_9d5a9be1dcf77f348de7544071ba291a);
+            
+        
+
+        marker_550fd75462a126a00b7a18040ce18f74.bindPopup(popup_a5f27330b3c30a36d8019dcbdf2f2a2b)
+        ;
+
+        
+    
+</script>
+</html>
