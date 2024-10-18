@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3d54fa98018c756ea53c9213f62f2999 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3d54fa98018c756ea53c9213f62f2999" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3d54fa98018c756ea53c9213f62f2999 = L.map(
+                "map_3d54fa98018c756ea53c9213f62f2999",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3d8e094cd5c6a07ce0d0234408c54688 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3d8e094cd5c6a07ce0d0234408c54688.addTo(map_3d54fa98018c756ea53c9213f62f2999);
+        
+    
+            var marker_28074fd36bb4bc1e3bf4c31a1241f41c = L.marker(
+                [32.798691, -117.150828963067],
+                {}
+            ).addTo(map_3d54fa98018c756ea53c9213f62f2999);
+        
+    
+        var popup_e91020af17b413e58f5d62699a6f975e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2613fe5be8edb81ba5eb55b0c4d7c0c = $(`<div id="html_a2613fe5be8edb81ba5eb55b0c4d7c0c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3020 CHILDRENS WAY<br>     <b>Classification:</b> Clinical Neuropsychologist<br>     <b>Physicians:</b> ROBERT GRAY, HOLLY HASLER<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_e91020af17b413e58f5d62699a6f975e.setContent(html_a2613fe5be8edb81ba5eb55b0c4d7c0c);
+            
+        
+
+        marker_28074fd36bb4bc1e3bf4c31a1241f41c.bindPopup(popup_e91020af17b413e58f5d62699a6f975e)
+        ;
+
+        
+    
+    
+            var marker_8f4698c6b43bcc7492464940af9df81a = L.marker(
+                [32.798889, -117.150825994893],
+                {}
+            ).addTo(map_3d54fa98018c756ea53c9213f62f2999);
+        
+    
+        var popup_c75f4b30b465c33e718a50603390bbaf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b85cbc8acc8cebc10b0c503310364e0a = $(`<div id="html_b85cbc8acc8cebc10b0c503310364e0a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3030 CHILDRENS WAY<br>     <b>Classification:</b> Clinical Neuropsychologist<br>     <b>Physicians:</b> ROBERT GRAY<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_c75f4b30b465c33e718a50603390bbaf.setContent(html_b85cbc8acc8cebc10b0c503310364e0a);
+            
+        
+
+        marker_8f4698c6b43bcc7492464940af9df81a.bindPopup(popup_c75f4b30b465c33e718a50603390bbaf)
+        ;
+
+        
+    
+    
+            var marker_376fc2981e4ee96152131a9d17aeed71 = L.marker(
+                [32.798889, -117.150825994893],
+                {}
+            ).addTo(map_3d54fa98018c756ea53c9213f62f2999);
+        
+    
+        var popup_34beeaef9dd1e16c092de607a080c179 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4139b618949b6e74f4c410327c5c9351 = $(`<div id="html_4139b618949b6e74f4c410327c5c9351" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3030 CHILDRENS WY<br>     <b>Classification:</b> Clinical Neuropsychologist<br>     <b>Physicians:</b> HOLLY HASLER<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_34beeaef9dd1e16c092de607a080c179.setContent(html_4139b618949b6e74f4c410327c5c9351);
+            
+        
+
+        marker_376fc2981e4ee96152131a9d17aeed71.bindPopup(popup_34beeaef9dd1e16c092de607a080c179)
+        ;
+
+        
+    
+    
+            var marker_f3cf3aba3cbb1968cef5576c20327d87 = L.marker(
+                [32.8003065553079, -117.154106131163],
+                {}
+            ).addTo(map_3d54fa98018c756ea53c9213f62f2999);
+        
+    
+        var popup_8e5e3c6e9dfe002401d11ee9c377298b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b606a83bbd87679ce965455e0fb2c8e5 = $(`<div id="html_b606a83bbd87679ce965455e0fb2c8e5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7910 FROST ST<br>     <b>Classification:</b> Clinical Neuropsychologist<br>     <b>Physicians:</b> HOLLY HASLER, ROBERT GRAY<br>     <b>Telehealth:</b> O<br>     </div>`)[0];
+                popup_8e5e3c6e9dfe002401d11ee9c377298b.setContent(html_b606a83bbd87679ce965455e0fb2c8e5);
+            
+        
+
+        marker_f3cf3aba3cbb1968cef5576c20327d87.bindPopup(popup_8e5e3c6e9dfe002401d11ee9c377298b)
+        ;
+
+        
+    
+</script>
+</html>
