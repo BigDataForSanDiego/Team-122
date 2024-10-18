@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9a55fbda71e5701a6a0b277b6b4d8417 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9a55fbda71e5701a6a0b277b6b4d8417" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9a55fbda71e5701a6a0b277b6b4d8417 = L.map(
+                "map_9a55fbda71e5701a6a0b277b6b4d8417",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_790ac9143dff4fb963d045f1c998d485 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_790ac9143dff4fb963d045f1c998d485.addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+            var marker_19fee9af4fbfd7d840e36a108b104a60 = L.marker(
+                [33.058381817746, -117.260491711819],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_da2c9517f5239fbf54de841a772bf38a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f15086c4a78cc54a6791b699defb008 = $(`<div id="html_1f15086c4a78cc54a6791b699defb008" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1200 GARDEN VIEW RD STE 200<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> Lisa Parry<br>     </div>`)[0];
+                popup_da2c9517f5239fbf54de841a772bf38a.setContent(html_1f15086c4a78cc54a6791b699defb008);
+            
+        
+
+        marker_19fee9af4fbfd7d840e36a108b104a60.bindPopup(popup_da2c9517f5239fbf54de841a772bf38a)
+        ;
+
+        
+    
+    
+            var marker_6c62a106ba2a1eebd5a721abdb233be4 = L.marker(
+                [33.0225778834037, -117.085633177823],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_e084e42c50f17565d5dea4fbc2a21548 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fee26896f37b83b46f4e28eb94451951 = $(`<div id="html_fee26896f37b83b46f4e28eb94451951" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 16950 VIA TAZON<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> Lisa Parry<br>     </div>`)[0];
+                popup_e084e42c50f17565d5dea4fbc2a21548.setContent(html_fee26896f37b83b46f4e28eb94451951);
+            
+        
+
+        marker_6c62a106ba2a1eebd5a721abdb233be4.bindPopup(popup_e084e42c50f17565d5dea4fbc2a21548)
+        ;
+
+        
+    
+    
+            var marker_9e5b0308e039562d0a94cb9ef54c4e30 = L.marker(
+                [32.7537974982397, -117.165829840412],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_ecc5650c4cc8020b05e780250ed7ef31 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e81d2dc50d7b2acd59e1bcdd5d06d52b = $(`<div id="html_e81d2dc50d7b2acd59e1bcdd5d06d52b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 W ARBOR DR<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> Shanglei Liu, Samuel Eisenstein, NICOLE LOPEZ, Benjamin Abbadessa<br>     </div>`)[0];
+                popup_ecc5650c4cc8020b05e780250ed7ef31.setContent(html_e81d2dc50d7b2acd59e1bcdd5d06d52b);
+            
+        
+
+        marker_9e5b0308e039562d0a94cb9ef54c4e30.bindPopup(popup_ecc5650c4cc8020b05e780250ed7ef31)
+        ;
+
+        
+    
+    
+            var marker_d7d348cf49f20176715864f2064e5f85 = L.marker(
+                [33.181886077804, -117.310559077695],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_8bf1397835567af2ef4d29421a719643 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7551a00e147de856363f0f05ee9f68e8 = $(`<div id="html_7551a00e147de856363f0f05ee9f68e8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3601 VISTA WAY STE 203<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> KRISTEN NASSERY<br>     </div>`)[0];
+                popup_8bf1397835567af2ef4d29421a719643.setContent(html_7551a00e147de856363f0f05ee9f68e8);
+            
+        
+
+        marker_d7d348cf49f20176715864f2064e5f85.bindPopup(popup_8bf1397835567af2ef4d29421a719643)
+        ;
+
+        
+    
+    
+            var marker_698a69ca77bcffaf03e3dcde8a99d4a9 = L.marker(
+                [32.8786149946912, -117.222204175053],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_788a4ad22c8407e89c667bca9be6f035 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6186954eae894f791fccb65306e364d = $(`<div id="html_d6186954eae894f791fccb65306e364d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3855 HEALTH SCIENCES DR<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> NICOLE LOPEZ, Lisa Parry, Samuel Eisenstein<br>     </div>`)[0];
+                popup_788a4ad22c8407e89c667bca9be6f035.setContent(html_d6186954eae894f791fccb65306e364d);
+            
+        
+
+        marker_698a69ca77bcffaf03e3dcde8a99d4a9.bindPopup(popup_788a4ad22c8407e89c667bca9be6f035)
+        ;
+
+        
+    
+    
+            var marker_a106da1e054484c49da37da92022c9e4 = L.marker(
+                [32.7511857043014, -117.161690125568],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_7969a7f8de5baeb4f8fbedb1dac41234 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_43d45a73becb09feab278d5eb9d3ad00 = $(`<div id="html_43d45a73becb09feab278d5eb9d3ad00" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4060 4TH AVE STE 510<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> MATHEW ISHO<br>     </div>`)[0];
+                popup_7969a7f8de5baeb4f8fbedb1dac41234.setContent(html_43d45a73becb09feab278d5eb9d3ad00);
+            
+        
+
+        marker_a106da1e054484c49da37da92022c9e4.bindPopup(popup_7969a7f8de5baeb4f8fbedb1dac41234)
+        ;
+
+        
+    
+    
+            var marker_7f4eec83c0f45d3fc20a7c8b7d42fd5a = L.marker(
+                [32.8724890879656, -117.2138852354],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_04b6c0cf4aa35c93e3690407a42cda18 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d8f6e20ccd9f68e692fc753f94063e41 = $(`<div id="html_d8f6e20ccd9f68e692fc753f94063e41" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4303 LA JOLLA VILLAGE DR STE 2110<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> NICOLE LOPEZ, Samuel Eisenstein, Lisa Parry, SONIA RAMAMOORTHY<br>     </div>`)[0];
+                popup_04b6c0cf4aa35c93e3690407a42cda18.setContent(html_d8f6e20ccd9f68e692fc753f94063e41);
+            
+        
+
+        marker_7f4eec83c0f45d3fc20a7c8b7d42fd5a.bindPopup(popup_04b6c0cf4aa35c93e3690407a42cda18)
+        ;
+
+        
+    
+    
+            var marker_bfe80cbb1299cdbda801ebf216f4bcd7 = L.marker(
+                [32.8760874665876, -117.20977628634],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_72ff97062bbb7bd920d558eda38b7648 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fdfc6c611dc862e4b50a1b2075951215 = $(`<div id="html_fdfc6c611dc862e4b50a1b2075951215" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4520 EXECUTIVE DR<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> Samuel Eisenstein<br>     </div>`)[0];
+                popup_72ff97062bbb7bd920d558eda38b7648.setContent(html_fdfc6c611dc862e4b50a1b2075951215);
+            
+        
+
+        marker_bfe80cbb1299cdbda801ebf216f4bcd7.bindPopup(popup_72ff97062bbb7bd920d558eda38b7648)
+        ;
+
+        
+    
+    
+            var marker_2ef93268859ebd3fd5e6da778ad87e58 = L.marker(
+                [32.8756756218711, -117.210158898447],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_f397953a433236f5d4f4f0a482bce7b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e83cb1935af211406184ec5ed58b8028 = $(`<div id="html_e83cb1935af211406184ec5ed58b8028" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4520 EXECUTIVE DR STE 111<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> Samuel Eisenstein<br>     </div>`)[0];
+                popup_f397953a433236f5d4f4f0a482bce7b4.setContent(html_e83cb1935af211406184ec5ed58b8028);
+            
+        
+
+        marker_2ef93268859ebd3fd5e6da778ad87e58.bindPopup(popup_f397953a433236f5d4f4f0a482bce7b4)
+        ;
+
+        
+    
+    
+            var marker_7f85d77808e2de8c31fe2876c3e90f24 = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_06d381f2fad506c0ead804747a499832 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5abf66b6aa33423284047823d44a101 = $(`<div id="html_a5abf66b6aa33423284047823d44a101" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9300 CAMPUS POINT DR<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> Shanglei Liu, Benjamin Abbadessa<br>     </div>`)[0];
+                popup_06d381f2fad506c0ead804747a499832.setContent(html_a5abf66b6aa33423284047823d44a101);
+            
+        
+
+        marker_7f85d77808e2de8c31fe2876c3e90f24.bindPopup(popup_06d381f2fad506c0ead804747a499832)
+        ;
+
+        
+    
+    
+            var marker_b8a9f1bcb543b9577ecb8cec8437ecab = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_9a55fbda71e5701a6a0b277b6b4d8417);
+        
+    
+        var popup_164c15465061160c0cd99d6f1f7ec031 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8925645526d43bacd849518c044bbc1b = $(`<div id="html_8925645526d43bacd849518c044bbc1b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9350 CAMPUS POINT DR<br>     <b>Classification:</b> Colon & Rectal Surgery<br>     <b>Physicians:</b> SONIA RAMAMOORTHY<br>     </div>`)[0];
+                popup_164c15465061160c0cd99d6f1f7ec031.setContent(html_8925645526d43bacd849518c044bbc1b);
+            
+        
+
+        marker_b8a9f1bcb543b9577ecb8cec8437ecab.bindPopup(popup_164c15465061160c0cd99d6f1f7ec031)
+        ;
+
+        
+    
+</script>
+</html>
