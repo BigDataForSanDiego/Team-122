@@ -1,0 +1,56 @@
+#Folium Heatmap For Specializations
+import folium
+from folium.plugins import HeatMap
+import geopandas as gpd
+
+# Load the shapefile 
+gdf = gpd.read_file('merged_taxonomy_data.shp')
+
+# Ensure the GeoDataFrame has the required columns
+gdf['latitude'] = gdf.geometry.y
+gdf['longitude'] = gdf.geometry.x
+
+# Set NaN values to 0
+gdf['latitude'] = gdf['latitude'].fillna(0)
+gdf['longitude'] = gdf['longitude'].fillna(0)
+
+#Base Intensity
+gdf['intensity'] = 1
+
+# Filter for a specific classification
+filtered_gdf = gdf[gdf['Classifica'] == 'Dietitian, Registered']
+
+# Check if filtered DataFrame is empty
+if filtered_gdf.empty:
+    raise ValueError("No data found for the specified classification.")
+
+# Initialize a Folium map centered around the filtered data
+m = folium.Map(location=[filtered_gdf['latitude'].mean(), filtered_gdf['longitude'].mean()], zoom_start=13)
+
+# Create a list of points for the heatmap
+heat_data = [[row['latitude'], row['longitude'], row['intensity']] for index, row in filtered_gdf.iterrows()]
+
+# Add the heatmap layer
+HeatMap(heat_data).add_to(m)
+
+#color gradient
+legend_html = '''
+    <div style="position: fixed;
+                bottom: 30px; left: 30px; width: 150px; height: auto;
+                border: 2px solid grey; background-color: white; z-index: 9999;
+                font-size: 14px;">
+        <div style="text-align: center; font-weight: bold;">Heatmap Legend</div>
+        <div style="background: linear-gradient(to right, blue, green, yellow, red); height: 20px; margin: 5px 0;"></div>
+        <div style="display: flex; justify-content: space-between;">
+            <span>Low Density</span>
+            <span>High Density</span>
+        </div>
+    </div>
+'''
+m.get_root().html.add_child(folium.Element(legend_html))
+
+# Save the map
+m.save('DieticianIV.html')
+
+# Display the map (works in Jupyter Notebook; otherwise, open the HTML file)
+m
