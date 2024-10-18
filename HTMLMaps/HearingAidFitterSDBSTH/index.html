@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d63304a9be1fef935af3c51511aff3ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d63304a9be1fef935af3c51511aff3ce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d63304a9be1fef935af3c51511aff3ce = L.map(
+                "map_d63304a9be1fef935af3c51511aff3ce",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8b575ea227916d39f40d63ac33b68819 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8b575ea227916d39f40d63ac33b68819.addTo(map_d63304a9be1fef935af3c51511aff3ce);
+        
+    
+            var marker_b993b8dbafdcf2ba78082b53fb033787 = L.marker(
+                [32.8143959582867, -116.917017095725],
+                {}
+            ).addTo(map_d63304a9be1fef935af3c51511aff3ce);
+        
+    
+        var popup_ba4a3f4646b8fd3ae411c69f3002258a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ef4c3e0705ac2adcd69679cdc931ddd = $(`<div id="html_8ef4c3e0705ac2adcd69679cdc931ddd" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1767 E MAIN ST<br>     <b>Classification:</b> Audiologist-Hearing Aid Fitter<br>     <b>Physicians:</b> JOHN DANDURAND<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_ba4a3f4646b8fd3ae411c69f3002258a.setContent(html_8ef4c3e0705ac2adcd69679cdc931ddd);
+            
+        
+
+        marker_b993b8dbafdcf2ba78082b53fb033787.bindPopup(popup_ba4a3f4646b8fd3ae411c69f3002258a)
+        ;
+
+        
+    
+    
+            var marker_ba0583ac1162777f9a2a96102e245418 = L.marker(
+                [32.7706718418358, -117.142105002252],
+                {}
+            ).addTo(map_d63304a9be1fef935af3c51511aff3ce);
+        
+    
+        var popup_51e3e64cb1cd6a929ecb516aa57b99f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a0112a796f5a5877f7fdd4121a063be7 = $(`<div id="html_a0112a796f5a5877f7fdd4121a063be7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2020 CAMINO DEL RIO N STE 106<br>     <b>Classification:</b> Audiologist-Hearing Aid Fitter<br>     <b>Physicians:</b> JULIE MADEIRA, Saverio Colarusso<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_51e3e64cb1cd6a929ecb516aa57b99f1.setContent(html_a0112a796f5a5877f7fdd4121a063be7);
+            
+        
+
+        marker_ba0583ac1162777f9a2a96102e245418.bindPopup(popup_51e3e64cb1cd6a929ecb516aa57b99f1)
+        ;
+
+        
+    
+    
+            var marker_3fd67dd553366e071726dd85e1707e2e = L.marker(
+                [33.1727804098195, -117.323139784201],
+                {}
+            ).addTo(map_d63304a9be1fef935af3c51511aff3ce);
+        
+    
+        var popup_195619bcc7f85bfe7e43f7d05d409806 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7cc2d713823da23743b089a75a492f9 = $(`<div id="html_c7cc2d713823da23743b089a75a492f9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3144 EL CAMINO REAL STE 105<br>     <b>Classification:</b> Audiologist-Hearing Aid Fitter<br>     <b>Physicians:</b> JULIE MADEIRA, Saverio Colarusso<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_195619bcc7f85bfe7e43f7d05d409806.setContent(html_c7cc2d713823da23743b089a75a492f9);
+            
+        
+
+        marker_3fd67dd553366e071726dd85e1707e2e.bindPopup(popup_195619bcc7f85bfe7e43f7d05d409806)
+        ;
+
+        
+    
+    
+            var marker_4762c3c930fc7ba6ff4ad5be35e74525 = L.marker(
+                [32.7766596830171, -117.061430648884],
+                {}
+            ).addTo(map_d63304a9be1fef935af3c51511aff3ce);
+        
+    
+        var popup_fca34924f6475f9b70c937314a206278 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7084f05476df1d3d4617d339590767da = $(`<div id="html_7084f05476df1d3d4617d339590767da" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 6367 ALVARADO CT<br>     <b>Classification:</b> Audiologist-Hearing Aid Fitter<br>     <b>Physicians:</b> JOHN DANDURAND<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_fca34924f6475f9b70c937314a206278.setContent(html_7084f05476df1d3d4617d339590767da);
+            
+        
+
+        marker_4762c3c930fc7ba6ff4ad5be35e74525.bindPopup(popup_fca34924f6475f9b70c937314a206278)
+        ;
+
+        
+    
+</script>
+</html>
