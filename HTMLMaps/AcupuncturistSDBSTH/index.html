@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf4ab824aa7e8d9793712c8d4ef75d9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf4ab824aa7e8d9793712c8d4ef75d9a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf4ab824aa7e8d9793712c8d4ef75d9a = L.map(
+                "map_cf4ab824aa7e8d9793712c8d4ef75d9a",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b8897e7ace58157e46a1cd2cff48c40 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6b8897e7ace58157e46a1cd2cff48c40.addTo(map_cf4ab824aa7e8d9793712c8d4ef75d9a);
+        
+    
+            var marker_13212687b8de00dce82d1cf1dfaf7f14 = L.marker(
+                [32.8378491716187, -116.780244580821],
+                {}
+            ).addTo(map_cf4ab824aa7e8d9793712c8d4ef75d9a);
+        
+    
+        var popup_c7a050f92501c8e4c88894919b4c2641 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_65cc629412e57d34e6f1d1f20db3b6de = $(`<div id="html_65cc629412e57d34e6f1d1f20db3b6de" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1620 ALPINE BLVD STE 110<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Long Vuong<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_c7a050f92501c8e4c88894919b4c2641.setContent(html_65cc629412e57d34e6f1d1f20db3b6de);
+            
+        
+
+        marker_13212687b8de00dce82d1cf1dfaf7f14.bindPopup(popup_c7a050f92501c8e4c88894919b4c2641)
+        ;
+
+        
+    
+    
+            var marker_b89f0d378b683f3cb3bef114044703ea = L.marker(
+                [32.6383151295066, -117.083354279679],
+                {}
+            ).addTo(map_cf4ab824aa7e8d9793712c8d4ef75d9a);
+        
+    
+        var popup_c4865c69622474e2b898e7c5ad478367 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c2b31c31ec441a2226602ca20bcdf72 = $(`<div id="html_0c2b31c31ec441a2226602ca20bcdf72" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 340 4TH AVE STE 19<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> KHANH LAM<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_c4865c69622474e2b898e7c5ad478367.setContent(html_0c2b31c31ec441a2226602ca20bcdf72);
+            
+        
+
+        marker_b89f0d378b683f3cb3bef114044703ea.bindPopup(popup_c4865c69622474e2b898e7c5ad478367)
+        ;
+
+        
+    
+    
+            var marker_bccb4b6b8343c741faed1135875feda3 = L.marker(
+                [32.7506425910142, -117.212517646967],
+                {}
+            ).addTo(map_cf4ab824aa7e8d9793712c8d4ef75d9a);
+        
+    
+        var popup_ad511cb12d581880dca157906c7246c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e1957f13e2fae03c1371989982340fc = $(`<div id="html_3e1957f13e2fae03c1371989982340fc" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3434 MIDWAY DR STE 2001<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> KHANH LAM<br>     <b>Telehealth:</b> B<br>     </div>`)[0];
+                popup_ad511cb12d581880dca157906c7246c0.setContent(html_3e1957f13e2fae03c1371989982340fc);
+            
+        
+
+        marker_bccb4b6b8343c741faed1135875feda3.bindPopup(popup_ad511cb12d581880dca157906c7246c0)
+        ;
+
+        
+    
+</script>
+</html>
