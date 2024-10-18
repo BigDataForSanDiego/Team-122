@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9806b3648998fa09e598f61e57aab227 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9806b3648998fa09e598f61e57aab227" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9806b3648998fa09e598f61e57aab227 = L.map(
+                "map_9806b3648998fa09e598f61e57aab227",
+                {
+                    center: [32.784884, -115.551463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_53d430f0cd227ba15214846d33cc6ac8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_53d430f0cd227ba15214846d33cc6ac8.addTo(map_9806b3648998fa09e598f61e57aab227);
+        
+    
+            var marker_b634873a2d1d1497b069fa5957766400 = L.marker(
+                [32.7795011770731, -115.569727914594],
+                {}
+            ).addTo(map_9806b3648998fa09e598f61e57aab227);
+        
+    
+        var popup_aa49741aaad6dede05c8226a0972fac0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55186b82d16261a7b603a0d308bdad05 = $(`<div id="html_55186b82d16261a7b603a0d308bdad05" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1590 S IMPERIAL AVE<br>     <b>Classification:</b> Podiatrist<br>     <b>Physicians:</b> DUC NGUYEN<br>     </div>`)[0];
+                popup_aa49741aaad6dede05c8226a0972fac0.setContent(html_55186b82d16261a7b603a0d308bdad05);
+            
+        
+
+        marker_b634873a2d1d1497b069fa5957766400.bindPopup(popup_aa49741aaad6dede05c8226a0972fac0)
+        ;
+
+        
+    
+    
+            var marker_98d644c26eb74e619a8cb63bf0b4842d = L.marker(
+                [32.6939194892669, -115.495038],
+                {}
+            ).addTo(map_9806b3648998fa09e598f61e57aab227);
+        
+    
+        var popup_42ef8b3137aa84df1e7aa42c73d18879 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_554304617c468b3c83c262df565a7555 = $(`<div id="html_554304617c468b3c83c262df565a7555" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 222 E COLE BLVD<br>     <b>Classification:</b> Podiatrist<br>     <b>Physicians:</b> DUC NGUYEN<br>     </div>`)[0];
+                popup_42ef8b3137aa84df1e7aa42c73d18879.setContent(html_554304617c468b3c83c262df565a7555);
+            
+        
+
+        marker_98d644c26eb74e619a8cb63bf0b4842d.bindPopup(popup_42ef8b3137aa84df1e7aa42c73d18879)
+        ;
+
+        
+    
+    
+            var marker_f12b03076df1930e0671d82559dfbbeb = L.marker(
+                [32.773176, -115.5270465],
+                {}
+            ).addTo(map_9806b3648998fa09e598f61e57aab227);
+        
+    
+        var popup_549d61aeb0e5fc8103c2f8b3f0580c3a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62e2a0f5be257a99cf70cffcd259fae7 = $(`<div id="html_62e2a0f5be257a99cf70cffcd259fae7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 852 E DANENBERG DR<br>     <b>Classification:</b> Podiatrist<br>     <b>Physicians:</b> CYRIL GOSTICH<br>     </div>`)[0];
+                popup_549d61aeb0e5fc8103c2f8b3f0580c3a.setContent(html_62e2a0f5be257a99cf70cffcd259fae7);
+            
+        
+
+        marker_f12b03076df1930e0671d82559dfbbeb.bindPopup(popup_549d61aeb0e5fc8103c2f8b3f0580c3a)
+        ;
+
+        
+    
+</script>
+</html>
