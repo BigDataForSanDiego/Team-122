@@ -1,0 +1,3600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12ffcb71f5cb3419eaf3a5866a933e96 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12ffcb71f5cb3419eaf3a5866a933e96" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12ffcb71f5cb3419eaf3a5866a933e96 = L.map(
+                "map_12ffcb71f5cb3419eaf3a5866a933e96",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9627608d86cdf7c39a842600b42aeeea = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9627608d86cdf7c39a842600b42aeeea.addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+            var marker_b52d6adc0fdfae41f5c044205bccb18f = L.marker(
+                [33.1560980260835, -117.093426329708],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_af51b3dc3f488b0198d63cc8be6ec2c8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aee206bebf746ce77379917ea9bda84e = $(`<div id="html_aee206bebf746ce77379917ea9bda84e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 100 HOLLAND GLN<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Xuan Chang<br>     </div>`)[0];
+                popup_af51b3dc3f488b0198d63cc8be6ec2c8.setContent(html_aee206bebf746ce77379917ea9bda84e);
+            
+        
+
+        marker_b52d6adc0fdfae41f5c044205bccb18f.bindPopup(popup_af51b3dc3f488b0198d63cc8be6ec2c8)
+        ;
+
+        
+    
+    
+            var marker_ad44481e61266bc6394b54d24f8f2372 = L.marker(
+                [33.2090450216974, -117.2286439474],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ac735550599d2ee06c227db75c27cac8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ebb829ba3cb8e126b9498114808e83ea = $(`<div id="html_ebb829ba3cb8e126b9498114808e83ea" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1000 VALE TERRACE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yvonne Scarlett, CAROL SONG, Carol Song<br>     </div>`)[0];
+                popup_ac735550599d2ee06c227db75c27cac8.setContent(html_ebb829ba3cb8e126b9498114808e83ea);
+            
+        
+
+        marker_ad44481e61266bc6394b54d24f8f2372.bindPopup(popup_ac735550599d2ee06c227db75c27cac8)
+        ;
+
+        
+    
+    
+            var marker_6c4467e5e28d4cede74c3d52616c084b = L.marker(
+                [32.9546192607691, -117.263315713501],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_2e6d9a58e6f7aac4b1a95e6993a9161e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b91966f03ac45b6a6cfdd5eeed5d747e = $(`<div id="html_b91966f03ac45b6a6cfdd5eeed5d747e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1011 CAMINO DEL MAR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Andrea Beck<br>     </div>`)[0];
+                popup_2e6d9a58e6f7aac4b1a95e6993a9161e.setContent(html_b91966f03ac45b6a6cfdd5eeed5d747e);
+            
+        
+
+        marker_6c4467e5e28d4cede74c3d52616c084b.bindPopup(popup_2e6d9a58e6f7aac4b1a95e6993a9161e)
+        ;
+
+        
+    
+    
+            var marker_48291cf592bbe532bda94c9ebc934ef4 = L.marker(
+                [32.764192396428, -117.154493737051],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ebc03f5c51b910eb6c456f0bc7a8eeb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fd672f8c7dfbe1fffc41c5fdf8f11e43 = $(`<div id="html_fd672f8c7dfbe1fffc41c5fdf8f11e43" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1011 CAMINO DEL RIO S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> HeeJoo Hong, Ma Regina Blanca Robles<br>     </div>`)[0];
+                popup_ebc03f5c51b910eb6c456f0bc7a8eeb8.setContent(html_fd672f8c7dfbe1fffc41c5fdf8f11e43);
+            
+        
+
+        marker_48291cf592bbe532bda94c9ebc934ef4.bindPopup(popup_ebc03f5c51b910eb6c456f0bc7a8eeb8)
+        ;
+
+        
+    
+    
+            var marker_ea40ca412b9a6b23a1da902a6794631b = L.marker(
+                [32.8384455197078, -116.9759925],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5f66852493c601062a0b48e9d6f70877 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc9c6091bfae7abbc0604a3d7a399bce = $(`<div id="html_bc9c6091bfae7abbc0604a3d7a399bce" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 10201 MISSION GORGE RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Rebecca Alexander<br>     </div>`)[0];
+                popup_5f66852493c601062a0b48e9d6f70877.setContent(html_bc9c6091bfae7abbc0604a3d7a399bce);
+            
+        
+
+        marker_ea40ca412b9a6b23a1da902a6794631b.bindPopup(popup_5f66852493c601062a0b48e9d6f70877)
+        ;
+
+        
+    
+    
+            var marker_3d64d9201d09a5e57e9559bc3b14a3a8 = L.marker(
+                [32.8950120903354, -117.217083930647],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_be5f91436129be9ce6590e79cbf845fa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7db52504957b74c48db7cb1a87b50c09 = $(`<div id="html_7db52504957b74c48db7cb1a87b50c09" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 10455 SORRENTO VALLEY RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Xuan Chang<br>     </div>`)[0];
+                popup_be5f91436129be9ce6590e79cbf845fa.setContent(html_7db52504957b74c48db7cb1a87b50c09);
+            
+        
+
+        marker_3d64d9201d09a5e57e9559bc3b14a3a8.bindPopup(popup_be5f91436129be9ce6590e79cbf845fa)
+        ;
+
+        
+    
+    
+            var marker_9d9f155e65215c9c48b216071c0d5942 = L.marker(
+                [32.9137697342471, -117.143744507131],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_eceeed639cecbad50d5e2fe7b5bbe427 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66fd8326870d8bf144790dcd4056bc78 = $(`<div id="html_66fd8326870d8bf144790dcd4056bc78" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 10717 CAMINO RUIZ<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Hyun Ho Park<br>     </div>`)[0];
+                popup_eceeed639cecbad50d5e2fe7b5bbe427.setContent(html_66fd8326870d8bf144790dcd4056bc78);
+            
+        
+
+        marker_9d9f155e65215c9c48b216071c0d5942.bindPopup(popup_eceeed639cecbad50d5e2fe7b5bbe427)
+        ;
+
+        
+    
+    
+            var marker_95657e2717fb7e803aab1835b0593b92 = L.marker(
+                [32.9009071265799, -117.222707634998],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_93ee82784bd6e2988b60d757dd5c2b78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_856c61246fc7df015066302c51cc7d45 = $(`<div id="html_856c61246fc7df015066302c51cc7d45" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 10951 SORRENTO VALLEY RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Xuan Chang<br>     </div>`)[0];
+                popup_93ee82784bd6e2988b60d757dd5c2b78.setContent(html_856c61246fc7df015066302c51cc7d45);
+            
+        
+
+        marker_95657e2717fb7e803aab1835b0593b92.bindPopup(popup_93ee82784bd6e2988b60d757dd5c2b78)
+        ;
+
+        
+    
+    
+            var marker_453be464e8cf70790876f027c8a01c57 = L.marker(
+                [33.0374741282244, -117.293683880403],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_72577a45d3f26aebeef2f558308b1c1b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7aa0729e57cba2e5e8b40a201520e98d = $(`<div id="html_7aa0729e57cba2e5e8b40a201520e98d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1130 2ND ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> ANDRES GONZALEZ, Andres Gonzalez<br>     </div>`)[0];
+                popup_72577a45d3f26aebeef2f558308b1c1b.setContent(html_7aa0729e57cba2e5e8b40a201520e98d);
+            
+        
+
+        marker_453be464e8cf70790876f027c8a01c57.bindPopup(popup_72577a45d3f26aebeef2f558308b1c1b)
+        ;
+
+        
+    
+    
+            var marker_829a338ab302861223a2e3ee206ef765 = L.marker(
+                [32.810319, -116.93564302063],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_6ef054ed46ea9d28d1a4c2036dd9f756 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a26b6b445998b10871ee1abd6f4b782 = $(`<div id="html_4a26b6b445998b10871ee1abd6f4b782" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1149 N 2ND ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Teresa Onan, Rhiannon Knapp, Yoon Lee, William Schlesinger, Travis Zinner, Casey Culp, Wanhee Seo, Yesenia Flores, Katerina Tsoucalas<br>     </div>`)[0];
+                popup_6ef054ed46ea9d28d1a4c2036dd9f756.setContent(html_4a26b6b445998b10871ee1abd6f4b782);
+            
+        
+
+        marker_829a338ab302861223a2e3ee206ef765.bindPopup(popup_6ef054ed46ea9d28d1a4c2036dd9f756)
+        ;
+
+        
+    
+    
+            var marker_566ead2bf27fe571f3215a9943e3dc0a = L.marker(
+                [33.2017849819379, -117.243039484996],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_caaa678f1ff36aa748ead66d72103cb9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_734e08f7c02121beb2250d4e2a476da5 = $(`<div id="html_734e08f7c02121beb2250d4e2a476da5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 115 MAIN ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Min Joo Kim<br>     </div>`)[0];
+                popup_caaa678f1ff36aa748ead66d72103cb9.setContent(html_734e08f7c02121beb2250d4e2a476da5);
+            
+        
+
+        marker_566ead2bf27fe571f3215a9943e3dc0a.bindPopup(popup_caaa678f1ff36aa748ead66d72103cb9)
+        ;
+
+        
+    
+    
+            var marker_1315648fa97d394dc6e80d086df26652 = L.marker(
+                [33.0155945625052, -117.077788805037],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a568adf20e6c061837c48a7042ee6e9e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b65f781cdae93c50ce6acc1b75caba2 = $(`<div id="html_2b65f781cdae93c50ce6acc1b75caba2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 11650 IBERIA PL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Barry Zimmer<br>     </div>`)[0];
+                popup_a568adf20e6c061837c48a7042ee6e9e.setContent(html_2b65f781cdae93c50ce6acc1b75caba2);
+            
+        
+
+        marker_1315648fa97d394dc6e80d086df26652.bindPopup(popup_a568adf20e6c061837c48a7042ee6e9e)
+        ;
+
+        
+    
+    
+            var marker_96b6614115a58b22a85397124c389a12 = L.marker(
+                [33.0165990127688, -117.076679575978],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5dbf144b8ee8f1728399601b97954504 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aa2e75960a448a3cfe3376a50a580066 = $(`<div id="html_aa2e75960a448a3cfe3376a50a580066" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 11665 AVENA PL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Travis Zinner, Yoon Lee, Casey Culp, Teresa Onan<br>     </div>`)[0];
+                popup_5dbf144b8ee8f1728399601b97954504.setContent(html_aa2e75960a448a3cfe3376a50a580066);
+            
+        
+
+        marker_96b6614115a58b22a85397124c389a12.bindPopup(popup_5dbf144b8ee8f1728399601b97954504)
+        ;
+
+        
+    
+    
+            var marker_e43dc3044ee1932c06491bbe9a0ba9d5 = L.marker(
+                [33.0200975554837, -117.07672830782],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c6b0d2ca687551da1183f21027147e78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_48b86d2ecb1754b53e7a44959575d10b = $(`<div id="html_48b86d2ecb1754b53e7a44959575d10b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 11770 BERNARDO PLAZA CT<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Young Shig Oh<br>     </div>`)[0];
+                popup_c6b0d2ca687551da1183f21027147e78.setContent(html_48b86d2ecb1754b53e7a44959575d10b);
+            
+        
+
+        marker_e43dc3044ee1932c06491bbe9a0ba9d5.bindPopup(popup_c6b0d2ca687551da1183f21027147e78)
+        ;
+
+        
+    
+    
+            var marker_8dacbbcf973f55c9ee1d3cecf917223a = L.marker(
+                [33.058381817746, -117.260491711819],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3c66560cd97b5be92ec4d38819278ff7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73cf8c9b19243ace6a26abb03dadb59e = $(`<div id="html_73cf8c9b19243ace6a26abb03dadb59e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1200 GARDEN VIEW RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Leng Tang-Ritchie, Jacqueline Arellano, Steven Murray, Fides Julian, Estela Reyes, Dong Ji, Douglas Burr<br>     </div>`)[0];
+                popup_3c66560cd97b5be92ec4d38819278ff7.setContent(html_73cf8c9b19243ace6a26abb03dadb59e);
+            
+        
+
+        marker_8dacbbcf973f55c9ee1d3cecf917223a.bindPopup(popup_3c66560cd97b5be92ec4d38819278ff7)
+        ;
+
+        
+    
+    
+            var marker_e364f18b06b8b25451c065c5ba1eee1f = L.marker(
+                [33.0584036988288, -117.260155875382],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_15fda67cd7ed1a35801e1aee1ae804b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_439a548db95e0ba88cbd5c651bf94023 = $(`<div id="html_439a548db95e0ba88cbd5c651bf94023" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1200 GARDEN VIEW RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> STEVEN MURRAY, LENG TANG-RITCHIE, Leah Tinkham<br>     </div>`)[0];
+                popup_15fda67cd7ed1a35801e1aee1ae804b4.setContent(html_439a548db95e0ba88cbd5c651bf94023);
+            
+        
+
+        marker_e364f18b06b8b25451c065c5ba1eee1f.bindPopup(popup_15fda67cd7ed1a35801e1aee1ae804b4)
+        ;
+
+        
+    
+    
+            var marker_4dfccbeffe2f4b24d2eee3eb8d6f4384 = L.marker(
+                [33.058381817746, -117.260491711819],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_bb743d70812c72323449c651e71d1c13 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f5fccd15c140f2a6b9a4ef146c661990 = $(`<div id="html_f5fccd15c140f2a6b9a4ef146c661990" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1200 GARDEN VIEW RD STE 200<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> LENG TANG-RITCHIE, STEVEN MURRAY, Leah Tinkham<br>     </div>`)[0];
+                popup_bb743d70812c72323449c651e71d1c13.setContent(html_f5fccd15c140f2a6b9a4ef146c661990);
+            
+        
+
+        marker_4dfccbeffe2f4b24d2eee3eb8d6f4384.bindPopup(popup_bb743d70812c72323449c651e71d1c13)
+        ;
+
+        
+    
+    
+            var marker_9653117964ca77d48f58fe39396d5193 = L.marker(
+                [33.1640255400775, -117.340950684546],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_82ebc2d6839261b39932c34a7213265f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_463df73fe34a7e87d2afb52179e3490c = $(`<div id="html_463df73fe34a7e87d2afb52179e3490c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1207 CARLSBAD VILLAGE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jennifer Tom<br>     </div>`)[0];
+                popup_82ebc2d6839261b39932c34a7213265f.setContent(html_463df73fe34a7e87d2afb52179e3490c);
+            
+        
+
+        marker_9653117964ca77d48f58fe39396d5193.bindPopup(popup_82ebc2d6839261b39932c34a7213265f)
+        ;
+
+        
+    
+    
+            var marker_a853e3afadd4fbcb42338311db017aa4 = L.marker(
+                [32.6095864937065, -117.067556291413],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_68c55fa3732e174ad545199820e0d839 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9f615871d558d130b43056f2260e733 = $(`<div id="html_e9f615871d558d130b43056f2260e733" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1214 3RD AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Richard Dinsmore<br>     </div>`)[0];
+                popup_68c55fa3732e174ad545199820e0d839.setContent(html_e9f615871d558d130b43056f2260e733);
+            
+        
+
+        marker_a853e3afadd4fbcb42338311db017aa4.bindPopup(popup_68c55fa3732e174ad545199820e0d839)
+        ;
+
+        
+    
+    
+            var marker_429ab1fc152e683e4d53963ef22f0f48 = L.marker(
+                [32.951286374084, -117.066052392454],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_392130b4e5193ba8fdbd3c3d33c80b2d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a3144fd3937def062b4dca7c05aa3893 = $(`<div id="html_a3144fd3937def062b4dca7c05aa3893" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 12243 POWAY RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Pin Lu<br>     </div>`)[0];
+                popup_392130b4e5193ba8fdbd3c3d33c80b2d.setContent(html_a3144fd3937def062b4dca7c05aa3893);
+            
+        
+
+        marker_429ab1fc152e683e4d53963ef22f0f48.bindPopup(popup_392130b4e5193ba8fdbd3c3d33c80b2d)
+        ;
+
+        
+    
+    
+            var marker_1415e9b6f5ae6508110bfd02803ee6c5 = L.marker(
+                [32.9394644203493, -117.240176649749],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_0e3e4365532280d74ecba3db2be15a6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b43a499488c0a769d68a2f17f2747315 = $(`<div id="html_b43a499488c0a769d68a2f17f2747315" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 12264 EL CAMINO REAL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yunhee Friend<br>     </div>`)[0];
+                popup_0e3e4365532280d74ecba3db2be15a6c.setContent(html_b43a499488c0a769d68a2f17f2747315);
+            
+        
+
+        marker_1415e9b6f5ae6508110bfd02803ee6c5.bindPopup(popup_0e3e4365532280d74ecba3db2be15a6c)
+        ;
+
+        
+    
+    
+            var marker_3d33d1c249c51994b367d120f7657671 = L.marker(
+                [32.6092587599117, -117.067284326725],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_826bf2e29109d4d00d97a2f15676a8c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32fb264728848e529f518cb072719a6c = $(`<div id="html_32fb264728848e529f518cb072719a6c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1229 3RD AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Carol Tran<br>     </div>`)[0];
+                popup_826bf2e29109d4d00d97a2f15676a8c3.setContent(html_32fb264728848e529f518cb072719a6c);
+            
+        
+
+        marker_3d33d1c249c51994b367d120f7657671.bindPopup(popup_826bf2e29109d4d00d97a2f15676a8c3)
+        ;
+
+        
+    
+    
+            var marker_cb955cd57bf849ca9816220572a09882 = L.marker(
+                [32.9874521119749, -117.067831434878],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_642a9941afb243b132e44b52dfa4ca51 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_caf75e4f27700d8bd2e6ea9e66d75a9a = $(`<div id="html_caf75e4f27700d8bd2e6ea9e66d75a9a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 12396 WORLD TRADE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Young Shig Oh<br>     </div>`)[0];
+                popup_642a9941afb243b132e44b52dfa4ca51.setContent(html_caf75e4f27700d8bd2e6ea9e66d75a9a);
+            
+        
+
+        marker_cb955cd57bf849ca9816220572a09882.bindPopup(popup_642a9941afb243b132e44b52dfa4ca51)
+        ;
+
+        
+    
+    
+            var marker_ffb73e29e4cee7588a7c59acecdeb0f1 = L.marker(
+                [33.3693890904555, -117.251095362282],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a5024cbc52a07a6cf4abcc9c69a13c90 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e52ffb07c2d2b4d1b3d797323b9611b2 = $(`<div id="html_e52ffb07c2d2b4d1b3d797323b9611b2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1309 S MISSION RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> KRISTELYN WACHNER, Alexiss Larowe, Kevin Craft<br>     </div>`)[0];
+                popup_a5024cbc52a07a6cf4abcc9c69a13c90.setContent(html_e52ffb07c2d2b4d1b3d797323b9611b2);
+            
+        
+
+        marker_ffb73e29e4cee7588a7c59acecdeb0f1.bindPopup(popup_a5024cbc52a07a6cf4abcc9c69a13c90)
+        ;
+
+        
+    
+    
+            var marker_6616b3a6fa55dc33f50d0db7060070a8 = L.marker(
+                [32.9602262956986, -117.062559786476],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_1c505722f0f9224be2386aabd245eca2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9e6427eeb18393f7459bca0a37e1fe09 = $(`<div id="html_9e6427eeb18393f7459bca0a37e1fe09" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 13514 POMERADO RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Perla Kimball<br>     </div>`)[0];
+                popup_1c505722f0f9224be2386aabd245eca2.setContent(html_9e6427eeb18393f7459bca0a37e1fe09);
+            
+        
+
+        marker_6616b3a6fa55dc33f50d0db7060070a8.bindPopup(popup_1c505722f0f9224be2386aabd245eca2)
+        ;
+
+        
+    
+    
+            var marker_9d5aa943225c106444d1a412335cd8a9 = L.marker(
+                [32.9606572547879, -117.036235858585],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_03218418d61090500ba9582d77696475 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f0b479feaceda36f95b9f305f63661f9 = $(`<div id="html_f0b479feaceda36f95b9f305f63661f9" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 13525 MIDLAND RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Tracey Whitney<br>     </div>`)[0];
+                popup_03218418d61090500ba9582d77696475.setContent(html_f0b479feaceda36f95b9f305f63661f9);
+            
+        
+
+        marker_9d5aa943225c106444d1a412335cd8a9.bindPopup(popup_03218418d61090500ba9582d77696475)
+        ;
+
+        
+    
+    
+            var marker_85360cd5b8c1e8ac06220b28c3b58c0e = L.marker(
+                [32.7248140011252, -117.229095212765],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_64be2f20b910bf2ef67e7b0ea5ec2585 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a97fb2288aa4677324d6a53fc326925 = $(`<div id="html_4a97fb2288aa4677324d6a53fc326925" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1370 ROSECRANS ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Ha Hwang<br>     </div>`)[0];
+                popup_64be2f20b910bf2ef67e7b0ea5ec2585.setContent(html_4a97fb2288aa4677324d6a53fc326925);
+            
+        
+
+        marker_85360cd5b8c1e8ac06220b28c3b58c0e.bindPopup(popup_64be2f20b910bf2ef67e7b0ea5ec2585)
+        ;
+
+        
+    
+    
+            var marker_f26211e57292d15e3196ccf0018fe2bd = L.marker(
+                [32.7589347043014, -117.177292502612],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_09816bc7290c6287422816e9ece84363 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8889a8cd432f2f8d3335f099a6fde776 = $(`<div id="html_8889a8cd432f2f8d3335f099a6fde776" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1545 HOTEL CIR S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Lindsay Wunsch<br>     </div>`)[0];
+                popup_09816bc7290c6287422816e9ece84363.setContent(html_8889a8cd432f2f8d3335f099a6fde776);
+            
+        
+
+        marker_f26211e57292d15e3196ccf0018fe2bd.bindPopup(popup_09816bc7290c6287422816e9ece84363)
+        ;
+
+        
+    
+    
+            var marker_cd384b91f85c50245a035dac9b5ad626 = L.marker(
+                [32.9949809396579, -117.057900234767],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f88e75791d2da2e88080d078b6f46d2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a36c816e610832c01a9043234f407ac8 = $(`<div id="html_a36c816e610832c01a9043234f407ac8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 15525 POMERADO RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yuan Wang, Jocelyn Shinagawa<br>     </div>`)[0];
+                popup_f88e75791d2da2e88080d078b6f46d2a.setContent(html_a36c816e610832c01a9043234f407ac8);
+            
+        
+
+        marker_cd384b91f85c50245a035dac9b5ad626.bindPopup(popup_f88e75791d2da2e88080d078b6f46d2a)
+        ;
+
+        
+    
+    
+            var marker_c757f9d40cbfdbe86ba03fd7bb573c62 = L.marker(
+                [32.9978192956986, -117.057969815555],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_07773fecccf360b0cdaa773886d4f1e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e35a1a4f7ef42fdb8771c1cf984a524d = $(`<div id="html_e35a1a4f7ef42fdb8771c1cf984a524d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 15644 POMERADO RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Michele Arnold<br>     </div>`)[0];
+                popup_07773fecccf360b0cdaa773886d4f1e1.setContent(html_e35a1a4f7ef42fdb8771c1cf984a524d);
+            
+        
+
+        marker_c757f9d40cbfdbe86ba03fd7bb573c62.bindPopup(popup_07773fecccf360b0cdaa773886d4f1e1)
+        ;
+
+        
+    
+    
+            var marker_0d5f787e06d1d08507b760348ea88d3a = L.marker(
+                [33.0001305537203, -117.057991605651],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f2ac0a3ac4565b15f6de0f4448ce0d7e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ca30d04e9beba093fa6bb90d7580908 = $(`<div id="html_7ca30d04e9beba093fa6bb90d7580908" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 15725 POMERADO RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Ma Regina Blanca Robles<br>     </div>`)[0];
+                popup_f2ac0a3ac4565b15f6de0f4448ce0d7e.setContent(html_7ca30d04e9beba093fa6bb90d7580908);
+            
+        
+
+        marker_0d5f787e06d1d08507b760348ea88d3a.bindPopup(popup_f2ac0a3ac4565b15f6de0f4448ce0d7e)
+        ;
+
+        
+    
+    
+            var marker_25be062e7860b0731a8852c8456824a6 = L.marker(
+                [33.1452410350154, -117.198193351359],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c05b4644aed2b78f13a3b92855037bc2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2a5654914376f3cf8037c41dee66ab8 = $(`<div id="html_e2a5654914376f3cf8037c41dee66ab8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1595 GRAND AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Andres Gonzalez<br>     </div>`)[0];
+                popup_c05b4644aed2b78f13a3b92855037bc2.setContent(html_e2a5654914376f3cf8037c41dee66ab8);
+            
+        
+
+        marker_25be062e7860b0731a8852c8456824a6.bindPopup(popup_c05b4644aed2b78f13a3b92855037bc2)
+        ;
+
+        
+    
+    
+            var marker_97fb2ecfa3536c663e8c26aaacf9fb00 = L.marker(
+                [33.1452410350154, -117.198193351359],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ab200e44a53559a7249bdae4e09b4e43 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d83e7d5cce5f1e95af1e9993a4e1695 = $(`<div id="html_0d83e7d5cce5f1e95af1e9993a4e1695" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1595 GRAND AVE STE 100<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> ANDRES GONZALEZ<br>     </div>`)[0];
+                popup_ab200e44a53559a7249bdae4e09b4e43.setContent(html_0d83e7d5cce5f1e95af1e9993a4e1695);
+            
+        
+
+        marker_97fb2ecfa3536c663e8c26aaacf9fb00.bindPopup(popup_ab200e44a53559a7249bdae4e09b4e43)
+        ;
+
+        
+    
+    
+            var marker_2b27f48a1bfc04c4d84dd69a77f5a7b1 = L.marker(
+                [32.8378491716187, -116.780244580821],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_daea60e52fdd9434dfacca914facbd76 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2f50aaafb959fa735f40078a373e2fe = $(`<div id="html_e2f50aaafb959fa735f40078a373e2fe" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1620 ALPINE BLVD STE 110<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Long Vuong<br>     </div>`)[0];
+                popup_daea60e52fdd9434dfacca914facbd76.setContent(html_e2f50aaafb959fa735f40078a373e2fe);
+            
+        
+
+        marker_2b27f48a1bfc04c4d84dd69a77f5a7b1.bindPopup(popup_daea60e52fdd9434dfacca914facbd76)
+        ;
+
+        
+    
+    
+            var marker_1e8e5a1a79539c4692468082780ca139 = L.marker(
+                [33.017619934124, -117.075939590717],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_0a2c5f3a8050b4ca223076e06ded9c8e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28ee0847ab044dfc437445ea1db6ff49 = $(`<div id="html_28ee0847ab044dfc437445ea1db6ff49" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 16766 BERNARDO CENTER DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Young Shig Oh<br>     </div>`)[0];
+                popup_0a2c5f3a8050b4ca223076e06ded9c8e.setContent(html_28ee0847ab044dfc437445ea1db6ff49);
+            
+        
+
+        marker_1e8e5a1a79539c4692468082780ca139.bindPopup(popup_0a2c5f3a8050b4ca223076e06ded9c8e)
+        ;
+
+        
+    
+    
+            var marker_67d39fe014fd45c5ad2278b9910f12dc = L.marker(
+                [33.0184397800173, -117.07534414985],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d5aecb14916dfcc1db0e2c2c64efb05a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b89fc04078304030be69eee8188f667b = $(`<div id="html_b89fc04078304030be69eee8188f667b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 16769 BERNARDO CENTER DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Brittany Plummer<br>     </div>`)[0];
+                popup_d5aecb14916dfcc1db0e2c2c64efb05a.setContent(html_b89fc04078304030be69eee8188f667b);
+            
+        
+
+        marker_67d39fe014fd45c5ad2278b9910f12dc.bindPopup(popup_d5aecb14916dfcc1db0e2c2c64efb05a)
+        ;
+
+        
+    
+    
+            var marker_fc9abede278518462445585aeece0204 = L.marker(
+                [33.0181014411975, -117.075753596762],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_209d403811362a42301809ad1f6423b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db6b0a915e8e3bcadede86c6c62ed06c = $(`<div id="html_db6b0a915e8e3bcadede86c6c62ed06c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 16776 BERNARDO CENTER DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Kara Velez, Xuan Chang<br>     </div>`)[0];
+                popup_209d403811362a42301809ad1f6423b3.setContent(html_db6b0a915e8e3bcadede86c6c62ed06c);
+            
+        
+
+        marker_fc9abede278518462445585aeece0204.bindPopup(popup_209d403811362a42301809ad1f6423b3)
+        ;
+
+        
+    
+    
+            var marker_c45395a17be63c9560769ea5fe6d18a8 = L.marker(
+                [33.1040145134458, -117.072681247187],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_38dab20940bb6e9052663d12ef27da8f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7175d27a15765f69123e188e92172ae4 = $(`<div id="html_7175d27a15765f69123e188e92172ae4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1733 S ESCONDIDO BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Farahnaz Akhavan<br>     </div>`)[0];
+                popup_38dab20940bb6e9052663d12ef27da8f.setContent(html_7175d27a15765f69123e188e92172ae4);
+            
+        
+
+        marker_c45395a17be63c9560769ea5fe6d18a8.bindPopup(popup_38dab20940bb6e9052663d12ef27da8f)
+        ;
+
+        
+    
+    
+            var marker_7b6e31a2b8adf20db0722d4b6a6ad135 = L.marker(
+                [33.1866211477113, -117.280105806746],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c367380aa473e16bd6239dd130ede9f0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d55bbc84aeff6513a83d7d573334c43 = $(`<div id="html_5d55bbc84aeff6513a83d7d573334c43" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1830 HACIENDA DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yuelan Chen<br>     </div>`)[0];
+                popup_c367380aa473e16bd6239dd130ede9f0.setContent(html_5d55bbc84aeff6513a83d7d573334c43);
+            
+        
+
+        marker_7b6e31a2b8adf20db0722d4b6a6ad135.bindPopup(popup_c367380aa473e16bd6239dd130ede9f0)
+        ;
+
+        
+    
+    
+            var marker_ad3264500ab5a8ff0ce94e7a2503a03f = L.marker(
+                [33.0458715, -117.283791647177],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_06a70d706811947f854a8b09e29cbc0d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4087b7fddf8962418f80447b459a55ac = $(`<div id="html_4087b7fddf8962418f80447b459a55ac" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 187 CALLE MAGDALENA<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Greta Goforth<br>     </div>`)[0];
+                popup_06a70d706811947f854a8b09e29cbc0d.setContent(html_4087b7fddf8962418f80447b459a55ac);
+            
+        
+
+        marker_ad3264500ab5a8ff0ce94e7a2503a03f.bindPopup(popup_06a70d706811947f854a8b09e29cbc0d)
+        ;
+
+        
+    
+    
+            var marker_8dd2c7f2ce6f886cdda33c2e21940938 = L.marker(
+                [33.1216066852818, -117.289068331412],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c1a161959ab081b655a022756270fa1f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_71d5733297703be41f65f260ab942e00 = $(`<div id="html_71d5733297703be41f65f260ab942e00" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1902 WRIGHT PL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Claire Han<br>     </div>`)[0];
+                popup_c1a161959ab081b655a022756270fa1f.setContent(html_71d5733297703be41f65f260ab942e00);
+            
+        
+
+        marker_8dd2c7f2ce6f886cdda33c2e21940938.bindPopup(popup_c1a161959ab081b655a022756270fa1f)
+        ;
+
+        
+    
+    
+            var marker_cc4fa309ca89731e8771ab4a561157e0 = L.marker(
+                [33.193536124675, -117.356368014888],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_9d9e0352b8c0117e1215fbdc37ec6596 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_db96c20cf40f8dd9df63280f17a0f82d = $(`<div id="html_db96c20cf40f8dd9df63280f17a0f82d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1906 OCEANSIDE BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Kwangmyung Choo<br>     </div>`)[0];
+                popup_9d9e0352b8c0117e1215fbdc37ec6596.setContent(html_db96c20cf40f8dd9df63280f17a0f82d);
+            
+        
+
+        marker_cc4fa309ca89731e8771ab4a561157e0.bindPopup(popup_9d9e0352b8c0117e1215fbdc37ec6596)
+        ;
+
+        
+    
+    
+            var marker_b460a5e862c778a5ade7520010e671a1 = L.marker(
+                [32.7254547043014, -117.084860394333],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c7a443cec311a39b83684a20e1ec5e7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_efbdb32d774917920ff0bd253699a43a = $(`<div id="html_efbdb32d774917920ff0bd253699a43a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1913 EUCLID AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Rebecca Caliri<br>     </div>`)[0];
+                popup_c7a443cec311a39b83684a20e1ec5e7a.setContent(html_efbdb32d774917920ff0bd253699a43a);
+            
+        
+
+        marker_b460a5e862c778a5ade7520010e671a1.bindPopup(popup_c7a443cec311a39b83684a20e1ec5e7a)
+        ;
+
+        
+    
+    
+            var marker_20b5e8d0aab6c883484aced8b6b4f314 = L.marker(
+                [32.7258377601997, -117.130221721363],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_1b01eecb3f01ac9fcef7111dffebfe58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ea1ec257897b4e4d3fcce50c4641ab21 = $(`<div id="html_ea1ec257897b4e4d3fcce50c4641ab21" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1916 30TH ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Helena Choe<br>     </div>`)[0];
+                popup_1b01eecb3f01ac9fcef7111dffebfe58.setContent(html_ea1ec257897b4e4d3fcce50c4641ab21);
+            
+        
+
+        marker_20b5e8d0aab6c883484aced8b6b4f314.bindPopup(popup_1b01eecb3f01ac9fcef7111dffebfe58)
+        ;
+
+        
+    
+    
+            var marker_0d4d0730742a7b4b328ecc1a0031f818 = L.marker(
+                [32.7991080506379, -117.234137627219],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_08137878dd8e885f785cc3c5bd5c1daa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5cc788bd72c515b4009f650886cd5424 = $(`<div id="html_5cc788bd72c515b4009f650886cd5424" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 1919 GRAND AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Celia Tom<br>     </div>`)[0];
+                popup_08137878dd8e885f785cc3c5bd5c1daa.setContent(html_5cc788bd72c515b4009f650886cd5424);
+            
+        
+
+        marker_0d4d0730742a7b4b328ecc1a0031f818.bindPopup(popup_08137878dd8e885f785cc3c5bd5c1daa)
+        ;
+
+        
+    
+    
+            var marker_9303992d4b26fad02d251c7059d74505 = L.marker(
+                [32.7537974982397, -117.165829840412],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_48dfa8c7c479a8ba34a118796d220da7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2ef37e972023ce57cdea1d1289f5d307 = $(`<div id="html_2ef37e972023ce57cdea1d1289f5d307" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 200 W ARBOR DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jacqueline Arellano, Fides Julian, Estela Reyes, Steven Murray, Dong Ji, Leng Tang-Ritchie, Douglas Burr<br>     </div>`)[0];
+                popup_48dfa8c7c479a8ba34a118796d220da7.setContent(html_2ef37e972023ce57cdea1d1289f5d307);
+            
+        
+
+        marker_9303992d4b26fad02d251c7059d74505.bindPopup(popup_48dfa8c7c479a8ba34a118796d220da7)
+        ;
+
+        
+    
+    
+            var marker_c150115a63b120dbc05636af35d2f12e = L.marker(
+                [33.18934067556, -117.328036827485],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_7565d9e4adcdd11ba1d87de0ca29572a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fef14565014226b4999ce551f143fe82 = $(`<div id="html_fef14565014226b4999ce551f143fe82" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2124 S EL CAMINO REAL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Alex Stampbach<br>     </div>`)[0];
+                popup_7565d9e4adcdd11ba1d87de0ca29572a.setContent(html_fef14565014226b4999ce551f143fe82);
+            
+        
+
+        marker_c150115a63b120dbc05636af35d2f12e.bindPopup(popup_7565d9e4adcdd11ba1d87de0ca29572a)
+        ;
+
+        
+    
+    
+            var marker_18392723e5406eddeedba0b3de0cfd4d = L.marker(
+                [32.8035873987796, -116.993078689924],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_feddc72a2c36e60b925eb05635c03cf0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b26d4a3752773855ea51d886b9dd2499 = $(`<div id="html_b26d4a3752773855ea51d886b9dd2499" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2160 FLETCHER PKWY<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Andrea Beth Damsky<br>     </div>`)[0];
+                popup_feddc72a2c36e60b925eb05635c03cf0.setContent(html_b26d4a3752773855ea51d886b9dd2499);
+            
+        
+
+        marker_18392723e5406eddeedba0b3de0cfd4d.bindPopup(popup_feddc72a2c36e60b925eb05635c03cf0)
+        ;
+
+        
+    
+    
+            var marker_924735ae2d8063cf38d2507c4a9f933a = L.marker(
+                [32.8021757447623, -117.230280837873],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3f6a40575a07bed601efb9945d70379c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9d91ce8efd09541e4fecc0ac5b2232f = $(`<div id="html_d9d91ce8efd09541e4fecc0ac5b2232f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2180 GARNET AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Atsushi Kanomata<br>     </div>`)[0];
+                popup_3f6a40575a07bed601efb9945d70379c.setContent(html_d9d91ce8efd09541e4fecc0ac5b2232f);
+            
+        
+
+        marker_924735ae2d8063cf38d2507c4a9f933a.bindPopup(popup_3f6a40575a07bed601efb9945d70379c)
+        ;
+
+        
+    
+    
+            var marker_3f2ac143b7dd53c7331920debede767e = L.marker(
+                [32.8354084988428, -116.764860751119],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_e0b67a955d9fc8233a39d4435832beb7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79f0e4102ce635744d4443dfe1506691 = $(`<div id="html_79f0e4102ce635744d4443dfe1506691" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2271 ALPINE BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Mary Hills<br>     </div>`)[0];
+                popup_e0b67a955d9fc8233a39d4435832beb7.setContent(html_79f0e4102ce635744d4443dfe1506691);
+            
+        
+
+        marker_3f2ac143b7dd53c7331920debede767e.bindPopup(popup_e0b67a955d9fc8233a39d4435832beb7)
+        ;
+
+        
+    
+    
+            var marker_25f9b842b70aa6d508c953342e079bee = L.marker(
+                [32.9939741161299, -117.27286143423],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_1ae05e1360819cf78759d6d5dfcc7be6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bdb6d084abd6efa1d152d2f649515af = $(`<div id="html_0bdb6d084abd6efa1d152d2f649515af" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 234 N ACACIA AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Katerina Tsoucalas<br>     </div>`)[0];
+                popup_1ae05e1360819cf78759d6d5dfcc7be6.setContent(html_0bdb6d084abd6efa1d152d2f649515af);
+            
+        
+
+        marker_25f9b842b70aa6d508c953342e079bee.bindPopup(popup_1ae05e1360819cf78759d6d5dfcc7be6)
+        ;
+
+        
+    
+    
+            var marker_72b23391f9c44c405b68c5ebfcd7d620 = L.marker(
+                [32.8033677640713, -116.996944120578],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_34957e803dcdc96ae469c4a1191d184c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c7bb814f9413a9bb8c519d3824f6d41 = $(`<div id="html_7c7bb814f9413a9bb8c519d3824f6d41" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2363 NEEDHAM RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Alexiss Larowe<br>     </div>`)[0];
+                popup_34957e803dcdc96ae469c4a1191d184c.setContent(html_7c7bb814f9413a9bb8c519d3824f6d41);
+            
+        
+
+        marker_72b23391f9c44c405b68c5ebfcd7d620.bindPopup(popup_34957e803dcdc96ae469c4a1191d184c)
+        ;
+
+        
+    
+    
+            var marker_2cbf456adcfac80fc86ceec7ea7489f9 = L.marker(
+                [33.1832771373343, -117.335730622221],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_7809b12856e45b086d9abf4e6f1c5396 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d0a5f154d8df455980a82c04e011891 = $(`<div id="html_4d0a5f154d8df455980a82c04e011891" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2424 VISTA WAY<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jennifer Allen<br>     </div>`)[0];
+                popup_7809b12856e45b086d9abf4e6f1c5396.setContent(html_4d0a5f154d8df455980a82c04e011891);
+            
+        
+
+        marker_2cbf456adcfac80fc86ceec7ea7489f9.bindPopup(popup_7809b12856e45b086d9abf4e6f1c5396)
+        ;
+
+        
+    
+    
+            var marker_cc3a4bca899cfb56ffd83d1d10afeda9 = L.marker(
+                [32.7518085339893, -117.19537281655],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f79621fd22432dd473cf0588c2fd80fc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e512827283d43e4094cefe00ef5a893a = $(`<div id="html_e512827283d43e4094cefe00ef5a893a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2481 CONGRESS ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Wendi Miyashiro<br>     </div>`)[0];
+                popup_f79621fd22432dd473cf0588c2fd80fc.setContent(html_e512827283d43e4094cefe00ef5a893a);
+            
+        
+
+        marker_cc3a4bca899cfb56ffd83d1d10afeda9.bindPopup(popup_f79621fd22432dd473cf0588c2fd80fc)
+        ;
+
+        
+    
+    
+            var marker_6965baed843aed2da1f55ffb6f7ebf30 = L.marker(
+                [32.7949195300942, -116.959374],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_34566729003bba17174820e4b8f9017e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6aecedc59c2f73530cd544038a2c090a = $(`<div id="html_6aecedc59c2f73530cd544038a2c090a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 251 E MAIN ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Lisa Jeanne Potyk<br>     </div>`)[0];
+                popup_34566729003bba17174820e4b8f9017e.setContent(html_6aecedc59c2f73530cd544038a2c090a);
+            
+        
+
+        marker_6965baed843aed2da1f55ffb6f7ebf30.bindPopup(popup_34566729003bba17174820e4b8f9017e)
+        ;
+
+        
+    
+    
+            var marker_a3821c5c6dd87614579f8e0c94ab4fa9 = L.marker(
+                [32.76907637975, -117.137891792928],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_39276cf7e49c71669a9aa9159577f21a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32d2e76daf344d75feb2e6613a876f0d = $(`<div id="html_32d2e76daf344d75feb2e6613a876f0d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2515 CAMINO DEL RIO S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Michael Mendez<br>     </div>`)[0];
+                popup_39276cf7e49c71669a9aa9159577f21a.setContent(html_32d2e76daf344d75feb2e6613a876f0d);
+            
+        
+
+        marker_a3821c5c6dd87614579f8e0c94ab4fa9.bindPopup(popup_39276cf7e49c71669a9aa9159577f21a)
+        ;
+
+        
+    
+    
+            var marker_675fb8abfc0d23251c9cfebc0c7e16c3 = L.marker(
+                [32.769164744656, -117.137773973053],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3fc692f7dbafbff15d39d18020066ac0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22264296c9e907b4cd7e3faede27ad83 = $(`<div id="html_22264296c9e907b4cd7e3faede27ad83" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2525 CAMINO DEL RIO S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jewel Hayes, Maria-Cristina Ramos<br>     </div>`)[0];
+                popup_3fc692f7dbafbff15d39d18020066ac0.setContent(html_22264296c9e907b4cd7e3faede27ad83);
+            
+        
+
+        marker_675fb8abfc0d23251c9cfebc0c7e16c3.bindPopup(popup_3fc692f7dbafbff15d39d18020066ac0)
+        ;
+
+        
+    
+    
+            var marker_c22c2287bb33a28c3c88f1076ce9beea = L.marker(
+                [33.130550722626, -117.089547569389],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_2c2c4ad26de49bd2f95129541b2827c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66d47fe437050cad61f1a42c54ca3861 = $(`<div id="html_66d47fe437050cad61f1a42c54ca3861" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 260 W CREST ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Kiet Tran<br>     </div>`)[0];
+                popup_2c2c4ad26de49bd2f95129541b2827c6.setContent(html_66d47fe437050cad61f1a42c54ca3861);
+            
+        
+
+        marker_c22c2287bb33a28c3c88f1076ce9beea.bindPopup(popup_2c2c4ad26de49bd2f95129541b2827c6)
+        ;
+
+        
+    
+    
+            var marker_2ea4fdc602e150f113a1a68c91b63072 = L.marker(
+                [32.6452447408334, -117.079744854338],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ad47759be4bccc96a0d661eb3d2f084f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc95b2b16816f11372b50e20f827e56d = $(`<div id="html_bc95b2b16816f11372b50e20f827e56d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 265 E ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Michael Mendez<br>     </div>`)[0];
+                popup_ad47759be4bccc96a0d661eb3d2f084f.setContent(html_bc95b2b16816f11372b50e20f827e56d);
+            
+        
+
+        marker_2ea4fdc602e150f113a1a68c91b63072.bindPopup(popup_ad47759be4bccc96a0d661eb3d2f084f)
+        ;
+
+        
+    
+    
+            var marker_07293c99c30f399ade5c67d9c257d85e = L.marker(
+                [32.7699257515622, -117.134909457076],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a290c0e000491f4d7bd91b2543f1f0f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5d226aaab1944f2cbc98cf040a57d4f = $(`<div id="html_d5d226aaab1944f2cbc98cf040a57d4f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2727 CAMINO DEL RIO S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Lan Quach, Sheri Dang<br>     </div>`)[0];
+                popup_a290c0e000491f4d7bd91b2543f1f0f7.setContent(html_d5d226aaab1944f2cbc98cf040a57d4f);
+            
+        
+
+        marker_07293c99c30f399ade5c67d9c257d85e.bindPopup(popup_a290c0e000491f4d7bd91b2543f1f0f7)
+        ;
+
+        
+    
+    
+            var marker_f1ca8b5e901d3383f0554b4247d39bee = L.marker(
+                [33.1384159218676, -117.160210840047],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c14bf0a692f033b54174c04bd126d8e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6faad7a5dcae3f73b5ab5a8e29b7a1ba = $(`<div id="html_6faad7a5dcae3f73b5ab5a8e29b7a1ba" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 277 RANCHEROS DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jae Jin Son<br>     </div>`)[0];
+                popup_c14bf0a692f033b54174c04bd126d8e4.setContent(html_6faad7a5dcae3f73b5ab5a8e29b7a1ba);
+            
+        
+
+        marker_f1ca8b5e901d3383f0554b4247d39bee.bindPopup(popup_c14bf0a692f033b54174c04bd126d8e4)
+        ;
+
+        
+    
+    
+            var marker_b7ca5acbfac51adee1ae9cb58dac5ecf = L.marker(
+                [32.762896279791, -117.132445650153],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_462b3d28ead136823f17e3ec8373b3b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_24bf3cac0cc5ed649ae5e654379e7813 = $(`<div id="html_24bf3cac0cc5ed649ae5e654379e7813" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2852 ADAMS AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Fawsi Murra, Julie Laffen<br>     </div>`)[0];
+                popup_462b3d28ead136823f17e3ec8373b3b4.setContent(html_24bf3cac0cc5ed649ae5e654379e7813);
+            
+        
+
+        marker_b7ca5acbfac51adee1ae9cb58dac5ecf.bindPopup(popup_462b3d28ead136823f17e3ec8373b3b4)
+        ;
+
+        
+    
+    
+            var marker_99f416895d61d6b842c97eeac1e6103a = L.marker(
+                [32.7354278309437, -117.160398613692],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d586706d949ba0b559f85c0e416ce9e3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44b2b56094d4b97d5c4dc523461dd3a4 = $(`<div id="html_44b2b56094d4b97d5c4dc523461dd3a4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2870 5TH AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Carolyn Smyth<br>     </div>`)[0];
+                popup_d586706d949ba0b559f85c0e416ce9e3.setContent(html_44b2b56094d4b97d5c4dc523461dd3a4);
+            
+        
+
+        marker_99f416895d61d6b842c97eeac1e6103a.bindPopup(popup_d586706d949ba0b559f85c0e416ce9e3)
+        ;
+
+        
+    
+    
+            var marker_fe83ae93d33377da9f6c5ca585085918 = L.marker(
+                [32.7572157043014, -117.13177889297],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_4ddc6664102feee42d4d1551a12a8b83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_525eb70e8b49209e554552ed5cdce595 = $(`<div id="html_525eb70e8b49209e554552ed5cdce595" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2883 MEADE AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Farahnaz Akhavan<br>     </div>`)[0];
+                popup_4ddc6664102feee42d4d1551a12a8b83.setContent(html_525eb70e8b49209e554552ed5cdce595);
+            
+        
+
+        marker_fe83ae93d33377da9f6c5ca585085918.bindPopup(popup_4ddc6664102feee42d4d1551a12a8b83)
+        ;
+
+        
+    
+    
+            var marker_91f70b74219ce7061e009940140f6b44 = L.marker(
+                [33.165457508801, -117.34270382097],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_4078834b862c9d99dfe4ef5010ef6264 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b18e4dad612d52bf8c859d8a340ae552 = $(`<div id="html_b18e4dad612d52bf8c859d8a340ae552" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 2890 PIO PICO DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yvonne Scarlett, Ayanna Cobb<br>     </div>`)[0];
+                popup_4078834b862c9d99dfe4ef5010ef6264.setContent(html_b18e4dad612d52bf8c859d8a340ae552);
+            
+        
+
+        marker_91f70b74219ce7061e009940140f6b44.bindPopup(popup_4078834b862c9d99dfe4ef5010ef6264)
+        ;
+
+        
+    
+    
+            var marker_853ae822d60d1c464a2d87bbfc52960d = L.marker(
+                [32.6344598501069, -117.076918442957],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_92b4e23a546306a8af89c940a620ba0d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b84eec93a89d383d412ba08527f9ff2 = $(`<div id="html_8b84eec93a89d383d412ba08527f9ff2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 296 H ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jae Jin Son<br>     </div>`)[0];
+                popup_92b4e23a546306a8af89c940a620ba0d.setContent(html_8b84eec93a89d383d412ba08527f9ff2);
+            
+        
+
+        marker_853ae822d60d1c464a2d87bbfc52960d.bindPopup(popup_92b4e23a546306a8af89c940a620ba0d)
+        ;
+
+        
+    
+    
+            var marker_52a83f2806c88991b3cd04a12fdbe715 = L.marker(
+                [32.6344759595762, -117.07675315793],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_fdb3ae8719d390b11bc84187f14d0278 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_15630625ae7552d40789b0fcca68cc90 = $(`<div id="html_15630625ae7552d40789b0fcca68cc90" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 296 H ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Il Ju Lee<br>     </div>`)[0];
+                popup_fdb3ae8719d390b11bc84187f14d0278.setContent(html_15630625ae7552d40789b0fcca68cc90);
+            
+        
+
+        marker_52a83f2806c88991b3cd04a12fdbe715.bindPopup(popup_fdb3ae8719d390b11bc84187f14d0278)
+        ;
+
+        
+    
+    
+            var marker_fb70b06ef4afa2baf3a923dcab62d785 = L.marker(
+                [32.8033264077256, -117.215296938271],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_88e83d38b4144b8199848cb5b2f7ba84 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39dbacab6259c06bc2c9f892f1a0feca = $(`<div id="html_39dbacab6259c06bc2c9f892f1a0feca" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3023 BUNKER HILL ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Minchen Wang, Enid Rose Thomas<br>     </div>`)[0];
+                popup_88e83d38b4144b8199848cb5b2f7ba84.setContent(html_39dbacab6259c06bc2c9f892f1a0feca);
+            
+        
+
+        marker_fb70b06ef4afa2baf3a923dcab62d785.bindPopup(popup_88e83d38b4144b8199848cb5b2f7ba84)
+        ;
+
+        
+    
+    
+            var marker_641909957a4e7c0e5c286bc0041273b3 = L.marker(
+                [32.7370242790809, -117.160271385125],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_7f8cf9cc21e0574707b062dadfd732eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89e21c94a3771df2a22547288fcda9c6 = $(`<div id="html_89e21c94a3771df2a22547288fcda9c6" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3033 5TH AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Darcy DiVanterra<br>     </div>`)[0];
+                popup_7f8cf9cc21e0574707b062dadfd732eb.setContent(html_89e21c94a3771df2a22547288fcda9c6);
+            
+        
+
+        marker_641909957a4e7c0e5c286bc0041273b3.bindPopup(popup_7f8cf9cc21e0574707b062dadfd732eb)
+        ;
+
+        
+    
+    
+            var marker_1f500023f0661c6fca9a03fa432e7f0b = L.marker(
+                [32.7474932956986, -117.127494464875],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b7fe7de0c60f8efd9784ed24ea91ecae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_59ea72d43b1cadfac9182d6a23174930 = $(`<div id="html_59ea72d43b1cadfac9182d6a23174930" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3080 N PARK WAY<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Namrata Sakya, William Schlesinger<br>     </div>`)[0];
+                popup_b7fe7de0c60f8efd9784ed24ea91ecae.setContent(html_59ea72d43b1cadfac9182d6a23174930);
+            
+        
+
+        marker_1f500023f0661c6fca9a03fa432e7f0b.bindPopup(popup_b7fe7de0c60f8efd9784ed24ea91ecae)
+        ;
+
+        
+    
+    
+            var marker_cd8b6a37391cc714ea2aada7d386f10d = L.marker(
+                [33.1924899281262, -117.376633216747],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_79b8190c8e9eeb272ece2c8886402cf8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c0527f0e90c1c36a709e8d3771d72e14 = $(`<div id="html_c0527f0e90c1c36a709e8d3771d72e14" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 310 S COAST HWY<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Nancy Stevenson<br>     </div>`)[0];
+                popup_79b8190c8e9eeb272ece2c8886402cf8.setContent(html_c0527f0e90c1c36a709e8d3771d72e14);
+            
+        
+
+        marker_cd8b6a37391cc714ea2aada7d386f10d.bindPopup(popup_79b8190c8e9eeb272ece2c8886402cf8)
+        ;
+
+        
+    
+    
+            var marker_7200a624536846bc3dd2ff61932ead82 = L.marker(
+                [32.792562, -116.962368504876],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_9d22840918ca33c756965407b0e52df8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87d314bde8569d54c08084c8aab0cd17 = $(`<div id="html_87d314bde8569d54c08084c8aab0cd17" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 314 S MAGNOLIA AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Lesley Custodio<br>     </div>`)[0];
+                popup_9d22840918ca33c756965407b0e52df8.setContent(html_87d314bde8569d54c08084c8aab0cd17);
+            
+        
+
+        marker_7200a624536846bc3dd2ff61932ead82.bindPopup(popup_9d22840918ca33c756965407b0e52df8)
+        ;
+
+        
+    
+    
+            var marker_710af03d147fc9c642ee064be9b5814c = L.marker(
+                [33.0543711071561, -117.261552147405],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d6f00bb5ed166ddf88cde7e6f568f75d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_afe80f95076f7f86e493876591499ee4 = $(`<div id="html_afe80f95076f7f86e493876591499ee4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 317 N EL CAMINO REAL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Ma Regina Blanca Robles<br>     </div>`)[0];
+                popup_d6f00bb5ed166ddf88cde7e6f568f75d.setContent(html_afe80f95076f7f86e493876591499ee4);
+            
+        
+
+        marker_710af03d147fc9c642ee064be9b5814c.bindPopup(popup_d6f00bb5ed166ddf88cde7e6f568f75d)
+        ;
+
+        
+    
+    
+            var marker_e35b593de1cff8ac7292e6092e6657ea = L.marker(
+                [32.7313478778638, -117.16175945698],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_006066de4e58f5dc1d89fec3b9d4336a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82d9e1c584e33478ecb5be9d55be151b = $(`<div id="html_82d9e1c584e33478ecb5be9d55be151b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 319 LAUREL ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Marianna Godes<br>     </div>`)[0];
+                popup_006066de4e58f5dc1d89fec3b9d4336a.setContent(html_82d9e1c584e33478ecb5be9d55be151b);
+            
+        
+
+        marker_e35b593de1cff8ac7292e6092e6657ea.bindPopup(popup_006066de4e58f5dc1d89fec3b9d4336a)
+        ;
+
+        
+    
+    
+            var marker_8a375b3e966a68ce8e6602226bc1a854 = L.marker(
+                [32.7633019204748, -117.124172745493],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_081733c53bcb749778e869297fd15953 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f8c4c73d2f684e083e089a656887fbc = $(`<div id="html_8f8c4c73d2f684e083e089a656887fbc" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3239 ADAMS AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Maile Helgeson, Michelle Coltart, Leda De Rose, Ryan Altman, Robin Persinger<br>     </div>`)[0];
+                popup_081733c53bcb749778e869297fd15953.setContent(html_8f8c4c73d2f684e083e089a656887fbc);
+            
+        
+
+        marker_8a375b3e966a68ce8e6602226bc1a854.bindPopup(popup_081733c53bcb749778e869297fd15953)
+        ;
+
+        
+    
+    
+            var marker_9177beefb6239d33400d4a9cc758a748 = L.marker(
+                [33.1181864254615, -117.083476691181],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c6fd34eb329b6545f7df5887e790a74b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3ebb4d8a1de65bd2482934bcd03de6b8 = $(`<div id="html_3ebb4d8a1de65bd2482934bcd03de6b8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 325 W 3RD AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Donna McAdams<br>     </div>`)[0];
+                popup_c6fd34eb329b6545f7df5887e790a74b.setContent(html_3ebb4d8a1de65bd2482934bcd03de6b8);
+            
+        
+
+        marker_9177beefb6239d33400d4a9cc758a748.bindPopup(popup_c6fd34eb329b6545f7df5887e790a74b)
+        ;
+
+        
+    
+    
+            var marker_474d01f532767a4759936c9be8af26f6 = L.marker(
+                [32.7518749051011, -117.161740199694],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_827c991c6d6009b6679c871ec4795c42 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_63613d31cd7848be5b41f8f6631704c7 = $(`<div id="html_63613d31cd7848be5b41f8f6631704c7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 330 LEWIS ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> NORIKO UEDA-LANG, KIMBERLY REYNOLDS, Jacqueline Arellano, STEVEN MURRAY, LENG TANG-RITCHIE, FIDES JULIAN, Leah Tinkham, ESTELA REYES, Douglas Burr, ERIN RASKIN, Dong Ji<br>     </div>`)[0];
+                popup_827c991c6d6009b6679c871ec4795c42.setContent(html_63613d31cd7848be5b41f8f6631704c7);
+            
+        
+
+        marker_474d01f532767a4759936c9be8af26f6.bindPopup(popup_827c991c6d6009b6679c871ec4795c42)
+        ;
+
+        
+    
+    
+            var marker_31d7d071d9c617709f2efd9fd52b2e23 = L.marker(
+                [32.7519070129037, -117.161774745869],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c0b3b5fa4c03ec63c418382330fe1a7d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3dd5562d5361529d5f9aa8bce3198833 = $(`<div id="html_3dd5562d5361529d5f9aa8bce3198833" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 330 LEWIS ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Estela Reyes, Leng Tang-Ritchie, Fides Julian, Douglas Burr, Jacqueline Arellano, Steven Murray, Dong Ji<br>     </div>`)[0];
+                popup_c0b3b5fa4c03ec63c418382330fe1a7d.setContent(html_3dd5562d5361529d5f9aa8bce3198833);
+            
+        
+
+        marker_31d7d071d9c617709f2efd9fd52b2e23.bindPopup(popup_c0b3b5fa4c03ec63c418382330fe1a7d)
+        ;
+
+        
+    
+    
+            var marker_980bf452e62efa947a9148fffe85ee61 = L.marker(
+                [32.7400546588955, -117.163154429107],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ba703891e3c0c9d426d2e58556b62933 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1475117884bd21ff9f197efd6ff2e788 = $(`<div id="html_1475117884bd21ff9f197efd6ff2e788" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3320 2ND AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Gretchen Seitz, GRETCHEN SEITZ<br>     </div>`)[0];
+                popup_ba703891e3c0c9d426d2e58556b62933.setContent(html_1475117884bd21ff9f197efd6ff2e788);
+            
+        
+
+        marker_980bf452e62efa947a9148fffe85ee61.bindPopup(popup_ba703891e3c0c9d426d2e58556b62933)
+        ;
+
+        
+    
+    
+            var marker_ea03dc25917843bf463e5781983c70ff = L.marker(
+                [32.7400845849417, -117.162283025079],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_059f515134408344d683c7b704d1a991 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3d7aaa6e16d1d82eab5088298d2697a0 = $(`<div id="html_3d7aaa6e16d1d82eab5088298d2697a0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3320 3RD AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Louella Woodhouse<br>     </div>`)[0];
+                popup_059f515134408344d683c7b704d1a991.setContent(html_3d7aaa6e16d1d82eab5088298d2697a0);
+            
+        
+
+        marker_ea03dc25917843bf463e5781983c70ff.bindPopup(popup_059f515134408344d683c7b704d1a991)
+        ;
+
+        
+    
+    
+            var marker_60becfdfa5bbe5795b969fa2ea4eaaa4 = L.marker(
+                [33.1206280392564, -117.077129850737],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d46edb5addfc89e75be5b5c06e1f8daa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a6979b1375f771fe45b8004b12f9fe1e = $(`<div id="html_a6979b1375f771fe45b8004b12f9fe1e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 333 S JUNIPER ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Michael Stubblefield<br>     </div>`)[0];
+                popup_d46edb5addfc89e75be5b5c06e1f8daa.setContent(html_a6979b1375f771fe45b8004b12f9fe1e);
+            
+        
+
+        marker_60becfdfa5bbe5795b969fa2ea4eaaa4.bindPopup(popup_d46edb5addfc89e75be5b5c06e1f8daa)
+        ;
+
+        
+    
+    
+            var marker_2e27e0d606078caad26959b7c3c1a621 = L.marker(
+                [33.1200291004541, -117.078484030975],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_65cccd05b41b3c793601363d9f8e13ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a6d30044db0c7360ca92d179fd286df6 = $(`<div id="html_a6d30044db0c7360ca92d179fd286df6" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 337 S KALMIA ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Carolyn Pole<br>     </div>`)[0];
+                popup_65cccd05b41b3c793601363d9f8e13ed.setContent(html_a6d30044db0c7360ca92d179fd286df6);
+            
+        
+
+        marker_2e27e0d606078caad26959b7c3c1a621.bindPopup(popup_65cccd05b41b3c793601363d9f8e13ed)
+        ;
+
+        
+    
+    
+            var marker_51afc44b2838cde4753ae0335dc20593 = L.marker(
+                [32.6383151295066, -117.083354279679],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b2b31a6e1f8d2304a59dfb64318188f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9db9d0793f19024e3b459e72f1c05fc4 = $(`<div id="html_9db9d0793f19024e3b459e72f1c05fc4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 340 4TH AVE STE 19<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> KHANH LAM<br>     </div>`)[0];
+                popup_b2b31a6e1f8d2304a59dfb64318188f7.setContent(html_9db9d0793f19024e3b459e72f1c05fc4);
+            
+        
+
+        marker_51afc44b2838cde4753ae0335dc20593.bindPopup(popup_b2b31a6e1f8d2304a59dfb64318188f7)
+        ;
+
+        
+    
+    
+            var marker_91f9e3319d4a50c2153a9908f02cfd61 = L.marker(
+                [32.7506425910142, -117.212517646967],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_03c34362733c19d6ddf7e6d1ba7b296e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87ef1830a3d85e1529077088fd401d7b = $(`<div id="html_87ef1830a3d85e1529077088fd401d7b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3434 MIDWAY DR STE 2001<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> KHANH LAM<br>     </div>`)[0];
+                popup_03c34362733c19d6ddf7e6d1ba7b296e.setContent(html_87ef1830a3d85e1529077088fd401d7b);
+            
+        
+
+        marker_91f9e3319d4a50c2153a9908f02cfd61.bindPopup(popup_03c34362733c19d6ddf7e6d1ba7b296e)
+        ;
+
+        
+    
+    
+            var marker_66d835545b6b2050fd657e596adf21dd = L.marker(
+                [32.7775638556431, -117.118513453084],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a86a8a3ac400d7f737d58ece44740be1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29cd0785bf452832babed967d656cc27 = $(`<div id="html_29cd0785bf452832babed967d656cc27" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3505 CAMINO DEL RIO S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Thomas Noonan<br>     </div>`)[0];
+                popup_a86a8a3ac400d7f737d58ece44740be1.setContent(html_29cd0785bf452832babed967d656cc27);
+            
+        
+
+        marker_66d835545b6b2050fd657e596adf21dd.bindPopup(popup_a86a8a3ac400d7f737d58ece44740be1)
+        ;
+
+        
+    
+    
+            var marker_7fa044611aca260761d9aa30610a5123 = L.marker(
+                [32.742936, -117.130117959086],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5c47bf33d4978f42de8e9b4265e94af6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9764ed8afdb395935c5ed8823c4da282 = $(`<div id="html_9764ed8afdb395935c5ed8823c4da282" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3544 30TH ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> RICHARD MACGURN<br>     </div>`)[0];
+                popup_5c47bf33d4978f42de8e9b4265e94af6.setContent(html_9764ed8afdb395935c5ed8823c4da282);
+            
+        
+
+        marker_7fa044611aca260761d9aa30610a5123.bindPopup(popup_5c47bf33d4978f42de8e9b4265e94af6)
+        ;
+
+        
+    
+    
+            var marker_94f52ca10e3b896215f41fbce3767079 = L.marker(
+                [32.7779871969679, -117.117121067614],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_cc5953e6d5c08aad1d545a65462d9da1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9eb6cd58b01a3ab02b5892afe473bebd = $(`<div id="html_9eb6cd58b01a3ab02b5892afe473bebd" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3547 CAMINO DEL RIO S<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Mario Mancini<br>     </div>`)[0];
+                popup_cc5953e6d5c08aad1d545a65462d9da1.setContent(html_9eb6cd58b01a3ab02b5892afe473bebd);
+            
+        
+
+        marker_94f52ca10e3b896215f41fbce3767079.bindPopup(popup_cc5953e6d5c08aad1d545a65462d9da1)
+        ;
+
+        
+    
+    
+            var marker_213e9f8d1ea10663a13083a7c2a735fd = L.marker(
+                [32.806862036991, -117.201123658648],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_409474534f3f202999c82de0de8e4c7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7567df145653ef71939f46b2df4dc3f4 = $(`<div id="html_7567df145653ef71939f46b2df4dc3f4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3650 CLAIREMONT DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Susan Foley<br>     </div>`)[0];
+                popup_409474534f3f202999c82de0de8e4c7b.setContent(html_7567df145653ef71939f46b2df4dc3f4);
+            
+        
+
+        marker_213e9f8d1ea10663a13083a7c2a735fd.bindPopup(popup_409474534f3f202999c82de0de8e4c7b)
+        ;
+
+        
+    
+    
+            var marker_f24a1a0aa140993d328312a97dbe12f2 = L.marker(
+                [33.2269979987473, -117.328236553675],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_6636974f853ab8a78266d49e9f4f0e10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e1d3740d895cac5840f84c6de2107d5b = $(`<div id="html_e1d3740d895cac5840f84c6de2107d5b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 3861 MISSION AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Mijoung Choi<br>     </div>`)[0];
+                popup_6636974f853ab8a78266d49e9f4f0e10.setContent(html_e1d3740d895cac5840f84c6de2107d5b);
+            
+        
+
+        marker_f24a1a0aa140993d328312a97dbe12f2.bindPopup(popup_6636974f853ab8a78266d49e9f4f0e10)
+        ;
+
+        
+    
+    
+            var marker_ead5ea4a1d0bd497cb6c478f38508158 = L.marker(
+                [33.1902145432842, -117.25382461824],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_6a4befe93bed0a544199d0a4c3dc4526 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7a07b3ab88cf7d01ce71a3676d2f93a = $(`<div id="html_f7a07b3ab88cf7d01ce71a3676d2f93a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 410 S MELROSE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Seonghyeon Park<br>     </div>`)[0];
+                popup_6a4befe93bed0a544199d0a4c3dc4526.setContent(html_f7a07b3ab88cf7d01ce71a3676d2f93a);
+            
+        
+
+        marker_ead5ea4a1d0bd497cb6c478f38508158.bindPopup(popup_6a4befe93bed0a544199d0a4c3dc4526)
+        ;
+
+        
+    
+    
+            var marker_d56bb0205067f8c5b282ad46c668857b = L.marker(
+                [33.1292461024007, -117.071650946188],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_4523a42d6d03455491c9beced96eb751 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3e5d41fc1ccd94717dbf20dd2fbfe544 = $(`<div id="html_3e5d41fc1ccd94717dbf20dd2fbfe544" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 425 N DATE ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Min Joo Kim<br>     </div>`)[0];
+                popup_4523a42d6d03455491c9beced96eb751.setContent(html_3e5d41fc1ccd94717dbf20dd2fbfe544);
+            
+        
+
+        marker_d56bb0205067f8c5b282ad46c668857b.bindPopup(popup_4523a42d6d03455491c9beced96eb751)
+        ;
+
+        
+    
+    
+            var marker_cad1ecb957a0a4cabc5551846a0ef6b6 = L.marker(
+                [32.7916032670679, -117.203426596936],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3b3f6054fc9aa7b9f89385c47c96279e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ebe44aaa785332bb97a9345dc6e1535f = $(`<div id="html_ebe44aaa785332bb97a9345dc6e1535f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4295 GESNER ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Tai-Nan Wang<br>     </div>`)[0];
+                popup_3b3f6054fc9aa7b9f89385c47c96279e.setContent(html_ebe44aaa785332bb97a9345dc6e1535f);
+            
+        
+
+        marker_cad1ecb957a0a4cabc5551846a0ef6b6.bindPopup(popup_3b3f6054fc9aa7b9f89385c47c96279e)
+        ;
+
+        
+    
+    
+            var marker_95595955504d09b0c9887649e06db133 = L.marker(
+                [32.9864046831366, -117.269199128401],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a355c088d6c2ad08fddf081d1c6d724a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e14e70b11e4e6146ecd5250f27153e18 = $(`<div id="html_e14e70b11e4e6146ecd5250f27153e18" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 444 S CEDROS AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Brigitte Sacco, Emily Wells<br>     </div>`)[0];
+                popup_a355c088d6c2ad08fddf081d1c6d724a.setContent(html_e14e70b11e4e6146ecd5250f27153e18);
+            
+        
+
+        marker_95595955504d09b0c9887649e06db133.bindPopup(popup_a355c088d6c2ad08fddf081d1c6d724a)
+        ;
+
+        
+    
+    
+            var marker_99939beae3132d22388a5d0ff8d64a30 = L.marker(
+                [32.7849447043014, -117.098385424154],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b0bd8e401406aa7d6fa73548e99826fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa645e0d01055500dc0972f1a5e760d8 = $(`<div id="html_fa645e0d01055500dc0972f1a5e760d8" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4455 TWAIN AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Evelyn Ohashi, Gary Tran<br>     </div>`)[0];
+                popup_b0bd8e401406aa7d6fa73548e99826fb.setContent(html_fa645e0d01055500dc0972f1a5e760d8);
+            
+        
+
+        marker_99939beae3132d22388a5d0ff8d64a30.bindPopup(popup_b0bd8e401406aa7d6fa73548e99826fb)
+        ;
+
+        
+    
+    
+            var marker_69202ddf74ed5ce1d9937a68e25f4550 = L.marker(
+                [32.6616409879939, -117.030411864852],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_273a3dab45c63977d2b1ecef7800b217 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9338fa6a9b3ab507aa13591e80d5883 = $(`<div id="html_e9338fa6a9b3ab507aa13591e80d5883" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4514 BONITA RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Rhiannon Knapp, Tierra Wheatley, Min Joong Kim, Chutima Zhao, Arianna Lopez, Barbara Vallarta<br>     </div>`)[0];
+                popup_273a3dab45c63977d2b1ecef7800b217.setContent(html_e9338fa6a9b3ab507aa13591e80d5883);
+            
+        
+
+        marker_69202ddf74ed5ce1d9937a68e25f4550.bindPopup(popup_273a3dab45c63977d2b1ecef7800b217)
+        ;
+
+        
+    
+    
+            var marker_d783031b6daa613fab3418208e8f4f83 = L.marker(
+                [32.761692, -117.146306967973],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_dd753b584e4dcf1d4632b25b44500996 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4dfc25ba5df9b608d6e8b027976780fa = $(`<div id="html_4dfc25ba5df9b608d6e8b027976780fa" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4638 PARK BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Sophia Chang<br>     </div>`)[0];
+                popup_dd753b584e4dcf1d4632b25b44500996.setContent(html_4dfc25ba5df9b608d6e8b027976780fa);
+            
+        
+
+        marker_d783031b6daa613fab3418208e8f4f83.bindPopup(popup_dd753b584e4dcf1d4632b25b44500996)
+        ;
+
+        
+    
+    
+            var marker_9c331102e7ac8df6bf91e6e20a3bc2b4 = L.marker(
+                [32.7995830384598, -117.252585833284],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_63a81573b257e60d0e878bb26d51c103 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_607d481d4e08a626ca58cd41487331eb = $(`<div id="html_607d481d4e08a626ca58cd41487331eb" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4666 CASS ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Sharron Szablak<br>     </div>`)[0];
+                popup_63a81573b257e60d0e878bb26d51c103.setContent(html_607d481d4e08a626ca58cd41487331eb);
+            
+        
+
+        marker_9c331102e7ac8df6bf91e6e20a3bc2b4.bindPopup(popup_63a81573b257e60d0e878bb26d51c103)
+        ;
+
+        
+    
+    
+            var marker_ed5879a112558a9702f4ee9515d6e73b = L.marker(
+                [32.7998448229269, -116.95100592071],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b3173c0fa7e03473e7f36c0798034caf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_739c545f01423c51a9399678c6c933fb = $(`<div id="html_739c545f01423c51a9399678c6c933fb" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 470 N MOLLISON AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Alexiss Larowe<br>     </div>`)[0];
+                popup_b3173c0fa7e03473e7f36c0798034caf.setContent(html_739c545f01423c51a9399678c6c933fb);
+            
+        
+
+        marker_ed5879a112558a9702f4ee9515d6e73b.bindPopup(popup_b3173c0fa7e03473e7f36c0798034caf)
+        ;
+
+        
+    
+    
+            var marker_f72a0ae6dd6e0c9ac98f7091a090a9c9 = L.marker(
+                [32.7356775775866, -117.253740730769],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_be644b676599e733ef246f8571426fed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a636627634677b7fb03c1b8b590bd314 = $(`<div id="html_a636627634677b7fb03c1b8b590bd314" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4732 POINT LOMA AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jill Suess, Danae Koolen, Katarina Lundin<br>     </div>`)[0];
+                popup_be644b676599e733ef246f8571426fed.setContent(html_a636627634677b7fb03c1b8b590bd314);
+            
+        
+
+        marker_f72a0ae6dd6e0c9ac98f7091a090a9c9.bindPopup(popup_be644b676599e733ef246f8571426fed)
+        ;
+
+        
+    
+    
+            var marker_dc9140a9336ddec0c95322319e95adcd = L.marker(
+                [32.7650750776957, -117.019097662436],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_dfc8db413773426301c3ef5c799ea1c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c4930aa84988481f8588101cceb38b5 = $(`<div id="html_0c4930aa84988481f8588101cceb38b5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4754 PALM AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Patricia Jackson, Christine Miller<br>     </div>`)[0];
+                popup_dfc8db413773426301c3ef5c799ea1c0.setContent(html_0c4930aa84988481f8588101cceb38b5);
+            
+        
+
+        marker_dc9140a9336ddec0c95322319e95adcd.bindPopup(popup_dfc8db413773426301c3ef5c799ea1c0)
+        ;
+
+        
+    
+    
+            var marker_919238949b75bfc72dd403445d51298b = L.marker(
+                [32.7463563093753, -117.248019556714],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_cf35b4b93c7a094d6d5f3a7b1ec43c3d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87fc8249b424cfe0d8aaae752b8c0c93 = $(`<div id="html_87fc8249b424cfe0d8aaae752b8c0c93" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4870 SANTA MONICA AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Melinda Williams<br>     </div>`)[0];
+                popup_cf35b4b93c7a094d6d5f3a7b1ec43c3d.setContent(html_87fc8249b424cfe0d8aaae752b8c0c93);
+            
+        
+
+        marker_919238949b75bfc72dd403445d51298b.bindPopup(popup_cf35b4b93c7a094d6d5f3a7b1ec43c3d)
+        ;
+
+        
+    
+    
+            var marker_7af6e1e7d032331bd8fbc8b071b49277 = L.marker(
+                [32.8943764162246, -117.211500142288],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_96ac86ade0e7666ab9d22cc9f940aa19 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_82da6c5833403cc2d81e97a4cf0ef406 = $(`<div id="html_82da6c5833403cc2d81e97a4cf0ef406" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 4910 DIRECTORS PL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Leng Tang-Ritchie, Jacqueline Arellano, Fides Julian, Estela Reyes, Steven Murray, Dong Ji, Douglas Burr<br>     </div>`)[0];
+                popup_96ac86ade0e7666ab9d22cc9f940aa19.setContent(html_82da6c5833403cc2d81e97a4cf0ef406);
+            
+        
+
+        marker_7af6e1e7d032331bd8fbc8b071b49277.bindPopup(popup_96ac86ade0e7666ab9d22cc9f940aa19)
+        ;
+
+        
+    
+    
+            var marker_9970a2743f56645146a39dde62dc054b = L.marker(
+                [32.6694367380051, -117.022693028714],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_9d17cd95f94f3c6f432ed0f3726f43b6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c18405a1e3d8ef1f4b2a96d38a66106a = $(`<div id="html_c18405a1e3d8ef1f4b2a96d38a66106a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5030 BONITA RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Zhouyong Piao<br>     </div>`)[0];
+                popup_9d17cd95f94f3c6f432ed0f3726f43b6.setContent(html_c18405a1e3d8ef1f4b2a96d38a66106a);
+            
+        
+
+        marker_9970a2743f56645146a39dde62dc054b.bindPopup(popup_9d17cd95f94f3c6f432ed0f3726f43b6)
+        ;
+
+        
+    
+    
+            var marker_de3d39a359c475559901de6d6987152a = L.marker(
+                [32.7647400247411, -117.160187195114],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_adddbad2b810e46a318b33c637b955d4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_275f7574232db215a3d623155d807e9d = $(`<div id="html_275f7574232db215a3d623155d807e9d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5030 CAMINO DE LA SIESTA<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Gregory Sperber<br>     </div>`)[0];
+                popup_adddbad2b810e46a318b33c637b955d4.setContent(html_275f7574232db215a3d623155d807e9d);
+            
+        
+
+        marker_de3d39a359c475559901de6d6987152a.bindPopup(popup_adddbad2b810e46a318b33c637b955d4)
+        ;
+
+        
+    
+    
+            var marker_2a0b3843a4654e4fce60da0c20815513 = L.marker(
+                [32.8188563758045, -117.183612561649],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_e4a7aaf594e070ee8708add4df4f6d62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_22430d8dd75208ec010cbe4721f488da = $(`<div id="html_22430d8dd75208ec010cbe4721f488da" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5222 BALBOA AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Robert Pontecorvo, Shaheed Abdullah<br>     </div>`)[0];
+                popup_e4a7aaf594e070ee8708add4df4f6d62.setContent(html_22430d8dd75208ec010cbe4721f488da);
+            
+        
+
+        marker_2a0b3843a4654e4fce60da0c20815513.bindPopup(popup_e4a7aaf594e070ee8708add4df4f6d62)
+        ;
+
+        
+    
+    
+            var marker_d8a65a6f13b10af72a61b2c4d6ce1eb7 = L.marker(
+                [32.7768316269452, -117.017726972424],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_875ab71a075c088c62b835dacbc04fb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b2acc96f03d81e93f015b6a45bd45282 = $(`<div id="html_b2acc96f03d81e93f015b6a45bd45282" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5360 JACKSON DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Ghassan El Khoury<br>     </div>`)[0];
+                popup_875ab71a075c088c62b835dacbc04fb8.setContent(html_b2acc96f03d81e93f015b6a45bd45282);
+            
+        
+
+        marker_d8a65a6f13b10af72a61b2c4d6ce1eb7.bindPopup(popup_875ab71a075c088c62b835dacbc04fb8)
+        ;
+
+        
+    
+    
+            var marker_8a66bfb963152fa2fdfbf861e49883a2 = L.marker(
+                [33.0468469190783, -117.28042112666],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_10f3dbfda5fcc8ab5f065c71fe55dde9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6e889c0c5b0f2705aa1925343d4dd5d = $(`<div id="html_e6e889c0c5b0f2705aa1925343d4dd5d" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 543 ENCINITAS BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Sherine Blair<br>     </div>`)[0];
+                popup_10f3dbfda5fcc8ab5f065c71fe55dde9.setContent(html_e6e889c0c5b0f2705aa1925343d4dd5d);
+            
+        
+
+        marker_8a66bfb963152fa2fdfbf861e49883a2.bindPopup(popup_10f3dbfda5fcc8ab5f065c71fe55dde9)
+        ;
+
+        
+    
+    
+            var marker_be644b33e2baaac661f27f983bd76f7d = L.marker(
+                [32.8937322915333, -117.201223613265],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_df5e9724c844ebe340ed7826e5bd4186 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e730c3356f4aa3dcb5d42cdf6f60156 = $(`<div id="html_7e730c3356f4aa3dcb5d42cdf6f60156" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5440 MOREHOUSE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Andrea Beck<br>     </div>`)[0];
+                popup_df5e9724c844ebe340ed7826e5bd4186.setContent(html_7e730c3356f4aa3dcb5d42cdf6f60156);
+            
+        
+
+        marker_be644b33e2baaac661f27f983bd76f7d.bindPopup(popup_df5e9724c844ebe340ed7826e5bd4186)
+        ;
+
+        
+    
+    
+            var marker_6621483df0cf02dcd94650f129ac42d3 = L.marker(
+                [32.6774434709018, -117.100955578921],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_34eb6a023162cc0366b84046640029e7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_14adab9c7d65692c11f4aa4a2c54761a = $(`<div id="html_14adab9c7d65692c11f4aa4a2c54761a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 550 E 8TH ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Lourdes Ortega-Ticzon<br>     </div>`)[0];
+                popup_34eb6a023162cc0366b84046640029e7.setContent(html_14adab9c7d65692c11f4aa4a2c54761a);
+            
+        
+
+        marker_6621483df0cf02dcd94650f129ac42d3.bindPopup(popup_34eb6a023162cc0366b84046640029e7)
+        ;
+
+        
+    
+    
+            var marker_cced8f9c26843d677f6c1d3733bd0a9f = L.marker(
+                [32.7585335959085, -117.074688469473],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_0242419f24adcbbd32e460060dbd19ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a53f0cc015cda5e07fcc35aaa2a6134 = $(`<div id="html_8a53f0cc015cda5e07fcc35aaa2a6134" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5602 EL CAJON BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Sharron Szablak<br>     </div>`)[0];
+                popup_0242419f24adcbbd32e460060dbd19ee.setContent(html_8a53f0cc015cda5e07fcc35aaa2a6134);
+            
+        
+
+        marker_cced8f9c26843d677f6c1d3733bd0a9f.bindPopup(popup_0242419f24adcbbd32e460060dbd19ee)
+        ;
+
+        
+    
+    
+            var marker_43f97cc037554a96003a0c5273cae361 = L.marker(
+                [32.8077482956986, -116.954946223028],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a9a7212fe0f081edfa1a5e2e63fe7d13 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c00be44db04163c47d44522c3900242 = $(`<div id="html_8c00be44db04163c47d44522c3900242" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 564 BROADWAY<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Amber Bonito<br>     </div>`)[0];
+                popup_a9a7212fe0f081edfa1a5e2e63fe7d13.setContent(html_8c00be44db04163c47d44522c3900242);
+            
+        
+
+        marker_43f97cc037554a96003a0c5273cae361.bindPopup(popup_a9a7212fe0f081edfa1a5e2e63fe7d13)
+        ;
+
+        
+    
+    
+            var marker_3a5b7d0bdf0399e2d3d850944f7dea2a = L.marker(
+                [33.1389621692406, -117.274740404329],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_77c6298450d2ef9c5fbdbb680207e95b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5fe1f1b6176438cc4514413cc6905180 = $(`<div id="html_5fe1f1b6176438cc4514413cc6905180" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5650 EL CAMINO REAL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Toshiya Kawano<br>     </div>`)[0];
+                popup_77c6298450d2ef9c5fbdbb680207e95b.setContent(html_5fe1f1b6176438cc4514413cc6905180);
+            
+        
+
+        marker_3a5b7d0bdf0399e2d3d850944f7dea2a.bindPopup(popup_77c6298450d2ef9c5fbdbb680207e95b)
+        ;
+
+        
+    
+    
+            var marker_b29e031696884c2a5958d03b524eca1f = L.marker(
+                [32.8940895100603, -117.193239593329],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5ba9dd3a08240d15e63255b9c99694fc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec8e6b8e9c975812be00a6bd2ac4f7b4 = $(`<div id="html_ec8e6b8e9c975812be00a6bd2ac4f7b4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 5830 OBERLIN DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yvonne Negron<br>     </div>`)[0];
+                popup_5ba9dd3a08240d15e63255b9c99694fc.setContent(html_ec8e6b8e9c975812be00a6bd2ac4f7b4);
+            
+        
+
+        marker_b29e031696884c2a5958d03b524eca1f.bindPopup(popup_5ba9dd3a08240d15e63255b9c99694fc)
+        ;
+
+        
+    
+    
+            var marker_b7d72cd89dfeffcf53bd82cab914df7c = L.marker(
+                [33.3801147043014, -117.245453628515],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_dad0b5c2765b6d4b9aa0344fc7b93778 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce81946fbb117de7210f23af748bbecc = $(`<div id="html_ce81946fbb117de7210f23af748bbecc" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 587 E ELDER ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Lori Stephens<br>     </div>`)[0];
+                popup_dad0b5c2765b6d4b9aa0344fc7b93778.setContent(html_ce81946fbb117de7210f23af748bbecc);
+            
+        
+
+        marker_b7d72cd89dfeffcf53bd82cab914df7c.bindPopup(popup_dad0b5c2765b6d4b9aa0344fc7b93778)
+        ;
+
+        
+    
+    
+            var marker_e3e8b26c3e3045e75ee883ef75aaf56a = L.marker(
+                [33.3801147043014, -117.24539624297],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5df0bf148af8212245e00b448ce88b91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2bbcd0315038bb6af55e2e15cad147b7 = $(`<div id="html_2bbcd0315038bb6af55e2e15cad147b7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 593 E ELDER ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Randall Wegener<br>     </div>`)[0];
+                popup_5df0bf148af8212245e00b448ce88b91.setContent(html_2bbcd0315038bb6af55e2e15cad147b7);
+            
+        
+
+        marker_e3e8b26c3e3045e75ee883ef75aaf56a.bindPopup(popup_5df0bf148af8212245e00b448ce88b91)
+        ;
+
+        
+    
+    
+            var marker_9def481dd2a9ee9a421afe00cc11e1a0 = L.marker(
+                [33.1959979049442, -117.353746945831],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b680b9ca4951fea76f6339f7ccde0848 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2329843736d20ae088c2583229fa3668 = $(`<div id="html_2329843736d20ae088c2583229fa3668" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 619 CROUCH ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Andres Gonzalez<br>     </div>`)[0];
+                popup_b680b9ca4951fea76f6339f7ccde0848.setContent(html_2329843736d20ae088c2583229fa3668);
+            
+        
+
+        marker_9def481dd2a9ee9a421afe00cc11e1a0.bindPopup(popup_b680b9ca4951fea76f6339f7ccde0848)
+        ;
+
+        
+    
+    
+            var marker_8f700c3b19fed79652f43eb586194423 = L.marker(
+                [32.8272517629856, -117.27687844288],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d086e15edd452aad5f11144488e7504b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ad1b0c7a12977a0a8e44f65748d41a87 = $(`<div id="html_ad1b0c7a12977a0a8e44f65748d41a87" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 6529 LA JOLLA BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Beata Booth<br>     </div>`)[0];
+                popup_d086e15edd452aad5f11144488e7504b.setContent(html_ad1b0c7a12977a0a8e44f65748d41a87);
+            
+        
+
+        marker_8f700c3b19fed79652f43eb586194423.bindPopup(popup_d086e15edd452aad5f11144488e7504b)
+        ;
+
+        
+    
+    
+            var marker_eef8f69fc1cb497b0c498bf38a10f832 = L.marker(
+                [32.901428059452, -117.202700366695],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_e3ba68b10fa779aba9098cdd9960004c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ee2aacb023a32f1b5e72ac7a5838b590 = $(`<div id="html_ee2aacb023a32f1b5e72ac7a5838b590" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 6540 LUSK BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Young Shig Oh<br>     </div>`)[0];
+                popup_e3ba68b10fa779aba9098cdd9960004c.setContent(html_ee2aacb023a32f1b5e72ac7a5838b590);
+            
+        
+
+        marker_eef8f69fc1cb497b0c498bf38a10f832.bindPopup(popup_e3ba68b10fa779aba9098cdd9960004c)
+        ;
+
+        
+    
+    
+            var marker_060db20d732209760ca2a56812ef7eee = L.marker(
+                [32.7933068190604, -117.09752341292],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b4e5fac1d681e277a48c2f5f14db0f0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_531bc532269e3a306c231c0420d98d2f = $(`<div id="html_531bc532269e3a306c231c0420d98d2f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 6612 MISSION GORGE RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> M David Teixeira<br>     </div>`)[0];
+                popup_b4e5fac1d681e277a48c2f5f14db0f0f.setContent(html_531bc532269e3a306c231c0420d98d2f);
+            
+        
+
+        marker_060db20d732209760ca2a56812ef7eee.bindPopup(popup_b4e5fac1d681e277a48c2f5f14db0f0f)
+        ;
+
+        
+    
+    
+            var marker_c5858ab86eb86dfce784a5bd0df81b84 = L.marker(
+                [32.7769705318948, -117.056154382246],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3da59c57b6c596e5e5fdc84e936928ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56534198a9f62870152d3f69d2831598 = $(`<div id="html_56534198a9f62870152d3f69d2831598" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 6719 ALVARADO RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Ma Regina Blanca Robles<br>     </div>`)[0];
+                popup_3da59c57b6c596e5e5fdc84e936928ed.setContent(html_56534198a9f62870152d3f69d2831598);
+            
+        
+
+        marker_c5858ab86eb86dfce784a5bd0df81b84.bindPopup(popup_3da59c57b6c596e5e5fdc84e936928ed)
+        ;
+
+        
+    
+    
+            var marker_ac8fc040bea4ab2182c1517bce82b2a0 = L.marker(
+                [32.6287079275493, -117.075010753852],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_edbe92e9229f793b2f779d266dd9c9ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c86360e5846afb38d1bab21381f48056 = $(`<div id="html_c86360e5846afb38d1bab21381f48056" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 678 3RD AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Wenonah Wilcox<br>     </div>`)[0];
+                popup_edbe92e9229f793b2f779d266dd9c9ca.setContent(html_c86360e5846afb38d1bab21381f48056);
+            
+        
+
+        marker_ac8fc040bea4ab2182c1517bce82b2a0.bindPopup(popup_edbe92e9229f793b2f779d266dd9c9ca)
+        ;
+
+        
+    
+    
+            var marker_0db7100aee3f18b3129c2e4e53180278 = L.marker(
+                [32.7872545573029, -117.169802761008],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ac10d27fdb3258d0072e96182a855872 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6616836297b488f30cd061f279af3c1 = $(`<div id="html_b6616836297b488f30cd061f279af3c1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 6973 LINDA VISTA RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Kevin Craft<br>     </div>`)[0];
+                popup_ac10d27fdb3258d0072e96182a855872.setContent(html_b6616836297b488f30cd061f279af3c1);
+            
+        
+
+        marker_0db7100aee3f18b3129c2e4e53180278.bindPopup(popup_ac10d27fdb3258d0072e96182a855872)
+        ;
+
+        
+    
+    
+            var marker_85f55affec348254363e648b070679c9 = L.marker(
+                [33.1960356896822, -117.377064514831],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_6af53698eddbe7159ac6b906f51a5c89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a448b02b28909021951529914d60262e = $(`<div id="html_a448b02b28909021951529914d60262e" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 701 SEAGAZE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Daniel Haun, Gregory Lipton<br>     </div>`)[0];
+                popup_6af53698eddbe7159ac6b906f51a5c89.setContent(html_a448b02b28909021951529914d60262e);
+            
+        
+
+        marker_85f55affec348254363e648b070679c9.bindPopup(popup_6af53698eddbe7159ac6b906f51a5c89)
+        ;
+
+        
+    
+    
+            var marker_a1f5aa8c9fe58041bf5e18e497d7b5a4 = L.marker(
+                [32.8326918324193, -117.162906883432],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_533f62eba09429cd89d98b6fb5471e76 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_01ce9ec8b6e7b6dd615e7bda87921c1a = $(`<div id="html_01ce9ec8b6e7b6dd615e7bda87921c1a" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7204 CLAIREMONT MESA BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Fides Julian<br>     </div>`)[0];
+                popup_533f62eba09429cd89d98b6fb5471e76.setContent(html_01ce9ec8b6e7b6dd615e7bda87921c1a);
+            
+        
+
+        marker_a1f5aa8c9fe58041bf5e18e497d7b5a4.bindPopup(popup_533f62eba09429cd89d98b6fb5471e76)
+        ;
+
+        
+    
+    
+            var marker_ba72550749de2e18d04c031058bab7fe = L.marker(
+                [32.8289110549997, -117.161039706661],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_263672deea9d539c280f64af22ac9b74 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6c180bb1b2a5525026a1c653e2efdf2 = $(`<div id="html_e6c180bb1b2a5525026a1c653e2efdf2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7297 RONSON RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Naijia Guo<br>     </div>`)[0];
+                popup_263672deea9d539c280f64af22ac9b74.setContent(html_e6c180bb1b2a5525026a1c653e2efdf2);
+            
+        
+
+        marker_ba72550749de2e18d04c031058bab7fe.bindPopup(popup_263672deea9d539c280f64af22ac9b74)
+        ;
+
+        
+    
+    
+            var marker_ffe4bb79670308beb75eea708edc7524 = L.marker(
+                [33.1260796102484, -117.072516666909],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_14c53bf0a6588b8d7a678e06a716cb07 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba8a6a3ecf573d82d27019ddcd207950 = $(`<div id="html_ba8a6a3ecf573d82d27019ddcd207950" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 735 E OHIO AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Joy Heo<br>     </div>`)[0];
+                popup_14c53bf0a6588b8d7a678e06a716cb07.setContent(html_ba8a6a3ecf573d82d27019ddcd207950);
+            
+        
+
+        marker_ffe4bb79670308beb75eea708edc7524.bindPopup(popup_14c53bf0a6588b8d7a678e06a716cb07)
+        ;
+
+        
+    
+    
+            var marker_b9d9702b707e699566fb4e9524573c24 = L.marker(
+                [32.7564183268758, -117.038967837578],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3b983d818eac66cb5ff0896dfd124235 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a60f96c5266dd91d276517ae255e1e7 = $(`<div id="html_0a60f96c5266dd91d276517ae255e1e7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7373 UNIVERSITY AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Steven Lala<br>     </div>`)[0];
+                popup_3b983d818eac66cb5ff0896dfd124235.setContent(html_0a60f96c5266dd91d276517ae255e1e7);
+            
+        
+
+        marker_b9d9702b707e699566fb4e9524573c24.bindPopup(popup_3b983d818eac66cb5ff0896dfd124235)
+        ;
+
+        
+    
+    
+            var marker_21544be3c50eca7c25c0699d3c0d8243 = L.marker(
+                [33.1621448597403, -117.347131183709],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ff33017b2b202856db8f1fdf70d86e37 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78e3bd814ea43d987cff78a43ac49116 = $(`<div id="html_78e3bd814ea43d987cff78a43ac49116" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 756 GRAND AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Sang-Kyou Han<br>     </div>`)[0];
+                popup_ff33017b2b202856db8f1fdf70d86e37.setContent(html_78e3bd814ea43d987cff78a43ac49116);
+            
+        
+
+        marker_21544be3c50eca7c25c0699d3c0d8243.bindPopup(popup_ff33017b2b202856db8f1fdf70d86e37)
+        ;
+
+        
+    
+    
+            var marker_fe9fe3d3495c2e2659fad4a4c49efa1d = L.marker(
+                [32.8021793864734, -117.157492888185],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a6d4dd3e8dcd80bccda4d9c498bafe5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e1fa91ec5e725b474f0da4226afaf52 = $(`<div id="html_1e1fa91ec5e725b474f0da4226afaf52" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7612 LINDA VISTA RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> James Pham<br>     </div>`)[0];
+                popup_a6d4dd3e8dcd80bccda4d9c498bafe5d.setContent(html_1e1fa91ec5e725b474f0da4226afaf52);
+            
+        
+
+        marker_fe9fe3d3495c2e2659fad4a4c49efa1d.bindPopup(popup_a6d4dd3e8dcd80bccda4d9c498bafe5d)
+        ;
+
+        
+    
+    
+            var marker_53ac0ec742da7e3dd5822d1c005d450f = L.marker(
+                [32.8427230578982, -117.273299542748],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_56aaa7497dd93e0d09835460aad47d85 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8a7418165fa078aaeb7362fd518b7764 = $(`<div id="html_8a7418165fa078aaeb7362fd518b7764" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7634 GIRARD AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Diane Bousquin<br>     </div>`)[0];
+                popup_56aaa7497dd93e0d09835460aad47d85.setContent(html_8a7418165fa078aaeb7362fd518b7764);
+            
+        
+
+        marker_53ac0ec742da7e3dd5822d1c005d450f.bindPopup(popup_56aaa7497dd93e0d09835460aad47d85)
+        ;
+
+        
+    
+    
+            var marker_e7e12dc506b9052a89102ae6df8ff9b4 = L.marker(
+                [32.9910987043014, -117.259315937912],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_2138e9ec2f0a229b6e48b1801e955d90 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07d19868478c394d0971e336c2ffdff5 = $(`<div id="html_07d19868478c394d0971e336c2ffdff5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 765 ACADEMY DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Charles Mayberry, Nancy Stevenson<br>     </div>`)[0];
+                popup_2138e9ec2f0a229b6e48b1801e955d90.setContent(html_07d19868478c394d0971e336c2ffdff5);
+            
+        
+
+        marker_e7e12dc506b9052a89102ae6df8ff9b4.bindPopup(popup_2138e9ec2f0a229b6e48b1801e955d90)
+        ;
+
+        
+    
+    
+            var marker_1d30f6879e3bc24f61c2c9a3971e6dfb = L.marker(
+                [32.8236332956986, -117.156222740182],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_c58d85e3cb43aac214c6757daca83fd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d448b3d407247569e5229be7fe023bed = $(`<div id="html_d448b3d407247569e5229be7fe023bed" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7750 DAGGET ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Stephen Kim<br>     </div>`)[0];
+                popup_c58d85e3cb43aac214c6757daca83fd5.setContent(html_d448b3d407247569e5229be7fe023bed);
+            
+        
+
+        marker_1d30f6879e3bc24f61c2c9a3971e6dfb.bindPopup(popup_c58d85e3cb43aac214c6757daca83fd5)
+        ;
+
+        
+    
+    
+            var marker_15eb4672dfa3fce054b68cf98f979bcb = L.marker(
+                [32.8263776176367, -117.15341571893],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_0dc22c9c44087a1c2c0f32837cd360c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2f7695388a08c06c61c5b7f30491633 = $(`<div id="html_e2f7695388a08c06c61c5b7f30491633" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7825 ENGINEER RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Seong Cheon<br>     </div>`)[0];
+                popup_0dc22c9c44087a1c2c0f32837cd360c0.setContent(html_e2f7695388a08c06c61c5b7f30491633);
+            
+        
+
+        marker_15eb4672dfa3fce054b68cf98f979bcb.bindPopup(popup_0dc22c9c44087a1c2c0f32837cd360c0)
+        ;
+
+        
+    
+    
+            var marker_fdb13a9b19aefe665aea9a91444d1bb3 = L.marker(
+                [32.8258741396191, -117.152120150007],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5255d9a1d96f0761929afe9d8e959d92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_001f6d29c900d1a32ee6d9cfc3a78b49 = $(`<div id="html_001f6d29c900d1a32ee6d9cfc3a78b49" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 7969 ENGINEER RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Eric Hollander<br>     </div>`)[0];
+                popup_5255d9a1d96f0761929afe9d8e959d92.setContent(html_001f6d29c900d1a32ee6d9cfc3a78b49);
+            
+        
+
+        marker_fdb13a9b19aefe665aea9a91444d1bb3.bindPopup(popup_5255d9a1d96f0761929afe9d8e959d92)
+        ;
+
+        
+    
+    
+            var marker_32376a0b463f27eef057d4cc68783aaf = L.marker(
+                [33.1982484119942, -117.377873469119],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ce97da04040be58a5103a070c2706fa1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1dcd1e24aea1fb16aa776f69cf1bfa80 = $(`<div id="html_1dcd1e24aea1fb16aa776f69cf1bfa80" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 804 PIER VIEW WAY<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Tisa Anderson<br>     </div>`)[0];
+                popup_ce97da04040be58a5103a070c2706fa1.setContent(html_1dcd1e24aea1fb16aa776f69cf1bfa80);
+            
+        
+
+        marker_32376a0b463f27eef057d4cc68783aaf.bindPopup(popup_ce97da04040be58a5103a070c2706fa1)
+        ;
+
+        
+    
+    
+            var marker_b1d01cd8a32e2c2eb84e1073f1c28f53 = L.marker(
+                [33.1388334244354, -117.180356601574],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b4df5ac6b0e1b8267cd1f1752460ba28 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1dbadbe581479453a17cac41e4474ea = $(`<div id="html_a1dbadbe581479453a17cac41e4474ea" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 815 GRAND AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jessica Cole<br>     </div>`)[0];
+                popup_b4df5ac6b0e1b8267cd1f1752460ba28.setContent(html_a1dbadbe581479453a17cac41e4474ea);
+            
+        
+
+        marker_b1d01cd8a32e2c2eb84e1073f1c28f53.bindPopup(popup_b4df5ac6b0e1b8267cd1f1752460ba28)
+        ;
+
+        
+    
+    
+            var marker_ee83f09556bd95830cc019d9f7bc7f3f = L.marker(
+                [32.6533786298282, -116.967284092898],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f148104ee3ef56442db5b3ccd3d471e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab21d85ca71a8673bbd75b45882e1f52 = $(`<div id="html_ab21d85ca71a8673bbd75b45882e1f52" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 821 KUHN DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Atsushi Kanomata<br>     </div>`)[0];
+                popup_f148104ee3ef56442db5b3ccd3d471e0.setContent(html_ab21d85ca71a8673bbd75b45882e1f52);
+            
+        
+
+        marker_ee83f09556bd95830cc019d9f7bc7f3f.bindPopup(popup_f148104ee3ef56442db5b3ccd3d471e0)
+        ;
+
+        
+    
+    
+            var marker_a46c1840113bf89c6f0a3c1a74c85ea6 = L.marker(
+                [32.8326807043014, -117.145790311693],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ec6dc2de4ef18a6b49c12ad153665d4e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79214aac105d1b38920d4979c8466b46 = $(`<div id="html_79214aac105d1b38920d4979c8466b46" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8303 CLAIREMONT MESA BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yoonhee Choi<br>     </div>`)[0];
+                popup_ec6dc2de4ef18a6b49c12ad153665d4e.setContent(html_79214aac105d1b38920d4979c8466b46);
+            
+        
+
+        marker_a46c1840113bf89c6f0a3c1a74c85ea6.bindPopup(popup_ec6dc2de4ef18a6b49c12ad153665d4e)
+        ;
+
+        
+    
+    
+            var marker_40aca789fa0f4697f147346d174ad77f = L.marker(
+                [32.7499747462418, -117.171020724662],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_5a26c477dc442b02742d85b856f3c365 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_970b6e5e97ba22607ba647d5d8166108 = $(`<div id="html_970b6e5e97ba22607ba647d5d8166108" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 842 WASHINGTON ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Kirk Pfeiffer<br>     </div>`)[0];
+                popup_5a26c477dc442b02742d85b856f3c365.setContent(html_970b6e5e97ba22607ba647d5d8166108);
+            
+        
+
+        marker_40aca789fa0f4697f147346d174ad77f.bindPopup(popup_5a26c477dc442b02742d85b856f3c365)
+        ;
+
+        
+    
+    
+            var marker_f07d51f6adb89efc2ec97bcce02d6512 = L.marker(
+                [32.8004674382251, -116.952231498759],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_55f963137e07b996e7539a0eb4617727 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_923cf5f316f5a86d5a1ccf35a4fd6934 = $(`<div id="html_923cf5f316f5a86d5a1ccf35a4fd6934" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 855 E MADISON AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Alexiss Larowe, Kevin Craft<br>     </div>`)[0];
+                popup_55f963137e07b996e7539a0eb4617727.setContent(html_923cf5f316f5a86d5a1ccf35a4fd6934);
+            
+        
+
+        marker_f07d51f6adb89efc2ec97bcce02d6512.bindPopup(popup_55f963137e07b996e7539a0eb4617727)
+        ;
+
+        
+    
+    
+            var marker_6dfeb33cbad56010969b7e874027f436 = L.marker(
+                [32.7727059804448, -117.005762990498],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_7f80fcfb3456b26d3cb1ff79cf40e02e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ef0c34164f5c8de278b37e35ac2970b = $(`<div id="html_1ef0c34164f5c8de278b37e35ac2970b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8875 LA MESA BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Pier Paulo<br>     </div>`)[0];
+                popup_7f80fcfb3456b26d3cb1ff79cf40e02e.setContent(html_1ef0c34164f5c8de278b37e35ac2970b);
+            
+        
+
+        marker_6dfeb33cbad56010969b7e874027f436.bindPopup(popup_7f80fcfb3456b26d3cb1ff79cf40e02e)
+        ;
+
+        
+    
+    
+            var marker_cc583c49545d944f42f93aadd0f36dc8 = L.marker(
+                [32.8703718264574, -117.233926844595],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f825f06391a81f021ae0792f76cf478a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dfcc4aec81d9c59c5a9bf2e55baf1ef7 = $(`<div id="html_dfcc4aec81d9c59c5a9bf2e55baf1ef7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8910 VILLA LA JOLLA DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jacqueline Arellano, Leng Tang-Ritchie, Estela Reyes, Fides Julian, Steven Murray, Dong Ji, Douglas Burr<br>     </div>`)[0];
+                popup_f825f06391a81f021ae0792f76cf478a.setContent(html_dfcc4aec81d9c59c5a9bf2e55baf1ef7);
+            
+        
+
+        marker_cc583c49545d944f42f93aadd0f36dc8.bindPopup(popup_f825f06391a81f021ae0792f76cf478a)
+        ;
+
+        
+    
+    
+            var marker_5221ddb468c77cfa8ada2f1e23abac9a = L.marker(
+                [32.8703718264574, -117.233926844595],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_6c000d88884626786a6819751bc66101 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_271bf2adcda809cb82c1cc0a62b448ad = $(`<div id="html_271bf2adcda809cb82c1cc0a62b448ad" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8910 VILLA LA JOLLA DR STE 200<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Leah Tinkham, ESTELA REYES, KIMBERLY REYNOLDS, Douglas Burr, Dong Ji<br>     </div>`)[0];
+                popup_6c000d88884626786a6819751bc66101.setContent(html_271bf2adcda809cb82c1cc0a62b448ad);
+            
+        
+
+        marker_5221ddb468c77cfa8ada2f1e23abac9a.bindPopup(popup_6c000d88884626786a6819751bc66101)
+        ;
+
+        
+    
+    
+            var marker_e039c87bd6d2077872b84d2e30b312c0 = L.marker(
+                [32.8708652956986, -117.23391971757],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_dc482655aeebe8bf01fb5e04ef0b97ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2ad8e7a0add20f15e8f79bcafbfb5c0 = $(`<div id="html_e2ad8e7a0add20f15e8f79bcafbfb5c0" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8950 VILLA LA JOLLA DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Mariel Gallet<br>     </div>`)[0];
+                popup_dc482655aeebe8bf01fb5e04ef0b97ad.setContent(html_e2ad8e7a0add20f15e8f79bcafbfb5c0);
+            
+        
+
+        marker_e039c87bd6d2077872b84d2e30b312c0.bindPopup(popup_dc482655aeebe8bf01fb5e04ef0b97ad)
+        ;
+
+        
+    
+    
+            var marker_2701306195a084b8ca7df93ee024bb0c = L.marker(
+                [33.230575874441, -117.14149854837],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_a37978c91af290f429ffc0cb5f654367 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7cbabd26e38138e07f712884e286e84 = $(`<div id="html_c7cbabd26e38138e07f712884e286e84" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 8975 LAWRENCE WELK DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Michele McIntyre<br>     </div>`)[0];
+                popup_a37978c91af290f429ffc0cb5f654367.setContent(html_c7cbabd26e38138e07f712884e286e84);
+            
+        
+
+        marker_2701306195a084b8ca7df93ee024bb0c.bindPopup(popup_a37978c91af290f429ffc0cb5f654367)
+        ;
+
+        
+    
+    
+            var marker_0bbcb69dd701ad2f2aa529e6e7a203f7 = L.marker(
+                [32.7915355911766, -117.002917370074],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ed8d9d829177371a29713509e8c5bad5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e058649f7c8597d22bd8df58ffb2b837 = $(`<div id="html_e058649f7c8597d22bd8df58ffb2b837" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9019 PARK PLAZA DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jane Mergens<br>     </div>`)[0];
+                popup_ed8d9d829177371a29713509e8c5bad5.setContent(html_e058649f7c8597d22bd8df58ffb2b837);
+            
+        
+
+        marker_0bbcb69dd701ad2f2aa529e6e7a203f7.bindPopup(popup_ed8d9d829177371a29713509e8c5bad5)
+        ;
+
+        
+    
+    
+            var marker_1edacff6f61d2e469c884032bb1f0305 = L.marker(
+                [32.6510867338085, -116.963194154748],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_10de82e446e539fbc95eed27eff8a633 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f502a8cf667cac82ff68525294ded51 = $(`<div id="html_2f502a8cf667cac82ff68525294ded51" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 910 HALE PL<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Soo Chun Hwang<br>     </div>`)[0];
+                popup_10de82e446e539fbc95eed27eff8a633.setContent(html_2f502a8cf667cac82ff68525294ded51);
+            
+        
+
+        marker_1edacff6f61d2e469c884032bb1f0305.bindPopup(popup_10de82e446e539fbc95eed27eff8a633)
+        ;
+
+        
+    
+    
+            var marker_ab76520554757b8282d92679f3200164 = L.marker(
+                [32.8389032570423, -117.131366327165],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3c784b2fc0382fb065141bf851d30d96 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e227c6a97b01cbe946da883f6936b712 = $(`<div id="html_e227c6a97b01cbe946da883f6936b712" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9150 CHESAPEAKE DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Holly Halsey, Emily Wells, William Schlesinger, Adrian Bean, Jada Banko<br>     </div>`)[0];
+                popup_3c784b2fc0382fb065141bf851d30d96.setContent(html_e227c6a97b01cbe946da883f6936b712);
+            
+        
+
+        marker_ab76520554757b8282d92679f3200164.bindPopup(popup_3c784b2fc0382fb065141bf851d30d96)
+        ;
+
+        
+    
+    
+            var marker_a8d8d27e832423896d288bb582e11a32 = L.marker(
+                [32.8444262918555, -116.99782620653],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f2602cec4843a3d4d1b5d155a24fcb6e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a88de54f8143a59fbc77777e5df4e990 = $(`<div id="html_a88de54f8143a59fbc77777e5df4e990" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9225 CARLTON HILLS BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Wanhee Seo, Sheri Dang<br>     </div>`)[0];
+                popup_f2602cec4843a3d4d1b5d155a24fcb6e.setContent(html_a88de54f8143a59fbc77777e5df4e990);
+            
+        
+
+        marker_a8d8d27e832423896d288bb582e11a32.bindPopup(popup_f2602cec4843a3d4d1b5d155a24fcb6e)
+        ;
+
+        
+    
+    
+            var marker_cc3374a56888c5dfb96c94b395e3cd15 = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_45a28f5c9ea9e5630c4964a4cdbc7742 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1462cabf91ed7083da4f1a45a79afd9b = $(`<div id="html_1462cabf91ed7083da4f1a45a79afd9b" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9300 CAMPUS POINT DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jacqueline Arellano, Steven Murray, Estela Reyes, Leng Tang-Ritchie, Fides Julian, Douglas Burr<br>     </div>`)[0];
+                popup_45a28f5c9ea9e5630c4964a4cdbc7742.setContent(html_1462cabf91ed7083da4f1a45a79afd9b);
+            
+        
+
+        marker_cc3374a56888c5dfb96c94b395e3cd15.bindPopup(popup_45a28f5c9ea9e5630c4964a4cdbc7742)
+        ;
+
+        
+    
+    
+            var marker_f0b4a012dd51ebf0680201770e7beab2 = L.marker(
+                [32.8460002595072, -116.998285218824],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_fbc7795d0032e717d5f8feeebbccf758 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7205a131cc1059c4a38094553ba4128c = $(`<div id="html_7205a131cc1059c4a38094553ba4128c" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9307 CARLTON HILLS BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Heidi Handy<br>     </div>`)[0];
+                popup_fbc7795d0032e717d5f8feeebbccf758.setContent(html_7205a131cc1059c4a38094553ba4128c);
+            
+        
+
+        marker_f0b4a012dd51ebf0680201770e7beab2.bindPopup(popup_fbc7795d0032e717d5f8feeebbccf758)
+        ;
+
+        
+    
+    
+            var marker_bb51947d9b7acc7602274dcd6d8242c4 = L.marker(
+                [32.8755645, -117.213879779023],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_3867ba6233dc649f421553bbedd693b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4e21f5900a2c5fbc13cb44ee76bffd2 = $(`<div id="html_f4e21f5900a2c5fbc13cb44ee76bffd2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9333 GENESEE AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Steven Murray, Estela Reyes, Leng Tang-Ritchie, Fides Julian, Dong Ji, Jacqueline Arellano, Douglas Burr<br>     </div>`)[0];
+                popup_3867ba6233dc649f421553bbedd693b7.setContent(html_f4e21f5900a2c5fbc13cb44ee76bffd2);
+            
+        
+
+        marker_bb51947d9b7acc7602274dcd6d8242c4.bindPopup(popup_3867ba6233dc649f421553bbedd693b7)
+        ;
+
+        
+    
+    
+            var marker_787cbb72318795833642df7b40e9dea4 = L.marker(
+                [32.875668, -117.213922513129],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_0ed43a81062d67850c754887e28f6ce8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2f2640079cb364bd3c3555f3289e801f = $(`<div id="html_2f2640079cb364bd3c3555f3289e801f" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9333 GENESEE AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> LENG TANG-RITCHIE, ERIN RASKIN, NORIKO UEDA-LANG, ESTELA REYES, STEVEN MURRAY, KIMBERLY REYNOLDS, FIDES JULIAN, Jacqueline Arellano, Leah Tinkham, Dong Ji, Douglas Burr<br>     </div>`)[0];
+                popup_0ed43a81062d67850c754887e28f6ce8.setContent(html_2f2640079cb364bd3c3555f3289e801f);
+            
+        
+
+        marker_787cbb72318795833642df7b40e9dea4.bindPopup(popup_0ed43a81062d67850c754887e28f6ce8)
+        ;
+
+        
+    
+    
+            var marker_a85d925f1993171fdf8e7bb31ea23272 = L.marker(
+                [32.8755645, -117.213879779023],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_1c0796cc9aec45bfdf40bf2077ea5222 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4caacdef5ede16275709ece83694b3df = $(`<div id="html_4caacdef5ede16275709ece83694b3df" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9333 GENESEE AVE STE 200<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jacqueline Arellano, Alia Windham, KIMBERLY REYNOLDS, LENG TANG-RITCHIE, FIDES JULIAN, NORIKO UEDA-LANG, Leah Tinkham, ESTELA REYES, ERIN RASKIN, Douglas Burr, Dong Ji<br>     </div>`)[0];
+                popup_1c0796cc9aec45bfdf40bf2077ea5222.setContent(html_4caacdef5ede16275709ece83694b3df);
+            
+        
+
+        marker_a85d925f1993171fdf8e7bb31ea23272.bindPopup(popup_1c0796cc9aec45bfdf40bf2077ea5222)
+        ;
+
+        
+    
+    
+            var marker_771d2a402ca27f55fb624c055a35a0cb = L.marker(
+                [32.8755645, -117.213879779023],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_f19fe5baf61a3f44273cd574ea885202 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a70f421390fbc92983de657258915d4 = $(`<div id="html_5a70f421390fbc92983de657258915d4" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9333 GENESEE AVE STE 220<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> STEVEN MURRAY<br>     </div>`)[0];
+                popup_f19fe5baf61a3f44273cd574ea885202.setContent(html_5a70f421390fbc92983de657258915d4);
+            
+        
+
+        marker_771d2a402ca27f55fb624c055a35a0cb.bindPopup(popup_f19fe5baf61a3f44273cd574ea885202)
+        ;
+
+        
+    
+    
+            var marker_03a75aea63dd4164ce0d186134199cd4 = L.marker(
+                [32.877999, -117.225891],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d930fa076e1cd18a17d2280104afea81 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d2192e091f3dc811a76c0863984a53cd = $(`<div id="html_d2192e091f3dc811a76c0863984a53cd" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9350 CAMPUS POINT DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Samuel Fish<br>     </div>`)[0];
+                popup_d930fa076e1cd18a17d2280104afea81.setContent(html_d2192e091f3dc811a76c0863984a53cd);
+            
+        
+
+        marker_03a75aea63dd4164ce0d186134199cd4.bindPopup(popup_d930fa076e1cd18a17d2280104afea81)
+        ;
+
+        
+    
+    
+            var marker_1732790cb5c3257bf45320683fc59c7c = L.marker(
+                [32.8752, -117.2231775],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_ef749c40a7f31f245bad82b518bc9e05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e962f4e67770969c0e39aaa1bd1008fc = $(`<div id="html_e962f4e67770969c0e39aaa1bd1008fc" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9400 CAMPUS POINT DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Steven Murray, Douglas Burr, Leng Tang-Ritchie, Fides Julian, Estela Reyes, Jacqueline Arellano, Dong Ji<br>     </div>`)[0];
+                popup_ef749c40a7f31f245bad82b518bc9e05.setContent(html_e962f4e67770969c0e39aaa1bd1008fc);
+            
+        
+
+        marker_1732790cb5c3257bf45320683fc59c7c.bindPopup(popup_ef749c40a7f31f245bad82b518bc9e05)
+        ;
+
+        
+    
+    
+            var marker_2f667a4f560b7367b210ed38b54120c2 = L.marker(
+                [32.8955524044397, -117.120135230123],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_1f6b40ae76285f4a1d234a5dff8c38f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb68ed49d44b5ef86e44760c1851cd96 = $(`<div id="html_bb68ed49d44b5ef86e44760c1851cd96" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9474 KEARNY VILLA RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Soo Chun Hwang<br>     </div>`)[0];
+                popup_1f6b40ae76285f4a1d234a5dff8c38f9.setContent(html_bb68ed49d44b5ef86e44760c1851cd96);
+            
+        
+
+        marker_2f667a4f560b7367b210ed38b54120c2.bindPopup(popup_1f6b40ae76285f4a1d234a5dff8c38f9)
+        ;
+
+        
+    
+    
+            var marker_c3232b24b4912f479fb2382ac98aca72 = L.marker(
+                [32.6509725572453, -116.96148047847],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_d95486a34cdef140039c776b18e76875 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f877cd964745ccf16c6573aad9b669b5 = $(`<div id="html_f877cd964745ccf16c6573aad9b669b5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 955 LANE AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Emily Wells<br>     </div>`)[0];
+                popup_d95486a34cdef140039c776b18e76875.setContent(html_f877cd964745ccf16c6573aad9b669b5);
+            
+        
+
+        marker_c3232b24b4912f479fb2382ac98aca72.bindPopup(popup_d95486a34cdef140039c776b18e76875)
+        ;
+
+        
+    
+    
+            var marker_859c45ab7a62977ad787b984d5b50393 = L.marker(
+                [32.8979347109515, -117.123182997346],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_9d3b6f2f608700f338a05e5cf6ff52b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_084822711a790b4a48a4615ea5fa7014 = $(`<div id="html_084822711a790b4a48a4615ea5fa7014" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9625 BLACK MOUNTAIN RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Liman Rachels<br>     </div>`)[0];
+                popup_9d3b6f2f608700f338a05e5cf6ff52b3.setContent(html_084822711a790b4a48a4615ea5fa7014);
+            
+        
+
+        marker_859c45ab7a62977ad787b984d5b50393.bindPopup(popup_9d3b6f2f608700f338a05e5cf6ff52b3)
+        ;
+
+        
+    
+    
+            var marker_e734f44abf7935f3ed694bef93cf7759 = L.marker(
+                [32.8951112956986, -117.120972763764],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_fe6098f24645bbf70f12db5a2e79c6ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3dd7b4864ce939588e0db9ac728f1b24 = $(`<div id="html_3dd7b4864ce939588e0db9ac728f1b24" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9636 TIERRA GRANDE ST<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Yifan Liu<br>     </div>`)[0];
+                popup_fe6098f24645bbf70f12db5a2e79c6ed.setContent(html_3dd7b4864ce939588e0db9ac728f1b24);
+            
+        
+
+        marker_e734f44abf7935f3ed694bef93cf7759.bindPopup(popup_fe6098f24645bbf70f12db5a2e79c6ed)
+        ;
+
+        
+    
+    
+            var marker_10ec8d53abf7e61c66ac038bc8a1c23b = L.marker(
+                [32.787623505944, -116.948853],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_578b5f21e371f2a4e2eb192bc325e1fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_01af71b30f61f17cdabb14bb1b776817 = $(`<div id="html_01af71b30f61f17cdabb14bb1b776817" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 983 E WASHINGTON AVE<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Ida Candelaria<br>     </div>`)[0];
+                popup_578b5f21e371f2a4e2eb192bc325e1fd.setContent(html_01af71b30f61f17cdabb14bb1b776817);
+            
+        
+
+        marker_10ec8d53abf7e61c66ac038bc8a1c23b.bindPopup(popup_578b5f21e371f2a4e2eb192bc325e1fd)
+        ;
+
+        
+    
+    
+            var marker_ff7b9df19de4223c601fb981ff719cab = L.marker(
+                [32.9196873650481, -117.114454019436],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_2047c52e5c03ec01ae3f886ef5acb883 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_654bfa9fa4f273e8dd9519bd3acbf8d5 = $(`<div id="html_654bfa9fa4f273e8dd9519bd3acbf8d5" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9855 ERMA RD STE 105<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> GRETCHEN SEITZ<br>     </div>`)[0];
+                popup_2047c52e5c03ec01ae3f886ef5acb883.setContent(html_654bfa9fa4f273e8dd9519bd3acbf8d5);
+            
+        
+
+        marker_ff7b9df19de4223c601fb981ff719cab.bindPopup(popup_2047c52e5c03ec01ae3f886ef5acb883)
+        ;
+
+        
+    
+    
+            var marker_dd02b20f0daf26a4ee3423aa65631ca4 = L.marker(
+                [32.9801947100449, -117.256864631214],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_38b051c03a21b3616ed8137107ff2646 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7254bde3c01f4143c86e13f440835268 = $(`<div id="html_7254bde3c01f4143c86e13f440835268" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 990 HIGHLAND DR<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jae Jin Son<br>     </div>`)[0];
+                popup_38b051c03a21b3616ed8137107ff2646.setContent(html_7254bde3c01f4143c86e13f440835268);
+            
+        
+
+        marker_dd02b20f0daf26a4ee3423aa65631ca4.bindPopup(popup_38b051c03a21b3616ed8137107ff2646)
+        ;
+
+        
+    
+    
+            var marker_a11d1f3c132a5d643ee5c43bc489df29 = L.marker(
+                [32.916618887583, -117.112344793008],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_fe4f0a285a25e04b030e64d704c58fe4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_97fe70b1679f7e9bcf7dbfeaacb8ddb1 = $(`<div id="html_97fe70b1679f7e9bcf7dbfeaacb8ddb1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9909 MIRA MESA BLVD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Douglas Burr, Leng Tang-Ritchie, Fides Julian, Estela Reyes, Steven Murray, Dong Ji, Jacqueline Arellano<br>     </div>`)[0];
+                popup_fe4f0a285a25e04b030e64d704c58fe4.setContent(html_97fe70b1679f7e9bcf7dbfeaacb8ddb1);
+            
+        
+
+        marker_a11d1f3c132a5d643ee5c43bc489df29.bindPopup(popup_fe4f0a285a25e04b030e64d704c58fe4)
+        ;
+
+        
+    
+    
+            var marker_f1769fffaf76a854ce72f31f66d7d1d8 = L.marker(
+                [32.916618887583, -117.112344793008],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_24b401bdc3c18ccac3e7d2b9046a2b3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ddb343fb8d452e804600f00e367ebc1 = $(`<div id="html_7ddb343fb8d452e804600f00e367ebc1" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9909 MIRA MESA BLVD STE 200<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Jacqueline Arellano, ERIN RASKIN, KIMBERLY REYNOLDS, FIDES JULIAN, Douglas Burr, Dong Ji, STEVEN MURRAY, Alia Windham<br>     </div>`)[0];
+                popup_24b401bdc3c18ccac3e7d2b9046a2b3c.setContent(html_7ddb343fb8d452e804600f00e367ebc1);
+            
+        
+
+        marker_f1769fffaf76a854ce72f31f66d7d1d8.bindPopup(popup_24b401bdc3c18ccac3e7d2b9046a2b3c)
+        ;
+
+        
+    
+    
+            var marker_35cb89b8285acd0c3942813033e9ed25 = L.marker(
+                [32.9606894364713, -117.111487050994],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_6b6db09b18a924fc73fb29271eb194c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf6052b6440cbdb809c527994080b7b7 = $(`<div id="html_cf6052b6440cbdb809c527994080b7b7" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9995 CARMEL MOUNTAIN RD<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> Gretchen Seitz<br>     </div>`)[0];
+                popup_6b6db09b18a924fc73fb29271eb194c9.setContent(html_cf6052b6440cbdb809c527994080b7b7);
+            
+        
+
+        marker_35cb89b8285acd0c3942813033e9ed25.bindPopup(popup_6b6db09b18a924fc73fb29271eb194c9)
+        ;
+
+        
+    
+    
+            var marker_6bd88220165b27fb8303eb0f52ffb9f4 = L.marker(
+                [32.9606894364713, -117.111487050994],
+                {}
+            ).addTo(map_12ffcb71f5cb3419eaf3a5866a933e96);
+        
+    
+        var popup_b3a8668e7542039f8a8167eb0b94c638 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_145efadb63d019c46796da128f676cc2 = $(`<div id="html_145efadb63d019c46796da128f676cc2" style="width: 100.0%; height: 100.0%;">     <b>Address:</b> 9995 CARMEL MOUNTAIN RD STE B10-B11<br>     <b>Classification:</b> Acupuncturist<br>     <b>Physicians:</b> GRETCHEN SEITZ<br>     </div>`)[0];
+                popup_b3a8668e7542039f8a8167eb0b94c638.setContent(html_145efadb63d019c46796da128f676cc2);
+            
+        
+
+        marker_6bd88220165b27fb8303eb0f52ffb9f4.bindPopup(popup_b3a8668e7542039f8a8167eb0b94c638)
+        ;
+
+        
+    
+</script>
+</html>
