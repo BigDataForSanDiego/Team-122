@@ -1,0 +1,36 @@
+import geopandas as gpd
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the GeoDataFrame
+tf = gpd.read_file('merged_taxonomy_data.shp')
+
+# Specify the value you want to count
+specific_value = 'Dietitian, Registered'
+
+# Filter and count occurrences by county
+counts = tf[tf['Classifica'] == specific_value].groupby('County').size().reset_index(name='Counts')
+
+# Create a complete list of counties
+all_counties = tf['County'].unique()
+
+# Merge with all counties to include those with zero counts
+all_counts = pd.DataFrame(all_counties, columns=['County']).merge(counts, on='County', how='left').fillna(0)
+
+# Convert Counts to int for better display
+all_counts['Counts'] = all_counts['Counts'].astype(int)
+
+# Sort by counts for better visualization
+all_counts = all_counts.sort_values(by='Counts', ascending=False)
+
+# Create a bar graph
+plt.figure(figsize=(10, 5))  # Adjusted size
+plt.bar(all_counts['County'], all_counts['Counts'], color='skyblue', width=0.4)  # Adjusted bar width
+plt.xlabel('County', fontsize=12)  # Adjusted label size
+plt.ylabel('Number of Dietitians', fontsize=12)
+plt.title('Dietitian by County', fontsize=14)
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()  # Adjust layout for better fit
+plt.savefig('dietitian_distribution_by_county.png', dpi=300, bbox_inches='tight')  # Save as PNG
+# Show the plot
+plt.show()
