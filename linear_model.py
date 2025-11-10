@@ -1,4 +1,7 @@
 import argparse
+import re
+from datetime import datetime
+from pathlib import Path
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
@@ -9,6 +12,8 @@ def main() -> None:
     parser.add_argument("--input", default="master_with_counts.csv", help="Input CSV path (default: master_with_counts.csv)")
     parser.add_argument("--test_size", type=int, default=19, help="Holdout size in months (default: 19)")
     parser.add_argument("--output", default="predictions.csv", help="Where to save test predictions")
+    parser.add_argument("--run-label", default="", help="Short label for this run (used in per-run filename/comment)")
+    parser.add_argument("--change-note", default="", help="Description of what changed for this run")
     args = parser.parse_args()
 
     df = pd.read_csv(args.input)
@@ -24,27 +29,33 @@ def main() -> None:
     df = df.sort_values("year_month").reset_index(drop=True)
 
     # Ensure numeric dtypes for used columns
-    for col in ["homeless_count", "median_rent_city", "avg_temp"]:
+    for col in ["homeless_count", "median_rent_city", "avg_temp", "unemployment_rate", "evictions"]:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
     # Create lags
-    df["homeless_lag1"] = df["homeless_count"].shift(1)
-    df["homeless_lag2"] = df["homeless_count"].shift(2)
-    df["homeless_lag3"] = df["homeless_count"].shift(3)
-    df["rent_lag1"] = df["median_rent_city"].shift(1)
-    df["temp_lag1"] = df["avg_temp"].shift(1)
+    df["homeless_count_lag1"] = df["homeless_count"].shift(1)
+    df["homeless_count_lag2"] = df["homeless_count"].shift(2)
+    df["homeless_count_lag3"] = df["homeless_count"].shift(3)
+    df["median_rent_city_lag1"] = df["median_rent_city"].shift(1)
+    df["avg_temp_lag1"] = df["avg_temp"].shift(1)
+    df["unemployment_rate_lag1"] = df["unemployment_rate"].shift(1)
+    df["evictions_lag1"] = df["evictions"].shift(1)
 
     df = df.dropna().reset_index(drop=True)
 
     feature_cols = [
-        "homeless_lag1",
-        "homeless_lag2",
-        "homeless_lag3",
+        "homeless_count_lag1",
+        "homeless_count_lag2",
+        "homeless_count_lag3",
         "median_rent_city",
         "avg_temp",
-        "rent_lag1",
-        "temp_lag1",
+        "unemployment_rate",
+        "median_rent_city_lag1",
+        "avg_temp_lag1",
+        "unemployment_rate_lag1",
+        "evictions_lag1",
+        "evictions",
     ]
 
     X = df[feature_cols]
@@ -69,12 +80,28 @@ def main() -> None:
     out = df.loc[y_test.index, ["year_month"]].copy()
     out["y_true"] = y_test.values
     out["y_pred"] = y_pred
-    out.to_csv(args.output, index=False)
+    csv_body = out.to_csv(index=False)
+    Path(args.output).write_text(csv_body)
+
+    # Also save a run-specific file with descriptive comment
+    run_label = args.run_label.strip()
+    if not run_label:
+        run_label = datetime.now().strftime("%Y%m%d_%H%M%S")
+    safe_label = re.sub(r"[^A-Za-z0-9_-]+", "_", run_label).strip("_") or "run"
+    base_path = Path(args.output)
+    versioned_path = base_path.with_name(f"{base_path.stem}_{safe_label}{base_path.suffix or '.csv'}")
+    change_note = args.change_note.strip()
+    comment_parts = [f"Run: {run_label}"]
+    if change_note:
+        comment_parts.append(change_note)
+    comment_line = "# " + " | ".join(comment_parts)
+    versioned_path.write_text(comment_line + "\n" + csv_body)
 
     # Print quick metrics
     print(f"RMSE: {rmse:.3f}")
     print(f"R2:   {r2:.3f}")
     print(f"Saved predictions to {args.output}")
+    print(f"Saved run-specific predictions to {versioned_path}")
 
 
 if __name__ == "__main__":
