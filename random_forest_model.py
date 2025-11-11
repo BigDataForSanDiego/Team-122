@@ -42,6 +42,13 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
     df = df.sort_values("year_month").reset_index(drop=True)
     if "homeless_count" not in df.columns:
         raise ValueError("Input data must include homeless_count column.")
+    full_range = pd.date_range(df["year_month"].min(), df["year_month"].max(), freq="MS")
+    df = (
+        df.set_index("year_month")
+        .reindex(full_range)
+        .rename_axis("year_month")
+        .reset_index()
+    )
 
     numeric_cols = [
         "homeless_count",
@@ -67,6 +74,17 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
         if col in df.columns:
             df[col] = df[col].interpolate(method="linear", limit_direction="both").ffill().bfill()
 
+    covid_present = "covid" in df.columns
+    if covid_present:
+        df["covid"] = pd.to_numeric(df["covid"], errors="coerce")
+        df["covid"] = df["covid"].ffill().bfill().fillna(0)
+        df["covid_flag_current"] = (df["covid"] >= 0.5).astype(int)
+        df["covid_flag_lag1"] = df["covid_flag_current"].shift(1)
+        df["covid_flag_lag3"] = df["covid_flag_current"].shift(3)
+        df["covid_flag_roll3"] = (
+            df["covid_flag_current"].rolling(window=3, min_periods=1).mean().shift(1)
+        )
+
     if len(df) < 104:
         raise ValueError("Need at least 104 months of data before creating lags.")
     df = df.iloc[-104:].reset_index(drop=True)
@@ -88,6 +106,14 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
         "unemployment_rate_lag1",
         "evictions_lag1",
     ]
+    if "covid_flag_lag1" in df.columns:
+        lag_cols.extend(
+            [
+                "covid_flag_lag1",
+                "covid_flag_lag3",
+                "covid_flag_roll3",
+            ]
+        )
     for col in lag_cols:
         if col in df.columns:
             first_valid = df[col].first_valid_index()
@@ -146,6 +172,15 @@ def main() -> None:
         "unemployment_rate_lag1",
         "evictions_lag1",
     ]
+    if "covid_flag_current" in df.columns:
+        feature_cols.extend(
+            [
+                "covid_flag_current",
+                "covid_flag_lag1",
+                "covid_flag_lag3",
+                "covid_flag_roll3",
+            ]
+        )
     X = df[feature_cols]
     y = df["homeless_count"]
     dates = df["year_month"]
