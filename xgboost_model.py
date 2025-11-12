@@ -50,6 +50,8 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
         "avg_temp",
         "unemployment_rate",
         "evictions",
+        "precipitation",
+        "shelter_beds",
     ]
     for col in numeric_cols:
         if col in df.columns:
@@ -80,6 +82,7 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
     if len(df) < 104:
         raise ValueError("Need at least 104 months of data before creating lags.")
     df = df.iloc[-104:].reset_index(drop=True)
+    df = df.drop(columns=[col for col in ["cpi", "industrial_production"] if col in df.columns])
 
     # Homeless count lags 1-6
     homeless_lag_cols = []
@@ -88,13 +91,18 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
         df[col] = df["homeless_count"].shift(lag)
         homeless_lag_cols.append(col)
 
-    driver_cols = ["median_rent_city", "avg_temp", "unemployment_rate", "evictions"]
+    driver_lag_strategy = {
+        "median_rent_city": (1, 2),
+        "unemployment_rate": (1, 2),
+        "evictions": (1, 2),
+    }
     driver_lag_cols = []
-    for driver in driver_cols:
-        for lag in (1, 2):
-            col = f"{driver}_lag{lag}"
-            df[col] = df[driver].shift(lag)
-            driver_lag_cols.append(col)
+    for driver, lags in driver_lag_strategy.items():
+        if driver in df.columns:
+            for lag in lags:
+                col = f"{driver}_lag{lag}"
+                df[col] = df[driver].shift(lag)
+                driver_lag_cols.append(col)
 
     lag_cols = homeless_lag_cols + driver_lag_cols
     if "covid_flag_lag1" in df.columns:
@@ -148,6 +156,8 @@ def main() -> None:
         "avg_temp",
         "unemployment_rate",
         "evictions",
+        "precipitation",
+        "shelter_beds",
         "month_index",
         "is_summer",
         "is_winter",
@@ -156,8 +166,12 @@ def main() -> None:
         "pandemic_period",
     ]
     feature_cols += [f"homeless_count_lag{lag}" for lag in range(1, 7)]
-    for driver in ["median_rent_city", "avg_temp", "unemployment_rate", "evictions"]:
-        for lag in (1, 2):
+    for driver, lags in [
+        ("median_rent_city", (1, 2)),
+        ("unemployment_rate", (1, 2)),
+        ("evictions", (1, 2)),
+    ]:
+        for lag in lags:
             feature_cols.append(f"{driver}_lag{lag}")
     if "covid_flag_current" in df.columns:
         feature_cols.extend(
