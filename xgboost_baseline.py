@@ -2,6 +2,7 @@ import argparse
 import os
 from pathlib import Path
 from typing import List, Optional
+import sys
 
 MPL_DIR = Path.cwd() / ".matplotlib_cache"
 os.environ.setdefault("MPLCONFIGDIR", str(MPL_DIR))
@@ -14,7 +15,14 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import GridSearchCV, TimeSeriesSplit
+
+_REMOVED_SCRIPT_DIR = False
+if str(Path(__file__).resolve().parent) in sys.path:
+    sys.path.remove(str(Path(__file__).resolve().parent))
+    _REMOVED_SCRIPT_DIR = True
 from xgboost import XGBRegressor
+if _REMOVED_SCRIPT_DIR:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 
 def to_int_list(values: List[str]) -> List[int]:
@@ -50,8 +58,6 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
         "avg_temp",
         "unemployment_rate",
         "evictions",
-        "precipitation",
-        "shelter_beds",
     ]
     for col in numeric_cols:
         if col in df.columns:
@@ -63,8 +69,8 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
     completeness_mask = df[required_for_span].notna().all(axis=1)
     if not completeness_mask.any():
         raise ValueError("Unable to find any rows with complete numeric data.")
-    last_valid_date = df.loc[completeness_mask, "year_month"].max()
-    df = df[df["year_month"] <= last_valid_date].reset_index(drop=True)
+    last_valid_idx = completeness_mask[completeness_mask].index[-1]
+    df = df.loc[:last_valid_idx].reset_index(drop=True)
 
     for col in numeric_cols:
         if col in df.columns:
@@ -81,6 +87,8 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
 
     if len(df) < 104:
         raise ValueError("Need at least 104 months of data before creating lags.")
+    if len(df) < 104:
+        raise ValueError("Need at least 104 months before creating lags.")
     df = df.iloc[-104:].reset_index(drop=True)
     df = df.drop(columns=[col for col in ["cpi", "industrial_production"] if col in df.columns])
 
@@ -112,7 +120,9 @@ def prepare_dataframe(path: Path) -> pd.DataFrame:
             first_valid = df[col].first_valid_index()
             if first_valid is not None:
                 df[col] = df[col].fillna(df.at[first_valid, col])
-    df = df.dropna().reset_index(drop=True)
+    if "covid" in df.columns:
+        df = df.drop(columns=["covid"])
+    df = df.reset_index(drop=True)
     df["month_index"] = range(len(df))
     df["month"] = df["year_month"].dt.month
     df["is_summer"] = df["month"].isin([6, 7, 8]).astype(int)
@@ -156,8 +166,6 @@ def main() -> None:
         "avg_temp",
         "unemployment_rate",
         "evictions",
-        "precipitation",
-        "shelter_beds",
         "month_index",
         "is_summer",
         "is_winter",
